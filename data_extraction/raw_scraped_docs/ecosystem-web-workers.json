@@ -1,0 +1,39 @@
+{
+  "scrapeId": "56fc4248-7947-4c11-8e06-42aae3f0f50e",
+  "sourceURL": "https://angular.dev/ecosystem/web-workers",
+  "statusCode": 200,
+  "data": {
+    "markdown": "Skip to main content\n\nmenu\n\nmenuDocs\n\n- Introduction\n\n  - [What is Angular?](https://angular.dev/overview)\n  - [Installation](https://angular.dev/installation)\n  - Essentials\n  - [Start coding! 🚀](https://angular.dev/tutorials/learn-angular)\n- In-depth Guides\n\n  - Signals\n  - Components\n  - Templates\n  - Directives\n  - Dependency Injection\n  - Routing\n  - Forms\n  - HTTP Client\n  - Server-side & hybrid-rendering\n  - Testing\n  - Internationalization\n  - Experimental features\n- Developer Tools\n\n  - Angular CLI\n  - Libraries\n  - [DevTools](https://angular.dev/tools/devtools)\n  - [Language Service](https://angular.dev/tools/language-service)\n- Best Practices\n\n  - [Style Guide](https://angular.dev/style-guide)\n  - [Security](https://angular.dev/best-practices/security)\n  - [Accessibility](https://angular.dev/best-practices/a11y)\n  - Performance\n  - [Keeping up-to-date](https://angular.dev/update)\n- Extended Ecosystem\n\n  - [NgModules](https://angular.dev/guide/ngmodules/overview)\n  - Animations\n  - Using RxJS with Angular\n  - Service Workers & PWAs\n  - [Web workers](https://angular.dev/ecosystem/web-workers)\n  - [Custom build pipeline](https://angular.dev/ecosystem/custom-build-pipeline)\n  - [Angular Fire](https://github.com/angular/angularfire#readme)\n  - [Google Maps](https://github.com/angular/components/tree/main/src/google-maps#readme)\n  - [Google Pay](https://github.com/google-pay/google-pay-button#angular)\n  - [YouTube player](https://github.com/angular/components/blob/main/src/youtube-player/README.md)\n  - [Angular CDK](https://material.angular.io/cdk/categories)\n  - [Angular Material](https://material.angular.io/)\n\nThis site uses cookies from Google to deliver its services and to analyze traffic.\n\n[Learn more](https://policies.google.com/technologies/cookies) Ok, Got it\n\n[Web workers](https://developer.mozilla.org/docs/Web/API/Web_Workers_API) let you run CPU-intensive computations in a background thread, freeing the main thread to update the user interface.\nApplication's performing a lot of computations, like generating Computer-Aided Design (CAD) drawings or doing heavy geometric calculations, can use web workers to increase performance.\n\n**HELPFUL:** The Angular CLI does not support running itself in a web worker.\n\n## [Adding a web worker](https://angular.dev/ecosystem/web-workers\\#adding-a-web-worker)\n\nTo add a web worker to an existing project, use the Angular CLI `ng generate` command.\n\n```\n      ng generate web-worker <location>\n\n```\n\ncheck\n\nYou can add a web worker anywhere in your application.\nFor example, to add a web worker to the root component, `src/app/app.component.ts`, run the following command.\n\n```\n      ng generate web-worker app\n\n```\n\ncheck\n\nThe command performs the following actions.\n\n1. Configures your project to use web workers, if it isn't already.\n\n2. Adds the following scaffold code to `src/app/app.worker.ts` to receive messages.\n\n\n\n\n\n### src/app/app.worker.ts\n\n\n\n\n\n```\n         addEventListener('message', ({ data }) => {   const response = `worker response to ${data}`;   postMessage(response); });\n\n```\n\ncheck\n\n3. Adds the following scaffold code to `src/app/app.component.ts` to use the worker.\n\n\n\n\n\n### src/app/app.component.ts\n\n\n\n\n\n```\n         if (typeof Worker !== 'undefined') {   // Create a new   const worker = new Worker(new URL('./app.worker', import.meta.url));   worker.onmessage = ({ data }) => {     console.log(`page got message: ${data}`);   };   worker.postMessage('hello'); } else {   // Web workers are not supported in this environment.   // You should add a fallback so that your program still executes correctly. }\n\n```\n\ncheck\n\n\nAfter you create this initial scaffold, you must refactor your code to use the web worker by sending messages to and from the worker.\n\n**IMPORTANT:** Some environments or platforms, such as `@angular/platform-server` used in [Server-side Rendering](https://angular.dev/ecosystem/guide/ssr), don't support web workers.\n\nTo ensure that your application works in these environments, you must provide a fallback mechanism to perform the computations that the worker would otherwise perform.",
+    "screenshot": "https://service.firecrawl.dev/storage/v1/object/public/media/screenshot-1a3ce687-5f1e-48b5-bc5f-ab0208c6d326.png"
+  },
+  "metadata": {
+    "language": "en",
+    "ogDescription": "The web development framework for building modern apps.",
+    "ogUrl": "https://angular.dev/",
+    "apple-mobile-web-app-title": "Angular",
+    "msapplication-config": "/assets/icons/browserconfig.xml",
+    "viewport": "width=device-width, initial-scale=1",
+    "title": "Web workers • Angular",
+    "description": "The web development framework for building modern apps.",
+    "og:url": "https://angular.dev/",
+    "og:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "twitter:card": "summary_large_image",
+    "favicon": "https://angular.dev/assets/icons/favicon-48x48.png",
+    "twitter:title": "Angular",
+    "ogImage": "https://angular.dev/assets/images/ng-image.jpg",
+    "theme-color": "#ffffff",
+    "application-name": "Angular",
+    "og:type": "website",
+    "twitter:url": "https://angular.dev/",
+    "twitter:description": "The web development framework for building modern apps.",
+    "ogTitle": "Angular",
+    "og:description": "The web development framework for building modern apps.",
+    "twitter:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "og:title": "Angular",
+    "msapplication-TileColor": "#e90464",
+    "scrapeId": "56fc4248-7947-4c11-8e06-42aae3f0f50e",
+    "sourceURL": "https://angular.dev/ecosystem/web-workers",
+    "url": "https://angular.dev/ecosystem/web-workers",
+    "statusCode": 200
+  }
+}

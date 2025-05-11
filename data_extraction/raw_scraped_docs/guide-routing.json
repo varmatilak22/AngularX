@@ -1,0 +1,39 @@
+{
+  "scrapeId": "2bf6f9e2-8567-423c-abe8-cee39c1ff797",
+  "sourceURL": "https://angular.dev/guide/routing",
+  "statusCode": 200,
+  "data": {
+    "markdown": "Skip to main content\n\nmenu\n\nmenuDocs\n\n- Introduction\n\n  - [What is Angular?](https://angular.dev/overview)\n  - [Installation](https://angular.dev/installation)\n  - Essentials\n  - [Start coding! 🚀](https://angular.dev/tutorials/learn-angular)\n- In-depth Guides\n\n  - Signals\n  - Components\n  - Templates\n  - Directives\n  - Dependency Injection\n  - Routing\n  - Forms\n  - HTTP Client\n  - Server-side & hybrid-rendering\n  - Testing\n  - Internationalization\n  - Experimental features\n- Developer Tools\n\n  - Angular CLI\n  - Libraries\n  - [DevTools](https://angular.dev/tools/devtools)\n  - [Language Service](https://angular.dev/tools/language-service)\n- Best Practices\n\n  - [Style Guide](https://angular.dev/style-guide)\n  - [Security](https://angular.dev/best-practices/security)\n  - [Accessibility](https://angular.dev/best-practices/a11y)\n  - Performance\n  - [Keeping up-to-date](https://angular.dev/update)\n- Extended Ecosystem\n\n  - [NgModules](https://angular.dev/guide/ngmodules/overview)\n  - Animations\n  - Using RxJS with Angular\n  - Service Workers & PWAs\n  - [Web workers](https://angular.dev/ecosystem/web-workers)\n  - [Custom build pipeline](https://angular.dev/ecosystem/custom-build-pipeline)\n  - [Angular Fire](https://github.com/angular/angularfire#readme)\n  - [Google Maps](https://github.com/angular/components/tree/main/src/google-maps#readme)\n  - [Google Pay](https://github.com/google-pay/google-pay-button#angular)\n  - [YouTube player](https://github.com/angular/components/blob/main/src/youtube-player/README.md)\n  - [Angular CDK](https://material.angular.io/cdk/categories)\n  - [Angular Material](https://material.angular.io/)\n\n- arrow\\_backRouting\n  - [Overview](https://angular.dev/guide/routing)\n  - [Common routing tasks](https://angular.dev/guide/routing/common-router-tasks)\n  - [Routing in single-page applications](https://angular.dev/guide/routing/router-tutorial)\n  - [Creating custom route matches](https://angular.dev/guide/routing/routing-with-urlmatcher)\n  - [Router reference](https://angular.dev/guide/routing/router-reference)\n\nThis site uses cookies from Google to deliver its services and to analyze traffic.\n\n[Learn more](https://policies.google.com/technologies/cookies) Ok, Got it\n\nIn-depth Guides\n\nRouting\n\n# Angular Routing\n\n[edit](https://github.com/angular/angular/edit/main/adev/src/content/guide/routing/overview.md \"Edit this page\")\n\nRouting helps you change what the user sees in a single-page app.\n\nIn a single-page app, you change what the user sees by showing or hiding portions of the display that correspond to particular components, rather than going out to the server to get a new page.\n\nAs users perform application tasks, they need to move between the different views that you have defined.\n\nTo handle the navigation from one view to the next, you use the Angular **`Router`**.\nThe **`Router`** enables navigation by interpreting a browser URL as an instruction to change the view.\n\n## [Learn about Angular routing](https://angular.dev/guide/routing\\#learn-about-angular-routing)\n\n[**Common routing tasks** \\\\\n\\\\\nLearn how to implement many of the common tasks associated with Angular routing.\\\\\n\\\\\nLearn more](https://angular.dev/guide/guide/routing/common-router-tasks) [**Routing SPA tutorial** \\\\\n\\\\\nA tutorial that covers patterns associated with Angular routing.\\\\\n\\\\\nLearn more](https://angular.dev/guide/guide/routing/router-tutorial) [**Creating custom route matches tutorial** \\\\\n\\\\\nA tutorial that covers how to use custom matching strategy patterns with Angular routing.\\\\\n\\\\\nLearn more](https://angular.dev/guide/guide/routing/routing-with-urlmatcher) [**Router reference** \\\\\n\\\\\nDescribes some core router API concepts.\\\\\n\\\\\nLearn more](https://angular.dev/guide/guide/routing/router-reference)",
+    "screenshot": "https://service.firecrawl.dev/storage/v1/object/public/media/screenshot-98f03289-c53b-468e-94e0-e0408b4cbd4a.png"
+  },
+  "metadata": {
+    "twitter:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "ogImage": "https://angular.dev/assets/images/ng-image.jpg",
+    "og:url": "https://angular.dev/",
+    "ogTitle": "Angular",
+    "apple-mobile-web-app-title": "Angular",
+    "ogUrl": "https://angular.dev/",
+    "theme-color": "#ffffff",
+    "language": "en",
+    "msapplication-config": "/assets/icons/browserconfig.xml",
+    "twitter:url": "https://angular.dev/",
+    "title": "Routing • Overview • Angular",
+    "application-name": "Angular",
+    "og:title": "Angular",
+    "viewport": "width=device-width, initial-scale=1",
+    "og:description": "The web development framework for building modern apps.",
+    "description": "The web development framework for building modern apps.",
+    "og:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "twitter:card": "summary_large_image",
+    "twitter:title": "Angular",
+    "favicon": "https://angular.dev/assets/icons/favicon-48x48.png",
+    "msapplication-TileColor": "#e90464",
+    "og:type": "website",
+    "twitter:description": "The web development framework for building modern apps.",
+    "ogDescription": "The web development framework for building modern apps.",
+    "scrapeId": "2bf6f9e2-8567-423c-abe8-cee39c1ff797",
+    "sourceURL": "https://angular.dev/guide/routing",
+    "url": "https://angular.dev/guide/routing",
+    "statusCode": 200
+  }
+}

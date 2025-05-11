@@ -1,0 +1,39 @@
+{
+  "scrapeId": "7a35e7c7-6dd9-4a62-9e53-1041f5d17727",
+  "sourceURL": "https://angular.dev/guide/templates/ng-content",
+  "statusCode": 200,
+  "data": {
+    "markdown": "Skip to main content\n\nmenu\n\nmenuDocs\n\n- Introduction\n\n  - [What is Angular?](https://angular.dev/overview)\n  - [Installation](https://angular.dev/installation)\n  - Essentials\n  - [Start coding! 🚀](https://angular.dev/tutorials/learn-angular)\n- In-depth Guides\n\n  - Signals\n  - Components\n  - Templates\n  - Directives\n  - Dependency Injection\n  - Routing\n  - Forms\n  - HTTP Client\n  - Server-side & hybrid-rendering\n  - Testing\n  - Internationalization\n  - Experimental features\n- Developer Tools\n\n  - Angular CLI\n  - Libraries\n  - [DevTools](https://angular.dev/tools/devtools)\n  - [Language Service](https://angular.dev/tools/language-service)\n- Best Practices\n\n  - [Style Guide](https://angular.dev/style-guide)\n  - [Security](https://angular.dev/best-practices/security)\n  - [Accessibility](https://angular.dev/best-practices/a11y)\n  - Performance\n  - [Keeping up-to-date](https://angular.dev/update)\n- Extended Ecosystem\n\n  - [NgModules](https://angular.dev/guide/ngmodules/overview)\n  - Animations\n  - Using RxJS with Angular\n  - Service Workers & PWAs\n  - [Web workers](https://angular.dev/ecosystem/web-workers)\n  - [Custom build pipeline](https://angular.dev/ecosystem/custom-build-pipeline)\n  - [Angular Fire](https://github.com/angular/angularfire#readme)\n  - [Google Maps](https://github.com/angular/components/tree/main/src/google-maps#readme)\n  - [Google Pay](https://github.com/google-pay/google-pay-button#angular)\n  - [YouTube player](https://github.com/angular/components/blob/main/src/youtube-player/README.md)\n  - [Angular CDK](https://material.angular.io/cdk/categories)\n  - [Angular Material](https://material.angular.io/)\n\n- arrow\\_backTemplates\n  - [Overview](https://angular.dev/guide/templates)\n  - [Binding dynamic text, properties and attributes](https://angular.dev/guide/templates/binding)\n  - [Adding event listeners](https://angular.dev/guide/templates/event-listeners)\n  - [Two-way binding](https://angular.dev/guide/templates/two-way-binding)\n  - [Control flow](https://angular.dev/guide/templates/control-flow)\n  - [Pipes](https://angular.dev/guide/templates/pipes)\n  - [Slotting child content with ng-content](https://angular.dev/guide/templates/ng-content)\n  - [Create template fragments with ng-template](https://angular.dev/guide/templates/ng-template)\n  - [Grouping elements with ng-container](https://angular.dev/guide/templates/ng-container)\n  - [Variables in templates](https://angular.dev/guide/templates/variables)\n  - [Deferred loading with @defer](https://angular.dev/guide/templates/defer)\n  - [Expression syntax](https://angular.dev/guide/templates/expression-syntax)\n  - [Whitespace in templates](https://angular.dev/guide/templates/whitespace)\n\nThis site uses cookies from Google to deliver its services and to analyze traffic.\n\n[Learn more](https://policies.google.com/technologies/cookies) Ok, Got it\n\n`<ng-content>` is a special element that accepts markup or a template fragment and controls how components render content. It does not render a real DOM element.\n\nHere is an example of a `BaseButton` component that accepts any markup from its parent.\n\n```\n      // ./base-button/base-button.component.tsimport { Component } from '@angular/core';@Component({  selector: 'button[baseButton]',  template: `      <ng-content />  `,})export class BaseButton {}\n\n```\n\ncheck\n\n```\n      // ./app.component.tsimport { Component } from '@angular/core';import { BaseButton } from './base-button/base-button.component.ts';@Component({  selector: 'app-root',  imports: [BaseButton],  template: `    <button baseButton>      Next <span class=\"icon arrow-right\" />    </button>  `,})export class AppComponent {}\n\n```\n\ncheck\n\nFor more detail, check out the [`<ng-content>` in-depth guide](https://angular.dev/guide/components/content-projection) for other ways you can leverage this pattern.",
+    "screenshot": "https://service.firecrawl.dev/storage/v1/object/public/media/screenshot-9941ac5d-755a-4cfc-8028-fa66fb0040af.png"
+  },
+  "metadata": {
+    "og:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "twitter:description": "The web development framework for building modern apps.",
+    "og:url": "https://angular.dev/",
+    "twitter:url": "https://angular.dev/",
+    "ogUrl": "https://angular.dev/",
+    "description": "The web development framework for building modern apps.",
+    "viewport": "width=device-width, initial-scale=1",
+    "ogTitle": "Angular",
+    "favicon": "https://angular.dev/assets/icons/favicon-48x48.png",
+    "theme-color": "#ffffff",
+    "twitter:card": "summary_large_image",
+    "ogDescription": "The web development framework for building modern apps.",
+    "ogImage": "https://angular.dev/assets/images/ng-image.jpg",
+    "og:description": "The web development framework for building modern apps.",
+    "twitter:title": "Angular",
+    "language": "en",
+    "application-name": "Angular",
+    "msapplication-config": "/assets/icons/browserconfig.xml",
+    "og:type": "website",
+    "apple-mobile-web-app-title": "Angular",
+    "msapplication-TileColor": "#e90464",
+    "og:title": "Angular",
+    "title": "Slotting child content with ng-content • Angular",
+    "twitter:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "scrapeId": "7a35e7c7-6dd9-4a62-9e53-1041f5d17727",
+    "sourceURL": "https://angular.dev/guide/templates/ng-content",
+    "url": "https://angular.dev/guide/templates/ng-content",
+    "statusCode": 200
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "scrapeId": "10128e6d-bf1b-473c-a08f-d2e3fb70c82b",
+  "sourceURL": "https://angular.dev/tools/cli/end-to-end",
+  "statusCode": 200,
+  "data": {
+    "markdown": "Skip to main content\n\nmenu\n\nmenuDocs\n\n- Introduction\n\n  - [What is Angular?](https://angular.dev/overview)\n  - [Installation](https://angular.dev/installation)\n  - Essentials\n  - [Start coding! 🚀](https://angular.dev/tutorials/learn-angular)\n- In-depth Guides\n\n  - Signals\n  - Components\n  - Templates\n  - Directives\n  - Dependency Injection\n  - Routing\n  - Forms\n  - HTTP Client\n  - Server-side & hybrid-rendering\n  - Testing\n  - Internationalization\n  - Experimental features\n- Developer Tools\n\n  - Angular CLI\n  - Libraries\n  - [DevTools](https://angular.dev/tools/devtools)\n  - [Language Service](https://angular.dev/tools/language-service)\n- Best Practices\n\n  - [Style Guide](https://angular.dev/style-guide)\n  - [Security](https://angular.dev/best-practices/security)\n  - [Accessibility](https://angular.dev/best-practices/a11y)\n  - Performance\n  - [Keeping up-to-date](https://angular.dev/update)\n- Extended Ecosystem\n\n  - [NgModules](https://angular.dev/guide/ngmodules/overview)\n  - Animations\n  - Using RxJS with Angular\n  - Service Workers & PWAs\n  - [Web workers](https://angular.dev/ecosystem/web-workers)\n  - [Custom build pipeline](https://angular.dev/ecosystem/custom-build-pipeline)\n  - [Angular Fire](https://github.com/angular/angularfire#readme)\n  - [Google Maps](https://github.com/angular/components/tree/main/src/google-maps#readme)\n  - [Google Pay](https://github.com/google-pay/google-pay-button#angular)\n  - [YouTube player](https://github.com/angular/components/blob/main/src/youtube-player/README.md)\n  - [Angular CDK](https://material.angular.io/cdk/categories)\n  - [Angular Material](https://material.angular.io/)\n\n- arrow\\_backAngular CLI\n  - [Overview](https://angular.dev/tools/cli)\n  - [Local set-up](https://angular.dev/tools/cli/setup-local)\n  - [Building Angular apps](https://angular.dev/tools/cli/build)\n  - [Serving Angular apps for development](https://angular.dev/tools/cli/serve)\n  - [Deployment](https://angular.dev/tools/cli/deployment)\n  - [End-to-End Testing](https://angular.dev/tools/cli/end-to-end)\n  - [Migrating to new build system](https://angular.dev/tools/cli/build-system-migration)\n  - [Build environments](https://angular.dev/tools/cli/environments)\n  - [Angular CLI builders](https://angular.dev/tools/cli/cli-builder)\n  - [Generating code using schematics](https://angular.dev/tools/cli/schematics)\n  - [Authoring schematics](https://angular.dev/tools/cli/schematics-authoring)\n  - [Schematics for libraries](https://angular.dev/tools/cli/schematics-for-libraries)\n  - [Template type checking](https://angular.dev/tools/cli/template-typecheck)\n  - [Ahead-of-time (AOT) compilation](https://angular.dev/tools/cli/aot-compiler)\n  - [AOT metadata errors](https://angular.dev/tools/cli/aot-metadata-errors)\n\nThis site uses cookies from Google to deliver its services and to analyze traffic.\n\n[Learn more](https://policies.google.com/technologies/cookies) Ok, Got it\n\nEnd-to-end or (E2E) testing is a form of testing used to assert your entire application works as expected from start to finish or _\"end-to-end\"_. E2E testing differs from unit testing in that it is completely decoupled from the underlying implementation details of your code. It is typically used to validate an application in a way that mimics the way a user would interact with it. This page serves as a guide to getting started with end-to-end testing in Angular using the Angular CLI.\n\n## [Set Up E2E Testing](https://angular.dev/tools/cli/end-to-end\\#set-up-e2e-testing)\n\nThe Angular CLI downloads and installs everything you need to run end-to-end tests for your Angular application.\n\n```\n      ng e2e\n\n```\n\ncheck\n\nThe `ng e2e` command will first check your project for the \"e2e\" target. If it can't locate it, the CLI will then prompt you which e2e package you would like to use and walk you through the setup.\n\n```\n      Cannot find \"e2e\" target for the specified project.You can add a package that implements these capabilities.For example:Cypress: ng add @cypress/schematicNightwatch: ng add @nightwatch/schematicsWebdriverIO: ng add @wdio/schematicsPlaywright: ng add playwright-ng-schematicsPuppeteer: ng add @puppeteer/ng-schematicsWould you like to add a package with \"e2e\" capabilities now?No❯ CypressNightwatchWebdriverIOPlaywrightPuppeteer\n\n```\n\ncheck\n\nIf you don't find the test runner you would like to use from the list above, you can manually add a package using `ng add`.\n\n## [Running E2E Tests](https://angular.dev/tools/cli/end-to-end\\#running-e2e-tests)\n\nNow that your application is configured for end-to-end testing we can now run the same command to execute your tests.\n\n```\n      ng e2e\n\n```\n\ncheck\n\nNote, their isn't anything \"special\" about running your tests with any of the integrated e2e packages. The `ng e2e` command is really just running the `e2e` builder under the hood. You can always [create your own custom builder](https://angular.dev/tools/cli/tools/cli/cli-builder#creating-a-builder) named `e2e` and run it using `ng e2e`.\n\n## [More information on end-to-end testing tools](https://angular.dev/tools/cli/end-to-end\\#more-information-on-end-to-end-testing-tools)\n\n| Testing Tool | Details |\n| :-- | :-- |\n| Cypress | [Getting started with Cypress](https://docs.cypress.io/guides/end-to-end-testing/writing-your-first-end-to-end-test) |\n| Nightwatch | [Getting started with Nightwatch](https://nightwatchjs.org/guide/writing-tests/introduction.html) |\n| WebdriverIO | [Getting started with Webdriver.io](https://webdriver.io/docs/gettingstarted) |\n| Playwright | [Getting started with Playwright](https://playwright.dev/docs/writing-tests) |\n| Puppeteer | [Getting started with Puppeteer](https://pptr.dev/) |",
+    "screenshot": "https://service.firecrawl.dev/storage/v1/object/public/media/screenshot-009900a8-f7be-481a-94ad-65587523bc46.png"
+  },
+  "metadata": {
+    "ogDescription": "The web development framework for building modern apps.",
+    "twitter:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "favicon": "https://angular.dev/assets/icons/favicon-48x48.png",
+    "og:type": "website",
+    "title": "End-to-End Testing • Angular",
+    "language": "en",
+    "ogImage": "https://angular.dev/assets/images/ng-image.jpg",
+    "msapplication-TileColor": "#e90464",
+    "og:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "apple-mobile-web-app-title": "Angular",
+    "twitter:card": "summary_large_image",
+    "twitter:url": "https://angular.dev/",
+    "description": "The web development framework for building modern apps.",
+    "twitter:title": "Angular",
+    "viewport": "width=device-width, initial-scale=1",
+    "msapplication-config": "/assets/icons/browserconfig.xml",
+    "theme-color": "#ffffff",
+    "twitter:description": "The web development framework for building modern apps.",
+    "ogTitle": "Angular",
+    "ogUrl": "https://angular.dev/",
+    "og:description": "The web development framework for building modern apps.",
+    "og:url": "https://angular.dev/",
+    "application-name": "Angular",
+    "og:title": "Angular",
+    "scrapeId": "10128e6d-bf1b-473c-a08f-d2e3fb70c82b",
+    "sourceURL": "https://angular.dev/tools/cli/end-to-end",
+    "url": "https://angular.dev/tools/cli/end-to-end",
+    "statusCode": 200
+  }
+}

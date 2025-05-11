@@ -1,0 +1,39 @@
+{
+  "scrapeId": "69ea7336-adac-49d4-aa8e-54b7f689c52a",
+  "sourceURL": "https://angular.dev/ecosystem/service-workers/app-shell",
+  "statusCode": 200,
+  "data": {
+    "markdown": "Skip to main content\n\nmenu\n\nmenuDocs\n\n- Introduction\n\n  - [What is Angular?](https://angular.dev/overview)\n  - [Installation](https://angular.dev/installation)\n  - Essentials\n  - [Start coding! 🚀](https://angular.dev/tutorials/learn-angular)\n- In-depth Guides\n\n  - Signals\n  - Components\n  - Templates\n  - Directives\n  - Dependency Injection\n  - Routing\n  - Forms\n  - HTTP Client\n  - Server-side & hybrid-rendering\n  - Testing\n  - Internationalization\n  - Experimental features\n- Developer Tools\n\n  - Angular CLI\n  - Libraries\n  - [DevTools](https://angular.dev/tools/devtools)\n  - [Language Service](https://angular.dev/tools/language-service)\n- Best Practices\n\n  - [Style Guide](https://angular.dev/style-guide)\n  - [Security](https://angular.dev/best-practices/security)\n  - [Accessibility](https://angular.dev/best-practices/a11y)\n  - Performance\n  - [Keeping up-to-date](https://angular.dev/update)\n- Extended Ecosystem\n\n  - [NgModules](https://angular.dev/guide/ngmodules/overview)\n  - Animations\n  - Using RxJS with Angular\n  - Service Workers & PWAs\n  - [Web workers](https://angular.dev/ecosystem/web-workers)\n  - [Custom build pipeline](https://angular.dev/ecosystem/custom-build-pipeline)\n  - [Angular Fire](https://github.com/angular/angularfire#readme)\n  - [Google Maps](https://github.com/angular/components/tree/main/src/google-maps#readme)\n  - [Google Pay](https://github.com/google-pay/google-pay-button#angular)\n  - [YouTube player](https://github.com/angular/components/blob/main/src/youtube-player/README.md)\n  - [Angular CDK](https://material.angular.io/cdk/categories)\n  - [Angular Material](https://material.angular.io/)\n\n- arrow\\_backService Workers & PWAs\n  - [Overview](https://angular.dev/ecosystem/service-workers)\n  - [Getting started](https://angular.dev/ecosystem/service-workers/getting-started)\n  - [Configuration file](https://angular.dev/ecosystem/service-workers/config)\n  - [Communicating with the service worker](https://angular.dev/ecosystem/service-workers/communications)\n  - [Push notifications](https://angular.dev/ecosystem/service-workers/push-notifications)\n  - [Service worker devops](https://angular.dev/ecosystem/service-workers/devops)\n  - [App shell pattern](https://angular.dev/ecosystem/service-workers/app-shell)\n\nThis site uses cookies from Google to deliver its services and to analyze traffic.\n\n[Learn more](https://policies.google.com/technologies/cookies) Ok, Got it\n\nThe [App shell pattern](https://developer.chrome.com/blog/app-shell) is a way to render a portion of your application using a route at build time.\nIt can improve the user experience by quickly launching a static rendered page (a skeleton common to all pages) while the browser downloads the full client version and switches to it automatically after the code loads.\n\nThis gives users a meaningful first paint of your application that appears quickly because the browser can render the HTML and CSS without the need to initialize any JavaScript.\n\n1. ### [Prepare the application](https://angular.dev/ecosystem/service-workers/app-shell\\#prepare-the-application)\n\n\nDo this with the following Angular CLI command:\n\n\n\n```\n         ng new my-app --routing\n\n```\n\ncheck\n\nFor an existing application, you have to manually add the `Router` and defining a `<router-outlet>` within your application.\n\n2. ### [Create the application shell](https://angular.dev/ecosystem/service-workers/app-shell\\#create-the-application-shell)\n\n\nUse the Angular CLI to automatically create the application shell.\n\n\n\n```\n         ng generate app-shell\n\n```\n\ncheck\n\nFor more information about this command, see [App shell command](https://angular.dev/ecosystem/service-workers/cli/generate/app-shell).\n\nThe command updates the application code and adds extra files to the project structure.\n\n\n\n```\n         src├── app│ ├── app.config.server.ts # server application configuration│ └── app-shell # app-shell component│   ├── app-shell.component.html│   ├── app-shell.component.scss│   ├── app-shell.component.spec.ts│   └── app-shell.component.ts└── main.server.ts # main server application bootstrapping\n\n```\n\ncheck\n\n\n\n\n```\n         ng build --configuration=development\n\n```\n\ncheck\n\n\n\nOr to use the production configuration.\n\n\n\n\n\n```\n         ng build\n\n```\n\ncheck\n\n\n\nTo verify the build output, open `dist/my-app/browser/index.html`.\nLook for default text `app-shell works!` to show that the application shell route was rendered as part of the output.",
+    "screenshot": "https://service.firecrawl.dev/storage/v1/object/public/media/screenshot-7ffeff46-1890-4572-aa99-a4ca4b841f88.png"
+  },
+  "metadata": {
+    "ogTitle": "Angular",
+    "ogUrl": "https://angular.dev/",
+    "description": "The web development framework for building modern apps.",
+    "application-name": "Angular",
+    "msapplication-TileColor": "#e90464",
+    "og:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "twitter:title": "Angular",
+    "og:url": "https://angular.dev/",
+    "language": "en",
+    "og:title": "Angular",
+    "twitter:url": "https://angular.dev/",
+    "twitter:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "og:description": "The web development framework for building modern apps.",
+    "twitter:description": "The web development framework for building modern apps.",
+    "ogImage": "https://angular.dev/assets/images/ng-image.jpg",
+    "title": "App shell pattern • Angular",
+    "msapplication-config": "/assets/icons/browserconfig.xml",
+    "og:type": "website",
+    "twitter:card": "summary_large_image",
+    "theme-color": "#ffffff",
+    "ogDescription": "The web development framework for building modern apps.",
+    "viewport": "width=device-width, initial-scale=1",
+    "favicon": "https://angular.dev/assets/icons/favicon-48x48.png",
+    "apple-mobile-web-app-title": "Angular",
+    "scrapeId": "69ea7336-adac-49d4-aa8e-54b7f689c52a",
+    "sourceURL": "https://angular.dev/ecosystem/service-workers/app-shell",
+    "url": "https://angular.dev/ecosystem/service-workers/app-shell",
+    "statusCode": 200
+  }
+}

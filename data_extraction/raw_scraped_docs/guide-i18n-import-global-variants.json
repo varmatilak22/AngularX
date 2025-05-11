@@ -1,0 +1,39 @@
+{
+  "scrapeId": "36947e03-7522-4e68-9f2e-b588e193ee37",
+  "sourceURL": "https://angular.dev/guide/i18n/import-global-variants",
+  "statusCode": 200,
+  "data": {
+    "markdown": "Skip to main content\n\nmenu\n\nmenuDocs\n\n- Introduction\n\n  - [What is Angular?](https://angular.dev/overview)\n  - [Installation](https://angular.dev/installation)\n  - Essentials\n  - [Start coding! 🚀](https://angular.dev/tutorials/learn-angular)\n- In-depth Guides\n\n  - Signals\n  - Components\n  - Templates\n  - Directives\n  - Dependency Injection\n  - Routing\n  - Forms\n  - HTTP Client\n  - Server-side & hybrid-rendering\n  - Testing\n  - Internationalization\n  - Experimental features\n- Developer Tools\n\n  - Angular CLI\n  - Libraries\n  - [DevTools](https://angular.dev/tools/devtools)\n  - [Language Service](https://angular.dev/tools/language-service)\n- Best Practices\n\n  - [Style Guide](https://angular.dev/style-guide)\n  - [Security](https://angular.dev/best-practices/security)\n  - [Accessibility](https://angular.dev/best-practices/a11y)\n  - Performance\n  - [Keeping up-to-date](https://angular.dev/update)\n- Extended Ecosystem\n\n  - [NgModules](https://angular.dev/guide/ngmodules/overview)\n  - Animations\n  - Using RxJS with Angular\n  - Service Workers & PWAs\n  - [Web workers](https://angular.dev/ecosystem/web-workers)\n  - [Custom build pipeline](https://angular.dev/ecosystem/custom-build-pipeline)\n  - [Angular Fire](https://github.com/angular/angularfire#readme)\n  - [Google Maps](https://github.com/angular/components/tree/main/src/google-maps#readme)\n  - [Google Pay](https://github.com/google-pay/google-pay-button#angular)\n  - [YouTube player](https://github.com/angular/components/blob/main/src/youtube-player/README.md)\n  - [Angular CDK](https://material.angular.io/cdk/categories)\n  - [Angular Material](https://material.angular.io/)\n\n- arrow\\_backInternationalization\n  - [Overview](https://angular.dev/guide/i18n)\n  - [Add the localize package](https://angular.dev/guide/i18n/add-package)\n  - [Refer to locales by ID](https://angular.dev/guide/i18n/locale-id)\n  - [Format data based on locale](https://angular.dev/guide/i18n/format-data-locale)\n  - [Prepare component for translation](https://angular.dev/guide/i18n/prepare)\n  - [Work with translation files](https://angular.dev/guide/i18n/translation-files)\n  - [Merge translations into the app](https://angular.dev/guide/i18n/merge)\n  - [Deploy multiple locales](https://angular.dev/guide/i18n/deploy)\n  - [Import global variants of the locale data](https://angular.dev/guide/i18n/import-global-variants)\n  - [Manage marked text with custom IDs](https://angular.dev/guide/i18n/manage-marked-text)\n  - [Example Angular application](https://angular.dev/guide/i18n/example)\n\nThis site uses cookies from Google to deliver its services and to analyze traffic.\n\n[Learn more](https://policies.google.com/technologies/cookies) Ok, Got it\n\nThe [Angular CLI](https://angular.dev/guide/i18n/cli \"CLI\") automatically includes locale data if you run the [`ng build`](https://angular.dev/guide/i18n/cli/build \"ng\") command with the `--localize` option.\n\n```\n      ng build --localize\n\n```\n\ncheck\n\n**HELPFUL:** The initial installation of Angular already contains locale data for English in the United States ( `en-US`).\nThe [Angular CLI](https://angular.dev/guide/i18n/cli \"CLI\") automatically includes the locale data and sets the `LOCALE_ID` value when you use the `--localize` option with [`ng build`](https://angular.dev/guide/i18n/cli/build \"ng\") command.\n\nThe `@angular/common` package on npm contains the locale data files.\nGlobal variants of the locale data are available in `@angular/common/locales/global`.\n\n## [`import` example for French](https://angular.dev/guide/i18n/import-global-variants\\#import-example-for-french)\n\nFor example, you could import the global variants for French ( `fr`) in `main.ts` where you bootstrap the application.\n\ncheck\n\n```\n      import '@angular/common/locales/global/fr';import {provideProtractorTestingSupport} from '@angular/platform-browser';import {bootstrapApplication} from '@angular/platform-browser';import {AppComponent} from './app/app.component';bootstrapApplication(AppComponent, {  providers: [    provideProtractorTestingSupport(), // essential for e2e testing  ],});\n\n```\n\n**HELPFUL:** In an `NgModules` application, you would import it in your `app.module`.",
+    "screenshot": "https://service.firecrawl.dev/storage/v1/object/public/media/screenshot-e862533d-c3eb-4792-8c45-72c689712629.png"
+  },
+  "metadata": {
+    "og:description": "The web development framework for building modern apps.",
+    "theme-color": "#ffffff",
+    "og:url": "https://angular.dev/",
+    "description": "The web development framework for building modern apps.",
+    "favicon": "https://angular.dev/assets/icons/favicon-48x48.png",
+    "msapplication-config": "/assets/icons/browserconfig.xml",
+    "og:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "ogUrl": "https://angular.dev/",
+    "twitter:description": "The web development framework for building modern apps.",
+    "twitter:card": "summary_large_image",
+    "twitter:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "ogImage": "https://angular.dev/assets/images/ng-image.jpg",
+    "title": "Import global variants of the locale data • Angular",
+    "ogTitle": "Angular",
+    "ogDescription": "The web development framework for building modern apps.",
+    "language": "en",
+    "viewport": "width=device-width, initial-scale=1",
+    "twitter:url": "https://angular.dev/",
+    "application-name": "Angular",
+    "twitter:title": "Angular",
+    "og:title": "Angular",
+    "apple-mobile-web-app-title": "Angular",
+    "og:type": "website",
+    "msapplication-TileColor": "#e90464",
+    "scrapeId": "36947e03-7522-4e68-9f2e-b588e193ee37",
+    "sourceURL": "https://angular.dev/guide/i18n/import-global-variants",
+    "url": "https://angular.dev/guide/i18n/import-global-variants",
+    "statusCode": 200
+  }
+}

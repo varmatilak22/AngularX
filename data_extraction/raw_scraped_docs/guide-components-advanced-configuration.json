@@ -1,0 +1,39 @@
+{
+  "scrapeId": "3366165d-1747-4e24-ae8f-b47a19a6bdc1",
+  "sourceURL": "https://angular.dev/guide/components/advanced-configuration",
+  "statusCode": 200,
+  "data": {
+    "markdown": "Skip to main content\n\nmenu\n\nmenuDocs\n\n- Introduction\n\n  - [What is Angular?](https://angular.dev/overview)\n  - [Installation](https://angular.dev/installation)\n  - Essentials\n  - [Start coding! 🚀](https://angular.dev/tutorials/learn-angular)\n- In-depth Guides\n\n  - Signals\n  - Components\n  - Templates\n  - Directives\n  - Dependency Injection\n  - Routing\n  - Forms\n  - HTTP Client\n  - Server-side & hybrid-rendering\n  - Testing\n  - Internationalization\n  - Experimental features\n- Developer Tools\n\n  - Angular CLI\n  - Libraries\n  - [DevTools](https://angular.dev/tools/devtools)\n  - [Language Service](https://angular.dev/tools/language-service)\n- Best Practices\n\n  - [Style Guide](https://angular.dev/style-guide)\n  - [Security](https://angular.dev/best-practices/security)\n  - [Accessibility](https://angular.dev/best-practices/a11y)\n  - Performance\n  - [Keeping up-to-date](https://angular.dev/update)\n- Extended Ecosystem\n\n  - [NgModules](https://angular.dev/guide/ngmodules/overview)\n  - Animations\n  - Using RxJS with Angular\n  - Service Workers & PWAs\n  - [Web workers](https://angular.dev/ecosystem/web-workers)\n  - [Custom build pipeline](https://angular.dev/ecosystem/custom-build-pipeline)\n  - [Angular Fire](https://github.com/angular/angularfire#readme)\n  - [Google Maps](https://github.com/angular/components/tree/main/src/google-maps#readme)\n  - [Google Pay](https://github.com/google-pay/google-pay-button#angular)\n  - [YouTube player](https://github.com/angular/components/blob/main/src/youtube-player/README.md)\n  - [Angular CDK](https://material.angular.io/cdk/categories)\n  - [Angular Material](https://material.angular.io/)\n\n- arrow\\_backComponents\n  - [Anatomy of components](https://angular.dev/guide/components)\n  - [Selectors](https://angular.dev/guide/components/selectors)\n  - [Styling](https://angular.dev/guide/components/styling)\n  - [Accepting data with input properties](https://angular.dev/guide/components/inputs)\n  - [Custom events with outputs](https://angular.dev/guide/components/outputs)\n  - [Content projection with ng-content](https://angular.dev/guide/components/content-projection)\n  - [Host elements](https://angular.dev/guide/components/host-elements)\n  - [Lifecycle](https://angular.dev/guide/components/lifecycle)\n  - [Referencing component children with queries](https://angular.dev/guide/components/queries)\n  - [Using DOM APIs](https://angular.dev/guide/components/dom-apis)\n  - [Inheritance](https://angular.dev/guide/components/inheritance)\n  - [Programmatically rendering components](https://angular.dev/guide/components/programmatic-rendering)\n  - [Advanced configuration](https://angular.dev/guide/components/advanced-configuration)\n  - [Custom Elements](https://angular.dev/guide/elements)\n\nThis site uses cookies from Google to deliver its services and to analyze traffic.\n\n[Learn more](https://policies.google.com/technologies/cookies) Ok, Got it\n\n**TIP:** This guide assumes you've already read the [Essentials Guide](https://angular.dev/guide/components/essentials). Read that first if you're new to Angular.\n\n## [ChangeDetectionStrategy](https://angular.dev/guide/components/advanced-configuration\\#changedetectionstrategy)\n\nThe `@Component` decorator accepts a `changeDetection` option that controls the component's **change**\n**detection mode**. There are two change detection mode options.\n\n**`ChangeDetectionStrategy.Default`** is, unsurprisingly, the default strategy. In this mode,\nAngular checks whether the component's DOM needs an update whenever any activity may have occurred\napplication-wide. Activities that trigger this checking include user interaction, network response,\ntimers, and more.\n\n**`ChangeDetectionStrategy.OnPush`** is an optional mode that reduces the amount of checking Angular\nneeds to perform. In this mode, the framework only checks if a component's DOM needs an update when:\n\n- A component input has changes as a result of a binding in a template, or\n- An event listener in this component runs\n- The component is explicitly marked for check, via `ChangeDetectorRef.markForCheck` or something which wraps it, like `AsyncPipe`.\n\nAdditionally, when an OnPush component is checked, Angular _also_ checks all of its ancestor\ncomponents, traversing upwards through the application tree.\n\n## [PreserveWhitespaces](https://angular.dev/guide/components/advanced-configuration\\#preservewhitespaces)\n\nBy default, Angular removes and collapses superfluous whitespace in templates, most commonly from\nnewlines and indentation. You can change this setting by explicitly setting `preserveWhitespaces` to\n`true` in a component's metadata.\n\n## [Custom element schemas](https://angular.dev/guide/components/advanced-configuration\\#custom-element-schemas)\n\nBy default, Angular throws an error when it encounters an unknown HTML element. You can\ndisable this behavior for a component by including `CUSTOM_ELEMENTS_SCHEMA` in the `schemas`\nproperty in your component metadata.\n\n```\n      import {Component, CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';@Component({  ...,  schemas: [CUSTOM_ELEMENTS_SCHEMA],  template: '<some-unknown-component></some-unknown-component>'})export class ComponentWithCustomElements { }\n\n```\n\ncheck\n\nAngular does not support any other schemas at this time.",
+    "screenshot": "https://service.firecrawl.dev/storage/v1/object/public/media/screenshot-a315f0d3-1f8d-41e3-978d-9eb950c94599.png"
+  },
+  "metadata": {
+    "twitter:card": "summary_large_image",
+    "application-name": "Angular",
+    "og:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "theme-color": "#ffffff",
+    "title": "Advanced configuration • Angular",
+    "twitter:url": "https://angular.dev/",
+    "language": "en",
+    "ogUrl": "https://angular.dev/",
+    "twitter:description": "The web development framework for building modern apps.",
+    "twitter:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "msapplication-TileColor": "#e90464",
+    "ogTitle": "Angular",
+    "og:description": "The web development framework for building modern apps.",
+    "twitter:title": "Angular",
+    "ogDescription": "The web development framework for building modern apps.",
+    "favicon": "https://angular.dev/assets/icons/favicon-48x48.png",
+    "apple-mobile-web-app-title": "Angular",
+    "og:title": "Angular",
+    "viewport": "width=device-width, initial-scale=1",
+    "msapplication-config": "/assets/icons/browserconfig.xml",
+    "og:url": "https://angular.dev/",
+    "ogImage": "https://angular.dev/assets/images/ng-image.jpg",
+    "description": "The web development framework for building modern apps.",
+    "og:type": "website",
+    "scrapeId": "3366165d-1747-4e24-ae8f-b47a19a6bdc1",
+    "sourceURL": "https://angular.dev/guide/components/advanced-configuration",
+    "url": "https://angular.dev/guide/components/advanced-configuration",
+    "statusCode": 200
+  }
+}

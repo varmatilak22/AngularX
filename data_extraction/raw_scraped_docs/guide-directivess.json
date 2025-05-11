@@ -1,0 +1,39 @@
+{
+  "scrapeId": "c24faa54-2d9a-48fc-935f-326f6eef666c",
+  "sourceURL": "https://angular.dev/guide/directivess",
+  "statusCode": 200,
+  "data": {
+    "markdown": "Skip to main content\n\nmenu\n\nThis site uses cookies from Google to deliver its services and to analyze traffic.\n\n[Learn more](https://policies.google.com/technologies/cookies) Ok, Got it\n\nIf you think this is a mistake, please [open an issue](https://github.com/angular/angular/issues/new?template=3-docs-bug.yaml) so we can fix it.",
+    "screenshot": "https://service.firecrawl.dev/storage/v1/object/public/media/screenshot-f9dfc3af-961d-4906-859f-d79d8e305a93.png"
+  },
+  "metadata": {
+    "apple-mobile-web-app-title": "Angular",
+    "og:url": "https://angular.dev/",
+    "language": "en",
+    "og:description": "The web development framework for building modern apps.",
+    "twitter:description": "The web development framework for building modern apps.",
+    "twitter:card": "summary_large_image",
+    "theme-color": "#ffffff",
+    "ogImage": "https://angular.dev/assets/images/ng-image.jpg",
+    "og:type": "website",
+    "og:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "msapplication-TileColor": "#e90464",
+    "msapplication-config": "/assets/icons/browserconfig.xml",
+    "title": "Angular",
+    "twitter:url": "https://angular.dev/",
+    "twitter:title": "Angular",
+    "og:title": "Angular",
+    "twitter:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "application-name": "Angular",
+    "favicon": "https://angular.dev/assets/icons/favicon-48x48.png",
+    "ogTitle": "Angular",
+    "ogDescription": "The web development framework for building modern apps.",
+    "ogUrl": "https://angular.dev/",
+    "description": "The web development framework for building modern apps.",
+    "viewport": "width=device-width, initial-scale=1",
+    "scrapeId": "c24faa54-2d9a-48fc-935f-326f6eef666c",
+    "sourceURL": "https://angular.dev/guide/directivess",
+    "url": "https://angular.dev/guide/directivess",
+    "statusCode": 200
+  }
+}

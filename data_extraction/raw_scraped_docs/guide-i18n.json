@@ -1,0 +1,42 @@
+{
+  "scrapeId": "053e42f7-ca90-4177-91bd-06ff30a289bb",
+  "sourceURL": "https://angular.dev/guide/i18n",
+  "statusCode": 200,
+  "data": {
+    "markdown": "Skip to main content\n\nmenu\n\nmenuDocs\n\n- Introduction\n\n  - [What is Angular?](https://angular.dev/overview)\n  - [Installation](https://angular.dev/installation)\n  - Essentials\n  - [Start coding! 🚀](https://angular.dev/tutorials/learn-angular)\n- In-depth Guides\n\n  - Signals\n  - Components\n  - Templates\n  - Directives\n  - Dependency Injection\n  - Routing\n  - Forms\n  - HTTP Client\n  - Server-side & hybrid-rendering\n  - Testing\n  - Internationalization\n  - Experimental features\n- Developer Tools\n\n  - Angular CLI\n  - Libraries\n  - [DevTools](https://angular.dev/tools/devtools)\n  - [Language Service](https://angular.dev/tools/language-service)\n- Best Practices\n\n  - [Style Guide](https://angular.dev/style-guide)\n  - [Security](https://angular.dev/best-practices/security)\n  - [Accessibility](https://angular.dev/best-practices/a11y)\n  - Performance\n  - [Keeping up-to-date](https://angular.dev/update)\n- Extended Ecosystem\n\n  - [NgModules](https://angular.dev/guide/ngmodules/overview)\n  - Animations\n  - Using RxJS with Angular\n  - Service Workers & PWAs\n  - [Web workers](https://angular.dev/ecosystem/web-workers)\n  - [Custom build pipeline](https://angular.dev/ecosystem/custom-build-pipeline)\n  - [Angular Fire](https://github.com/angular/angularfire#readme)\n  - [Google Maps](https://github.com/angular/components/tree/main/src/google-maps#readme)\n  - [Google Pay](https://github.com/google-pay/google-pay-button#angular)\n  - [YouTube player](https://github.com/angular/components/blob/main/src/youtube-player/README.md)\n  - [Angular CDK](https://material.angular.io/cdk/categories)\n  - [Angular Material](https://material.angular.io/)\n\n- arrow\\_backInternationalization\n  - [Overview](https://angular.dev/guide/i18n)\n  - [Add the localize package](https://angular.dev/guide/i18n/add-package)\n  - [Refer to locales by ID](https://angular.dev/guide/i18n/locale-id)\n  - [Format data based on locale](https://angular.dev/guide/i18n/format-data-locale)\n  - [Prepare component for translation](https://angular.dev/guide/i18n/prepare)\n  - [Work with translation files](https://angular.dev/guide/i18n/translation-files)\n  - [Merge translations into the app](https://angular.dev/guide/i18n/merge)\n  - [Deploy multiple locales](https://angular.dev/guide/i18n/deploy)\n  - [Import global variants of the locale data](https://angular.dev/guide/i18n/import-global-variants)\n  - [Manage marked text with custom IDs](https://angular.dev/guide/i18n/manage-marked-text)\n  - [Example Angular application](https://angular.dev/guide/i18n/example)\n\nThis site uses cookies from Google to deliver its services and to analyze traffic.\n\n[Learn more](https://policies.google.com/technologies/cookies) Ok, Got it\n\n_Internationalization_, sometimes referenced as i18n, is the process of designing and preparing your project for use in different locales around the world.\n_Localization_ is the process of building versions of your project for different locales.\nThe localization process includes the following actions.\n\n- Extract text for translation into different languages\n- Format data for a specific locale\n\nA _locale_ identifies a region in which people speak a particular language or language variant.\nPossible regions include countries and geographical regions.\nA locale determines the formatting and parsing of the following details.\n\n- Measurement units including date and time, numbers, and currencies\n- Translated names including time zones, languages, and countries\n\nFor a quick introduction to localization and internationalization watch this video:\n\nIntroduction to Internationalization in Angular - YouTube\n\nAngular\n\n159K subscribers\n\n[Introduction to Internationalization in Angular](https://www.youtube.com/watch?v=KNTN-nsbV7M)\n\nAngular\n\nSearch\n\nWatch later\n\nShare\n\nCopy link\n\nInfo\n\nShopping\n\nTap to unmute\n\nIf playback doesn't begin shortly, try restarting your device.\n\nYou're signed out\n\nVideos you watch may be added to the TV's watch history and influence TV recommendations. To avoid this, cancel and sign in to YouTube on your computer.\n\nCancelConfirm\n\nMore videos\n\n## More videos\n\nShare\n\nInclude playlist\n\nAn error occurred while retrieving sharing information. Please try again later.\n\n[Watch on](https://www.youtube.com/watch?v=KNTN-nsbV7M&embeds_referring_euri=https%3A%2F%2Fangular.dev%2F)\n\n0:00\n\n0:00 / 13:04•Live\n\n•\n\n[Watch on YouTube](https://www.youtube.com/watch?v=KNTN-nsbV7M \"Watch on YouTube\")\n\n## [Learn about Angular internationalization](https://angular.dev/guide/i18n\\#learn-about-angular-internationalization)\n\n[**Add the localize package** \\\\\n\\\\\nLearn how to add the Angular Localize package to your project\\\\\n\\\\\nLearn more](https://angular.dev/guide/i18n/add-package) [**Refer to locales by ID** \\\\\n\\\\\nLearn how to identify and specify a locale identifier for your project\\\\\n\\\\\nLearn more](https://angular.dev/guide/i18n/locale-id) [**Format data based on locale** \\\\\n\\\\\nLearn how to implement localized data pipes and override the locale for your project\\\\\n\\\\\nLearn more](https://angular.dev/guide/i18n/format-data-locale) [**Prepare component for translation** \\\\\n\\\\\nLearn how to specify source text for translation\\\\\n\\\\\nLearn more](https://angular.dev/guide/i18n/prepare) [**Work with translation files** \\\\\n\\\\\nLearn how to review and process translation text\\\\\n\\\\\nLearn more](https://angular.dev/guide/i18n/translation-files) [**Merge translations into the application** \\\\\n\\\\\nLearn how to merge translations and build your translated application\\\\\n\\\\\nLearn more](https://angular.dev/guide/i18n/merge) [**Deploy multiple locales** \\\\\n\\\\\nLearn how to deploy multiple locales for your application\\\\\n\\\\\nLearn more](https://angular.dev/guide/i18n/deploy) [**Import global variants of the locale data** \\\\\n\\\\\nLearn how to import locale data for language variants\\\\\n\\\\\nLearn more](https://angular.dev/guide/i18n/import-global-variants) [**Manage marked text with custom IDs** \\\\\n\\\\\nLearn how to implement custom IDs to help you manage your marked text\\\\\n\\\\\nLearn more](https://angular.dev/guide/i18n/manage-marked-text) [**Internationalization example** \\\\\n\\\\\nReview an example of Angular internationalization.\\\\\n\\\\\nLearn more](https://angular.dev/guide/i18n/example)",
+    "screenshot": "https://service.firecrawl.dev/storage/v1/object/public/media/screenshot-79f8e987-8307-4851-b4ad-03cef3490c59.png"
+  },
+  "metadata": {
+    "application-name": "Angular",
+    "favicon": "https://angular.dev/assets/icons/favicon-48x48.png",
+    "og:description": "The web development framework for building modern apps.",
+    "twitter:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "apple-mobile-web-app-title": "Angular",
+    "title": "Internationalization • Overview • Angular",
+    "twitter:card": "summary_large_image",
+    "twitter:url": "https://angular.dev/",
+    "og:url": "https://angular.dev/",
+    "language": "en",
+    "msapplication-TileColor": "#e90464",
+    "description": "The web development framework for building modern apps.",
+    "ogImage": "https://angular.dev/assets/images/ng-image.jpg",
+    "ogTitle": "Angular",
+    "ogDescription": "The web development framework for building modern apps.",
+    "msapplication-config": "/assets/icons/browserconfig.xml",
+    "twitter:description": "The web development framework for building modern apps.",
+    "ogUrl": "https://angular.dev/",
+    "og:type": "website",
+    "viewport": [
+      "width=device-width, initial-scale=1",
+      "width=device-width, initial-scale=1"
+    ],
+    "og:title": "Angular",
+    "og:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "twitter:title": "Angular",
+    "theme-color": "#ffffff",
+    "scrapeId": "053e42f7-ca90-4177-91bd-06ff30a289bb",
+    "sourceURL": "https://angular.dev/guide/i18n",
+    "url": "https://angular.dev/guide/i18n",
+    "statusCode": 200
+  }
+}

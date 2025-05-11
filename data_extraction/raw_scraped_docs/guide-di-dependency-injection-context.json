@@ -1,0 +1,39 @@
+{
+  "scrapeId": "71850511-5031-40de-b171-88a6cc21f19c",
+  "sourceURL": "https://angular.dev/guide/di/dependency-injection-context",
+  "statusCode": 200,
+  "data": {
+    "markdown": "Skip to main content\n\nmenu\n\nmenuDocs\n\n- Introduction\n\n  - [What is Angular?](https://angular.dev/overview)\n  - [Installation](https://angular.dev/installation)\n  - Essentials\n  - [Start coding! 🚀](https://angular.dev/tutorials/learn-angular)\n- In-depth Guides\n\n  - Signals\n  - Components\n  - Templates\n  - Directives\n  - Dependency Injection\n  - Routing\n  - Forms\n  - HTTP Client\n  - Server-side & hybrid-rendering\n  - Testing\n  - Internationalization\n  - Experimental features\n- Developer Tools\n\n  - Angular CLI\n  - Libraries\n  - [DevTools](https://angular.dev/tools/devtools)\n  - [Language Service](https://angular.dev/tools/language-service)\n- Best Practices\n\n  - [Style Guide](https://angular.dev/style-guide)\n  - [Security](https://angular.dev/best-practices/security)\n  - [Accessibility](https://angular.dev/best-practices/a11y)\n  - Performance\n  - [Keeping up-to-date](https://angular.dev/update)\n- Extended Ecosystem\n\n  - [NgModules](https://angular.dev/guide/ngmodules/overview)\n  - Animations\n  - Using RxJS with Angular\n  - Service Workers & PWAs\n  - [Web workers](https://angular.dev/ecosystem/web-workers)\n  - [Custom build pipeline](https://angular.dev/ecosystem/custom-build-pipeline)\n  - [Angular Fire](https://github.com/angular/angularfire#readme)\n  - [Google Maps](https://github.com/angular/components/tree/main/src/google-maps#readme)\n  - [Google Pay](https://github.com/google-pay/google-pay-button#angular)\n  - [YouTube player](https://github.com/angular/components/blob/main/src/youtube-player/README.md)\n  - [Angular CDK](https://material.angular.io/cdk/categories)\n  - [Angular Material](https://material.angular.io/)\n\n- arrow\\_backDependency Injection\n  - [Overview](https://angular.dev/guide/di)\n  - [Understanding dependency injection](https://angular.dev/guide/di/dependency-injection)\n  - [Creating an injectable service](https://angular.dev/guide/di/creating-injectable-service)\n  - [Defining dependency providers](https://angular.dev/guide/di/dependency-injection-providers)\n  - [Injection context](https://angular.dev/guide/di/dependency-injection-context)\n  - [Hierarchical injectors](https://angular.dev/guide/di/hierarchical-dependency-injection)\n  - [Optimizing injection tokens](https://angular.dev/guide/di/lightweight-injection-tokens)\n  - [DI in action](https://angular.dev/guide/di/di-in-action)\n\nThis site uses cookies from Google to deliver its services and to analyze traffic.\n\n[Learn more](https://policies.google.com/technologies/cookies) Ok, Got it\n\nThe dependency injection (DI) system relies internally on a runtime context where the current injector is available.\nThis means that injectors can only work when code is executed in such a context.\n\nThe injection context is available in these situations:\n\n- During construction (via the `constructor`) of a class being instantiated by the DI system, such as an `@Injectable` or `@Component`.\n- In the initializer for fields of such classes.\n- In the factory function specified for `useFactory` of a `Provider` or an `@Injectable`.\n- In the `factory` function specified for an `InjectionToken`.\n- Within a stack frame that runs in an injection context.\n\nKnowing when you are in an injection context will allow you to use the [`inject`](https://angular.dev/guide/di/api/core/inject) function to inject instances.\n\n## [Class constructors](https://angular.dev/guide/di/dependency-injection-context\\#class-constructors)\n\nEvery time the DI system instantiates a class, it does so in an injection context. This is handled by the framework itself. The constructor of the class is executed in that runtime context, which also allows injection of a token using the [`inject`](https://angular.dev/guide/di/api/core/inject) function.\n\n```\n      class MyComponent  {  private service1: Service1;  private service2: Service2 = inject(Service2); // In context  constructor() {    this.service1 = inject(Service1) // In context  }}\n\n```\n\ncheck\n\n## [Stack frame in context](https://angular.dev/guide/di/dependency-injection-context\\#stack-frame-in-context)\n\nSome APIs are designed to be run in an injection context. This is the case, for example, with router guards. This allows the use of [`inject`](https://angular.dev/guide/di/api/core/inject) within the guard function to access a service.\n\nHere is an example for `CanActivateFn`\n\n```\n      const canActivateTeam: CanActivateFn =    (route: ActivatedRouteSnapshot, state: RouterStateSnapshot) => {      return inject(PermissionsService).canActivate(inject(UserToken), route.params.id);    };\n\n```\n\ncheck\n\n## [Run within an injection context](https://angular.dev/guide/di/dependency-injection-context\\#run-within-an-injection-context)\n\nWhen you want to run a given function in an injection context without already being in one, you can do so with `runInInjectionContext`.\nThis requires access to a given injector, like the `EnvironmentInjector`, for example:\n\n### src/app/heroes/hero.service.ts\n\n```\n      @Injectable({  providedIn: 'root',})export class HeroService {  private environmentInjector = inject(EnvironmentInjector);  someMethod() {    runInInjectionContext(this.environmentInjector, () => {      inject(SomeService); // Do what you need with the injected service    });  }}\n\n```\n\ncheck\n\nNote that `inject` will return an instance only if the injector can resolve the required token.\n\n## [Asserts the context](https://angular.dev/guide/di/dependency-injection-context\\#asserts-the-context)\n\nAngular provides the `assertInInjectionContext` helper function to assert that the current context is an injection context.\n\n## [Using DI outside of a context](https://angular.dev/guide/di/dependency-injection-context\\#using-di-outside-of-a-context)\n\nCalling [`inject`](https://angular.dev/guide/di/api/core/inject) or calling `assertInInjectionContext` outside of an injection context will throw [error NG0203](https://angular.dev/errors/NG0203).",
+    "screenshot": "https://service.firecrawl.dev/storage/v1/object/public/media/screenshot-8c8a3138-4f31-439b-99ff-962ca67594c4.png"
+  },
+  "metadata": {
+    "ogTitle": "Angular",
+    "msapplication-config": "/assets/icons/browserconfig.xml",
+    "apple-mobile-web-app-title": "Angular",
+    "twitter:title": "Angular",
+    "viewport": "width=device-width, initial-scale=1",
+    "og:title": "Angular",
+    "og:type": "website",
+    "favicon": "https://angular.dev/assets/icons/favicon-48x48.png",
+    "language": "en",
+    "description": "The web development framework for building modern apps.",
+    "og:url": "https://angular.dev/",
+    "title": "Injection context • Angular",
+    "twitter:url": "https://angular.dev/",
+    "og:description": "The web development framework for building modern apps.",
+    "og:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "twitter:description": "The web development framework for building modern apps.",
+    "twitter:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "theme-color": "#ffffff",
+    "twitter:card": "summary_large_image",
+    "msapplication-TileColor": "#e90464",
+    "ogDescription": "The web development framework for building modern apps.",
+    "application-name": "Angular",
+    "ogImage": "https://angular.dev/assets/images/ng-image.jpg",
+    "ogUrl": "https://angular.dev/",
+    "scrapeId": "71850511-5031-40de-b171-88a6cc21f19c",
+    "sourceURL": "https://angular.dev/guide/di/dependency-injection-context",
+    "url": "https://angular.dev/guide/di/dependency-injection-context",
+    "statusCode": 200
+  }
+}

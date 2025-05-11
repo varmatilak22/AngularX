@@ -1,0 +1,39 @@
+{
+  "scrapeId": "eb0d2d9c-5529-479e-9f17-10c9c706cb0b",
+  "sourceURL": "https://angular.dev/guide/http",
+  "statusCode": 200,
+  "data": {
+    "markdown": "Skip to main content\n\nmenu\n\nmenuDocs\n\n- Introduction\n\n  - [What is Angular?](https://angular.dev/overview)\n  - [Installation](https://angular.dev/installation)\n  - Essentials\n  - [Start coding! 🚀](https://angular.dev/tutorials/learn-angular)\n- In-depth Guides\n\n  - Signals\n  - Components\n  - Templates\n  - Directives\n  - Dependency Injection\n  - Routing\n  - Forms\n  - HTTP Client\n  - Server-side & hybrid-rendering\n  - Testing\n  - Internationalization\n  - Experimental features\n- Developer Tools\n\n  - Angular CLI\n  - Libraries\n  - [DevTools](https://angular.dev/tools/devtools)\n  - [Language Service](https://angular.dev/tools/language-service)\n- Best Practices\n\n  - [Style Guide](https://angular.dev/style-guide)\n  - [Security](https://angular.dev/best-practices/security)\n  - [Accessibility](https://angular.dev/best-practices/a11y)\n  - Performance\n  - [Keeping up-to-date](https://angular.dev/update)\n- Extended Ecosystem\n\n  - [NgModules](https://angular.dev/guide/ngmodules/overview)\n  - Animations\n  - Using RxJS with Angular\n  - Service Workers & PWAs\n  - [Web workers](https://angular.dev/ecosystem/web-workers)\n  - [Custom build pipeline](https://angular.dev/ecosystem/custom-build-pipeline)\n  - [Angular Fire](https://github.com/angular/angularfire#readme)\n  - [Google Maps](https://github.com/angular/components/tree/main/src/google-maps#readme)\n  - [Google Pay](https://github.com/google-pay/google-pay-button#angular)\n  - [YouTube player](https://github.com/angular/components/blob/main/src/youtube-player/README.md)\n  - [Angular CDK](https://material.angular.io/cdk/categories)\n  - [Angular Material](https://material.angular.io/)\n\n- arrow\\_backHTTP Client\n  - [Overview](https://angular.dev/guide/http)\n  - [Setting up HttpClient](https://angular.dev/guide/http/setup)\n  - [Making requests](https://angular.dev/guide/http/making-requests)\n  - [Intercepting requests and responses](https://angular.dev/guide/http/interceptors)\n  - [Testing](https://angular.dev/guide/http/testing)\n\nThis site uses cookies from Google to deliver its services and to analyze traffic.\n\n[Learn more](https://policies.google.com/technologies/cookies) Ok, Got it\n\nMost front-end applications need to communicate with a server over the HTTP protocol, to download or upload data and access other back-end services. Angular provides a client HTTP API for Angular applications, the `HttpClient` service class in `@angular/common/http`.\n\n## [HTTP client service features](https://angular.dev/guide/http\\#http-client-service-features)\n\nThe HTTP client service offers the following major features:\n\n- The ability to request [typed response values](https://angular.dev/guide/guide/http/making-requests#fetching-json-data)\n- Streamlined [error handling](https://angular.dev/guide/guide/http/making-requests#handling-request-failure)\n- Request and response [interception](https://angular.dev/guide/guide/http/interceptors)\n- Robust [testing utilities](https://angular.dev/guide/guide/http/testing)\n\n## [What's next](https://angular.dev/guide/http\\#whats-next)",
+    "screenshot": "https://service.firecrawl.dev/storage/v1/object/public/media/screenshot-0464eb2f-a5b0-4927-afaa-dcff87f394d1.png"
+  },
+  "metadata": {
+    "ogDescription": "The web development framework for building modern apps.",
+    "twitter:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "language": "en",
+    "ogImage": "https://angular.dev/assets/images/ng-image.jpg",
+    "application-name": "Angular",
+    "title": "HTTP Client • Overview • Angular",
+    "msapplication-TileColor": "#e90464",
+    "favicon": "https://angular.dev/assets/icons/favicon-48x48.png",
+    "apple-mobile-web-app-title": "Angular",
+    "msapplication-config": "/assets/icons/browserconfig.xml",
+    "og:type": "website",
+    "og:description": "The web development framework for building modern apps.",
+    "viewport": "width=device-width, initial-scale=1",
+    "og:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "theme-color": "#ffffff",
+    "twitter:title": "Angular",
+    "twitter:url": "https://angular.dev/",
+    "twitter:description": "The web development framework for building modern apps.",
+    "og:title": "Angular",
+    "ogUrl": "https://angular.dev/",
+    "description": "The web development framework for building modern apps.",
+    "ogTitle": "Angular",
+    "twitter:card": "summary_large_image",
+    "og:url": "https://angular.dev/",
+    "scrapeId": "eb0d2d9c-5529-479e-9f17-10c9c706cb0b",
+    "sourceURL": "https://angular.dev/guide/http",
+    "url": "https://angular.dev/guide/http",
+    "statusCode": 200
+  }
+}

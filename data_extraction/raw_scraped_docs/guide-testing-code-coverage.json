@@ -1,0 +1,39 @@
+{
+  "scrapeId": "89adab82-2079-48cb-b723-ad5177c2df77",
+  "sourceURL": "https://angular.dev/guide/testing/code-coverage",
+  "statusCode": 200,
+  "data": {
+    "markdown": "Skip to main content\n\nmenu\n\nmenuDocs\n\n- Introduction\n\n  - [What is Angular?](https://angular.dev/overview)\n  - [Installation](https://angular.dev/installation)\n  - Essentials\n  - [Start coding! 🚀](https://angular.dev/tutorials/learn-angular)\n- In-depth Guides\n\n  - Signals\n  - Components\n  - Templates\n  - Directives\n  - Dependency Injection\n  - Routing\n  - Forms\n  - HTTP Client\n  - Server-side & hybrid-rendering\n  - Testing\n  - Internationalization\n  - Experimental features\n- Developer Tools\n\n  - Angular CLI\n  - Libraries\n  - [DevTools](https://angular.dev/tools/devtools)\n  - [Language Service](https://angular.dev/tools/language-service)\n- Best Practices\n\n  - [Style Guide](https://angular.dev/style-guide)\n  - [Security](https://angular.dev/best-practices/security)\n  - [Accessibility](https://angular.dev/best-practices/a11y)\n  - Performance\n  - [Keeping up-to-date](https://angular.dev/update)\n- Extended Ecosystem\n\n  - [NgModules](https://angular.dev/guide/ngmodules/overview)\n  - Animations\n  - Using RxJS with Angular\n  - Service Workers & PWAs\n  - [Web workers](https://angular.dev/ecosystem/web-workers)\n  - [Custom build pipeline](https://angular.dev/ecosystem/custom-build-pipeline)\n  - [Angular Fire](https://github.com/angular/angularfire#readme)\n  - [Google Maps](https://github.com/angular/components/tree/main/src/google-maps#readme)\n  - [Google Pay](https://github.com/google-pay/google-pay-button#angular)\n  - [YouTube player](https://github.com/angular/components/blob/main/src/youtube-player/README.md)\n  - [Angular CDK](https://material.angular.io/cdk/categories)\n  - [Angular Material](https://material.angular.io/)\n\n- arrow\\_backTesting\n  - [Overview](https://angular.dev/guide/testing)\n  - [Code coverage](https://angular.dev/guide/testing/code-coverage)\n  - [Testing services](https://angular.dev/guide/testing/services)\n  - [Basics of testing components](https://angular.dev/guide/testing/components-basics)\n  - [Component testing scenarios](https://angular.dev/guide/testing/components-scenarios)\n  - [Testing attribute directives](https://angular.dev/guide/testing/attribute-directives)\n  - [Testing pipes](https://angular.dev/guide/testing/pipes)\n  - [Debugging tests](https://angular.dev/guide/testing/debugging)\n  - [Testing utility APIs](https://angular.dev/guide/testing/utility-apis)\n  - [Component harnesses overview](https://angular.dev/guide/testing/component-harnesses-overview)\n  - [Using component harnesses in tests](https://angular.dev/guide/testing/using-component-harnesses)\n  - [Creating harnesses for your components](https://angular.dev/guide/testing/creating-component-harnesses)\n  - [Adding harness support for additional testing environments](https://angular.dev/guide/testing/component-harnesses-testing-environments)\n\nThis site uses cookies from Google to deliver its services and to analyze traffic.\n\n[Learn more](https://policies.google.com/technologies/cookies) Ok, Got it\n\nThe Angular CLI can run unit tests and create code coverage reports.\nCode coverage reports show you any parts of your code base that might not be properly tested by your unit tests.\n\nTo generate a coverage report run the following command in the root of your project.\n\n```\n      ng test --no-watch --code-coverage\n\n```\n\ncheck\n\nWhen the tests are complete, the command creates a new `/coverage` directory in the project.\nOpen the `index.html` file to see a report with your source code and code coverage values.\n\nIf you want to create code-coverage reports every time you test, set the following option in the Angular CLI configuration file, `angular.json`:\n\n```\n      \"test\": {  \"options\": {    \"codeCoverage\": true  }}\n\n```\n\ncheck\n\n## [Code coverage enforcement](https://angular.dev/guide/testing/code-coverage\\#code-coverage-enforcement)\n\nThe code coverage percentages let you estimate how much of your code is tested.\nIf your team decides on a set minimum amount to be unit tested, enforce this minimum with the Angular CLI.\n\nFor example, suppose you want the code base to have a minimum of 80% code coverage.\nTo enable this, open the [Karma](https://karma-runner.github.io/) test platform configuration file, `karma.conf.js`, and add the `check` property in the `coverageReporter:` key.\n\n```\n      coverageReporter: {  dir: require('path').join(__dirname, './coverage/<project-name>'),  subdir: '.',  reporters: [    { type: 'html' },    { type: 'text-summary' }  ],  check: {    global: {      statements: 80,      branches: 80,      functions: 80,      lines: 80    }  }}\n\n```\n\ncheck\n\n**HELPFUL:** Read more about creating and fine tuning Karma configuration in the [testing guide](https://angular.dev/guide/testing/guide/testing#configuration).\n\nThe `check` property causes the tool to enforce a minimum of 80% code coverage when the unit tests are run in the project.\n\nRead more on coverage configuration options in the [karma coverage documentation](https://github.com/karma-runner/karma-coverage/blob/master/docs/configuration.md).",
+    "screenshot": "https://service.firecrawl.dev/storage/v1/object/public/media/screenshot-e2b854ec-e9b4-4163-858e-20d2189274d9.png"
+  },
+  "metadata": {
+    "og:description": "The web development framework for building modern apps.",
+    "application-name": "Angular",
+    "twitter:url": "https://angular.dev/",
+    "twitter:description": "The web development framework for building modern apps.",
+    "msapplication-TileColor": "#e90464",
+    "ogUrl": "https://angular.dev/",
+    "apple-mobile-web-app-title": "Angular",
+    "title": "Code coverage • Angular",
+    "ogTitle": "Angular",
+    "msapplication-config": "/assets/icons/browserconfig.xml",
+    "og:title": "Angular",
+    "language": "en",
+    "favicon": "https://angular.dev/assets/icons/favicon-48x48.png",
+    "og:type": "website",
+    "twitter:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "description": "The web development framework for building modern apps.",
+    "og:url": "https://angular.dev/",
+    "ogDescription": "The web development framework for building modern apps.",
+    "twitter:title": "Angular",
+    "twitter:card": "summary_large_image",
+    "og:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "viewport": "width=device-width, initial-scale=1",
+    "theme-color": "#ffffff",
+    "ogImage": "https://angular.dev/assets/images/ng-image.jpg",
+    "scrapeId": "89adab82-2079-48cb-b723-ad5177c2df77",
+    "sourceURL": "https://angular.dev/guide/testing/code-coverage",
+    "url": "https://angular.dev/guide/testing/code-coverage",
+    "statusCode": 200
+  }
+}
