@@ -8,15 +8,33 @@ from sentence_transformers import SentenceTransformer
 import time
 import base64
 
+
 # Fix import for Pipeline
 ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 if ROOT_DIR not in sys.path:
     sys.path.insert(0, ROOT_DIR)
 from Pipeline.llm_utils_mistral_api import query_mistral
 
+# --- Main Chat Interface ---
+gif_path = os.path.join(ROOT_DIR, "assets", "angular_icon_gradient.gif")
+logo_path=os.path.join(ROOT_DIR, "assets", "angular_icon_gradient-removebg-preview.png")
+user_path=os.path.join(ROOT_DIR,"assets","user-removebg-preview.png")
+assist_path=os.path.join(ROOT_DIR,"assets","assitant-removebg-preview.png")
+
+with open(gif_path, "rb") as f:
+    b64 = base64.b64encode(f.read()).decode()
+with open(user_path, "rb") as f:
+    b65 = base64.b64encode(f.read()).decode()
+with open(assist_path, "rb") as f:
+    b66 = base64.b64encode(f.read()).decode()
+
+AVATAR_DATA_URL = f"data:image/gif;base64,{b64}"
+USER_DATA_URL = f"data:image/gif;base64,{b65}"
+ASSIST_DATA_URL = f"data:image/gif;base64,{b66}"
+
 # Page config
 os.environ["STREAMLIT_WATCHER_TYPE"] = "none"
-st.set_page_config(page_title="AngularX Chatbot", page_icon="🤖")
+st.set_page_config(page_title="AngularX Chatbot", page_icon=f"{logo_path}")
 
 # Embedding model & ChromaDB
 model = SentenceTransformer('all-MiniLM-L6-v2')
@@ -34,6 +52,27 @@ if "current_chat_id" not in st.session_state:
     st.session_state.current_chat_id = new_id
 
 # --- Sidebar: Manage Chats ---
+st.markdown("""
+<style>
+/* Sidebar background and text styles */
+section[data-testid="stSidebar"] {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Buttons in Sidebar */
+section[data-testid="stSidebar"] button {
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+/* Chat title buttons */
+section[data-testid="stSidebar"] .stButton > button {
+    border-radius: 5px;
+    font-weight: 500;
+}
+</style>
+""", unsafe_allow_html=True)
+
 with st.sidebar:
     st.subheader("💬 Your Chats")
 
@@ -73,23 +112,6 @@ with st.sidebar:
                 st.session_state.current_chat_id = cid
                 st.rerun()
         
-# --- Main Chat Interface ---
-gif_path = os.path.join(ROOT_DIR, "assets", "angular_icon_gradient.gif")
-
-user_path=os.path.join(ROOT_DIR,"assets","user-removebg-preview.png")
-assist_path=os.path.join(ROOT_DIR,"assets","assitant-removebg-preview.png")
-
-with open(gif_path, "rb") as f:
-    b64 = base64.b64encode(f.read()).decode()
-with open(user_path, "rb") as f:
-    b65 = base64.b64encode(f.read()).decode()
-with open(assist_path, "rb") as f:
-    b66 = base64.b64encode(f.read()).decode()
-
-AVATAR_DATA_URL = f"data:image/gif;base64,{b64}"
-USER_DATA_URL = f"data:image/gif;base64,{b65}"
-ASSIST_DATA_URL = f"data:image/gif;base64,{b66}"
-
 header_html = f"""
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');

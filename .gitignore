@@ -1,2 +1,3 @@
 myenv
 Pipeline/.env
+.streamlit/secrets.toml

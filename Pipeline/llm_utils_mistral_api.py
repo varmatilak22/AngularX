@@ -1,12 +1,8 @@
 import requests
 import time 
-import os
-from dotenv import load_dotenv
+import streamlit as st
 
-load_dotenv()
-
-print("MISTral api",os.getenv("MISTRAL_API_KEY"))
-API_KEY=os.getenv("MISTRAL_API_KEY")
+API_KEY=st.secrets["MISTRAL_API_KEY"]
 API_URL='https://api.mistral.ai/v1/chat/completions'
 
 HEADERS={
