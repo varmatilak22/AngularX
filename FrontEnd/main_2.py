@@ -40,8 +40,9 @@ st.set_page_config(page_title="AngularX Chatbot", page_icon=f"{logo_path}",layou
 # Embedding model & ChromaDB
 model = SentenceTransformer('all-MiniLM-L6-v2')
 CHROMADB_PATH = os.path.join(ROOT_DIR, 'data_preprocessing', 'chroma_db')
+
 client = chromadb.PersistentClient(path=CHROMADB_PATH)
-collection = client.get_collection("angular_docs")
+collection = client.get_or_create_collection("angular_docs")
 
 # --- Session State Initialization ---
 if "all_chats" not in st.session_state:
