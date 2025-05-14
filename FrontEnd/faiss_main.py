@@ -36,7 +36,7 @@ ASSIST_DATA_URL = f"data:image/gif;base64,{b66}"
 
 # Page config
 os.environ["STREAMLIT_WATCHER_TYPE"] = "none"
-st.set_page_config(page_title="AngularX Chatbot", page_icon=f"{logo_path}",layout="wide",initial_sidebar_state='expanded')
+st.set_page_config(page_title="AngularX Chatbot", page_icon=f"{logo_path}")
 
 # Embedding model & FAISS index initialization
 FAISS_INDEX_PATH = os.path.join(ROOT_DIR, 'data_preprocessing', 'faiss_index.index')
@@ -61,6 +61,129 @@ if "current_chat_id" not in st.session_state:
     new_id = str(uuid.uuid4())
     st.session_state.all_chats[new_id] = []
     st.session_state.current_chat_id = new_id
+
+
+# --- Custom CSS for Sidebar Styling ---
+st.markdown("""
+<style>
+/* Sidebar container */
+section[data-testid="stSidebar"] {
+    color: white;
+    padding: 1rem;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ 
+}
+
+/* Sidebar buttons */
+section[data-testid="stSidebar"] .stButton > button {
+    color: white;
+    border-radius: 8px;
+    padding: 0.4rem 1rem;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ 
+    transition: all 0.3s ease;
+}
+button.st-emotion-cache-c1nttv.eacrzsi2{
+        background-color: unset;
+    border-color: white;
+    border-width: thin;
+    
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ 
+}
+.st-emotion-cache-13na8ym {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    width: 100%;
+    border-style: solid;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ 
+    border-width: 2px;
+    border-color: rgb(23 5 5 / 37%);
+    border-radius: 0.5rem;
+}
+.stExpander.st-emotion-cache-0.e1kosxz20 {
+    padding: 0px;
+}
+.st-emotion-cache-13na8ym {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    width: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ 
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 0.5rem;
+}
+.st-emotion-cache-legh9n p, .st-emotion-cache-legh9n ol, .st-emotion-cache-legh9n ul, .st-emotion-cache-legh9n dl, .st-emotion-cache-legh9n li {
+    font-size: 1.3rem;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ img.st-emotion-cache-p4micv.ea2tk8x4 {
+    position: relative;
+    top: 10px;
+}
+.stMarkdown {
+    position: relative;
+    top: -8px;
+}
+    
+}
+
+section[data-testid="stSidebar"] .stButton > button:hover {
+    background-color: #ffffff33;
+}
+
+/* Subheader */
+section[data-testid="stSidebar"] h2 {
+    color: white;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ 
+}
+
+/* Divider */
+section[data-testid="stSidebar"] hr {
+    border-color: #ffffff44;
+}
+
+/* Chat title buttons */
+.chat-title-btn {
+    text-align: left;
+    width: 100%;
+    background: none;
+    border: none;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ 
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    transition: background 0.2s ease;
+}
+
+.chat-title-btn:hover {
+    background-color: #ffffff22;
+}
+
+/* Content inside the expander - Text color black and background same as sidebar */
+section[data-testid="stSidebar"] .stExpander {
+    color: white;
+    padding: 1rem;
+}
+
+section[data-testid="stSidebar"] .stExpander .stExpanderHeader {
+    color: white;
+}
+
+section[data-testid="stSidebar"] .stExpander .stExpanderBody {
+    background-color: transparent;
+    color: white;
+}
+
+</style>
+""", unsafe_allow_html=True)
 
 # --- Sidebar: Manage Chats ---
 with st.sidebar:
