@@ -9,7 +9,7 @@ import uuid
 from langchain.vectorstores import FAISS
 from langchain.embeddings import SentenceTransformerEmbeddings
 
-
+os.environ["TRANSFORMERS_NO_TF"] = "1"
 
 # Fix import for Pipeline
 ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
