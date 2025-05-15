@@ -1,0 +1,39 @@
+{
+  "scrapeId": "75e74fed-7985-4cda-881a-53175b2da4a9",
+  "sourceURL": "https://angular.dev/tutorials/deferrable-views/2-loading-error-placeholder",
+  "statusCode": 200,
+  "data": {
+    "markdown": "Skip to main content\n\nmenu\n\nThis site uses cookies from Google to deliver its services and to analyze traffic.\n\n[Learn more](https://policies.google.com/technologies/cookies) Ok, Got it\n\nunfold\\_more\nDeferrable Views@loading, @error and @placeholder blocks\nReveal Answer\n\n[chevron\\_left](https://angular.dev/tutorials/deferrable-views/1-what-are-deferrable-views) [chevron\\_right](https://angular.dev/tutorials/deferrable-views/3-defer-triggers)\n\nReveal Answer\n\nunfold\\_more\nDeferrable Views@loading, @error and @placeholder blocks\nReveal Answer\n\n[chevron\\_left](https://angular.dev/tutorials/deferrable-views/1-what-are-deferrable-views) [chevron\\_right](https://angular.dev/tutorials/deferrable-views/3-defer-triggers)\n\nReveal Answer\n\nDeferrable views let you define content to be shown in different loading states.\n\n|     |     |\n| --- | --- |\n| `@placeholder` | By default, defer blocks do not render any content before they are triggered. The `@placeholder` is an optional block that declares content to show before the deferred content loads. Angular replaces the placeholder with the deferred content after loading completes. While this block is optional, the Angular team recommends always including a placeholder.<br> [Learn more in the full deferrable views documentation](https://angular.dev/guide/defer#triggers) |\n| `@loading` | This optional block allows you to declare content to be shown during the loading of any deferred dependencies. |\n| `@error` | This block allows you to declare content which is shown if deferred loading fails. |\n\nThe contents of all the above sub-blocks are eagerly loaded. Additionally, some features require a `@placeholder` block.\n\nIn this activity, you'll learn how to use the `@loading`, `@error` and `@placeholder` blocks to manage the states of deferrable views.\n\n* * *\n\n1. ### [Add `@placeholder` block](https://angular.dev/tutorials/deferrable-views/2-loading-error-placeholder\\#add-placeholder-block)\n\n\nIn your `app.component.ts`, add a `@placeholder` block to the `@defer` block.\n\n\n\n```\n         @defer {  <article-comments />} @placeholder {  <p>Placeholder for comments</p>}\n\n```\n\ncheck\n\n2. ### [Configure the `@placeholder` block](https://angular.dev/tutorials/deferrable-views/2-loading-error-placeholder\\#configure-the-placeholder-block)\n\n\nThe `@placeholder` block accepts an optional parameter to specify the `minimum` amount of time that this placeholder should be shown. This `minimum` parameter is specified in time increments of milliseconds (ms) or seconds (s). This parameter exists to prevent fast flickering of placeholder content in the case that the deferred dependencies are fetched quickly.\n\n\n\n```\n         @defer {  <article-comments />} @placeholder (minimum 1s) {  <p>Placeholder for comments</p>}\n\n```\n\ncheck\n\n3. ### [Add `@loading` block](https://angular.dev/tutorials/deferrable-views/2-loading-error-placeholder\\#add-loading-block)\n\n\nNext add a `@loading` block to the component template.\n\nThe `@loading` block accepts two optional parameters:\n\n\n   - `minimum`: the amount of time that this block should be shown\n   - `after`: the amount of time to wait after loading begins before showing the loading template\n\nBoth parameters are specified in time increments of milliseconds (ms) or seconds (s).\n\nUpdate `app.component.ts` to include a `@loading` block with a minimum parameter of `1s` as well as an after parameter with the value 500ms to the @loading block.\n\n```\n      @defer {  <article-comments />} @placeholder (minimum 1s) {  <p>Placeholder for comments</p>} @loading (minimum 1s; after 500ms) {  <p>Loading comments...</p>}\n\n```\n\ncheck\n\nNOTE: this example uses two parameters, separated by the ; character.\n\n4. ### [Add `@error` block](https://angular.dev/tutorials/deferrable-views/2-loading-error-placeholder\\#add-error-block)\n\n\nFinally, add an `@error` block to the `@defer` block.\n\n\n\n```\n         @defer {  <article-comments />} @placeholder (minimum 1s) {  <p>Placeholder for comments</p>} @loading (minimum 1s; after 500ms) {  <p>Loading comments...</p>} @error {  <p>Failed to load comments</p>}\n\n```\n\ncheck\n\n\nCongratulations! At this point, you have a good understanding about deferrable views. Keep up the great work and let's learn about triggers next.\n\napp/app.component.ts\n\napp/article-comments.component.ts\n\nadd\n\nlaunchdownload\n\n99\n\n1\n\n2\n\n3\n\n4\n\n5\n\n6\n\n7\n\n8\n\n9\n\n10\n\n11\n\n12\n\n13\n\n14\n\n15\n\n16\n\n17\n\n18\n\n19\n\n20\n\n21\n\n22\n\n23\n\n24\n\n25\n\n26\n\n27\n\n28\n\n›\n\n⌄\n\n⌄\n\n⌄\n\n⌄\n\nimport{Component}from'@angular/core';\n\nimport{ArticleCommentsComponent}from'./article-comments.component';\n\n@Component({\n\nselector:'app-root',\n\ntemplate:\\`\n\n<div>\n\n<h1>How I feel about Angular</h1>\n\n<article>\n\n<p>\n\nAngular is my favorite framework, and\n\nthis is why. Angular has the coolest\n\ndeferrable view feature that makes defer\n\nloading content the easiest and most\n\nergonomic it could possibly be.\n\n</p>\n\n</article>\n\n@defer {\n\n<article-comments/>\n\n}\n\n</div>\n\n\\`,\n\nimports:\\[ArticleCommentsComponent\\],\n\n})\n\nexportclassAppComponent{}\n\nPreview\n\nBooting\n\nConsole\n\nTerminal\n\nrefresh\n\nStackBlitz",
+    "screenshot": "https://service.firecrawl.dev/storage/v1/object/public/media/screenshot-c925a5aa-1732-476d-a0d6-e05b959670a4.png"
+  },
+  "metadata": {
+    "og:title": "Angular",
+    "og:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "twitter:card": "summary_large_image",
+    "twitter:title": "Angular",
+    "og:description": "The web development framework for building modern apps.",
+    "description": "The web development framework for building modern apps.",
+    "msapplication-TileColor": "#e90464",
+    "msapplication-config": "/assets/icons/browserconfig.xml",
+    "ogImage": "https://angular.dev/assets/images/ng-image.jpg",
+    "twitter:description": "The web development framework for building modern apps.",
+    "language": "en",
+    "ogUrl": "https://angular.dev/",
+    "twitter:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "ogTitle": "Angular",
+    "theme-color": "#ffffff",
+    "ogDescription": "The web development framework for building modern apps.",
+    "apple-mobile-web-app-title": "Angular",
+    "favicon": "https://angular.dev/assets/icons/favicon-48x48.png",
+    "og:type": "website",
+    "twitter:url": "https://angular.dev/",
+    "viewport": "width=device-width, initial-scale=1",
+    "title": "@loading, @error and @placeholder blocks • Angular",
+    "og:url": "https://angular.dev/",
+    "application-name": "Angular",
+    "scrapeId": "75e74fed-7985-4cda-881a-53175b2da4a9",
+    "sourceURL": "https://angular.dev/tutorials/deferrable-views/2-loading-error-placeholder",
+    "url": "https://angular.dev/tutorials/deferrable-views/2-loading-error-placeholder",
+    "statusCode": 200
+  }
+}

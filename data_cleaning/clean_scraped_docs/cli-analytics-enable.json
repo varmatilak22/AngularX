@@ -1,0 +1,18 @@
+{
+  "content": "Skip to main content\n\nmenu\n\nmenuAPI\n\n- [Roadmap](https://angular.dev/roadmap)\n- [Get involved](https://github.com/angular/angular/blob/main/CONTRIBUTING.md)\n- API Reference\n- CLI Reference\n- Error Encyclopedia\n- Extended Diagnostics\n- [Versioning and releases](https://angular.dev/reference/releases)\n- [Version compatibility](https://angular.dev/reference/versions)\n- [Update guide](https://angular.dev/update-guide)\n- Configurations\n- Migrations\n\n- arrow\\_backCLI Reference\n  - [Overview](https://angular.dev/cli)\n  - [ng add](https://angular.dev/cli/add)\n  - ng analytics\n  - [ng build](https://angular.dev/cli/build)\n  - ng cache\n  - ng completion\n  - [ng config](https://angular.dev/cli/config)\n  - [ng deploy](https://angular.dev/cli/deploy)\n  - [ng e2e](https://angular.dev/cli/e2e)\n  - [ng extract-i18n](https://angular.dev/cli/extract-i18n)\n  - ng generate\n  - [ng lint](https://angular.dev/cli/lint)\n  - [ng new](https://angular.dev/cli/new)\n  - [ng run](https://angular.dev/cli/run)\n  - [ng serve](https://angular.dev/cli/serve)\n  - [ng test](https://angular.dev/cli/test)\n  - [ng update](https://angular.dev/cli/update)\n  - [ng version](https://angular.dev/cli/version)\n\n- arrow\\_backng analytics\n  - [Overview](https://angular.dev/cli/analytics)\n  - [disable](https://angular.dev/cli/analytics/disable)\n  - [enable](https://angular.dev/cli/analytics/enable)\n  - [info](https://angular.dev/cli/analytics/info)\n  - [prompt](https://angular.dev/cli/analytics/prompt)\n\nThis site uses cookies from Google to deliver its services and to analyze traffic.\n\n[Learn more](https://policies.google.com/technologies/cookies) Ok, Got it\n\n```\n\nng analytics enable[options]\n```\n\ncheck\n\n```\n\nng analytics on[options]\n```\n\ncheck\n\nEnables analytics gathering and reporting for the user.\n\n## [Options](https://angular.dev/cli/analytics/enable\\#options)\n\n`global`\n\nAlias `g `\n\nConfigure analytics gathering and reporting globally in the caller's home directory.\n\nValue Type `boolean` Default `false`\n\nJump to details",
+  "title": "enable \u2022 Angular",
+  "description": "The web development framework for building modern apps.",
+  "keywords": [
+    "angular",
+    "https",
+    "dev",
+    "cli",
+    "ng",
+    "analytics",
+    "reference",
+    "enable",
+    "options",
+    "update"
+  ],
+  "sourceURL": "https://angular.dev/cli/analytics/enable"
+}

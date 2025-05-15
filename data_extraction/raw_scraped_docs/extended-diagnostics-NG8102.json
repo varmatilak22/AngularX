@@ -1,0 +1,39 @@
+{
+  "scrapeId": "0460585d-dbaf-4487-a874-a9bca7bb3b04",
+  "sourceURL": "https://angular.dev/extended-diagnostics/NG8102",
+  "statusCode": 200,
+  "data": {
+    "markdown": "Skip to main content\n\nmenu\n\nmenuAPI\n\n- [Roadmap](https://angular.dev/roadmap)\n- [Get involved](https://github.com/angular/angular/blob/main/CONTRIBUTING.md)\n- API Reference\n- CLI Reference\n- Error Encyclopedia\n- Extended Diagnostics\n- [Versioning and releases](https://angular.dev/reference/releases)\n- [Version compatibility](https://angular.dev/reference/versions)\n- [Update guide](https://angular.dev/update-guide)\n- Configurations\n- Migrations\n\n- arrow\\_backExtended Diagnostics\n  - [Overview](https://angular.dev/extended-diagnostics)\n  - [NG8101: Invalid Banana-in-Box](https://angular.dev/extended-diagnostics/NG8101)\n  - [NG8102: Nullish coalescing not nullable](https://angular.dev/extended-diagnostics/NG8102)\n  - [NG8103: Missing control flow directive](https://angular.dev/extended-diagnostics/NG8103)\n  - [NG8104: Text attribute not binding](https://angular.dev/extended-diagnostics/NG8104)\n  - [NG8105: Missing \\`let\\` keyword in an \\`\\*ngFor\\` expression](https://angular.dev/extended-diagnostics/NG8105)\n  - [NG8106: Suffix not supported](https://angular.dev/extended-diagnostics/NG8106)\n  - [NG8107: Optional chain not nullable](https://angular.dev/extended-diagnostics/NG8107)\n  - [NG8108: \\`ngSkipHydration\\` should be a static attribute](https://angular.dev/extended-diagnostics/NG8108)\n  - [NG8109: Signals must be invoked in template interpolations.](https://angular.dev/extended-diagnostics/NG8109)\n  - [NG8111: Functions should be invoked in event bindings.](https://angular.dev/extended-diagnostics/NG8111)\n  - [NG8113: Unused Standalone Imports](https://angular.dev/extended-diagnostics/NG8113)\n\nThis site uses cookies from Google to deliver its services and to analyze traffic.\n\n[Learn more](https://policies.google.com/technologies/cookies) Ok, Got it\n\nThis diagnostic detects a useless nullish coalescing operator ( `??`) characters in Angular templates.\nSpecifically, it looks for operations where the input is not \"nullable\", meaning its type does not include `null` or `undefined`.\nFor such values, the right side of the `??` will never be used.\n\n```\n      import {Component} from '@angular/core';@Component({  // Template displays `username` if present, falls back to 'root' if it is  // `null` or `undefined`.  template: `<div>{{ username ?? 'root' }}</div>`,})class MyComponent {  // `username` is declared as a `string` which *cannot* be `null` or  // `undefined`.  username: string = 'Angelino';}\n\n```\n\ncheck\n\n## [What's wrong with that?](https://angular.dev/extended-diagnostics/NG8102\\#whats-wrong-with-that)\n\nUsing the nullish coalescing operator with a non-nullable input has no effect and is indicative of a discrepancy between the allowed type of a value and how it is presented in the template.\nA developer might reasonably assume that the right side of the nullish coalescing operator is displayed in some case, but it will never actually be displayed.\nThis can lead to confusion about the expected output of the program.\n\n## [What should I do instead?](https://angular.dev/extended-diagnostics/NG8102\\#what-should-i-do-instead)\n\nUpdate the template and declared type to be in sync.\nDouble-check the type of the input and confirm whether it is actually expected to be nullable.\n\nIf the input should be nullable, add `null` or `undefined` to its type to indicate this.\n\n```\n      import {Component} from '@angular/core';@Component({  template: `<div>{{ username ?? 'root' }}</div>`,})class MyComponent {  // `username` is now nullable. If it is ever set to `null`, 'root' will be  // displayed.  username: string | null = 'Angelino';}\n\n```\n\ncheck\n\nIf the input should _not_ be nullable, delete the `??` operator and its right operand, since the value is guaranteed by TypeScript to always be non-nullable.\n\n```\n      import {Component} from '@angular/core';@Component({  // Template always displays `username`, which is guaranteed to never be `null`  // or `undefined`.  template: `<div>{{ username }}</div>`,})class MyComponent {  username: string = 'Angelino';}\n\n```\n\ncheck\n\n## [Configuration requirements](https://angular.dev/extended-diagnostics/NG8102\\#configuration-requirements)\n\n[`strictTemplates`](https://angular.dev/extended-diagnostics/tools/cli/template-typecheck#strict-mode) must be enabled for any extended diagnostic to emit.\n[`strictNullChecks`](https://angular.dev/extended-diagnostics/tools/cli/template-typecheck#strict-null-checks) must also be enabled to emit `nullishCoalescingNotNullable` diagnostics.\n\n## [What if I can't avoid this?](https://angular.dev/extended-diagnostics/NG8102\\#what-if-i-cant-avoid-this)\n\nThis diagnostic can be disabled by editing the project's `tsconfig.json` file:\n\n```\n      {  \"angularCompilerOptions\": {    \"extendedDiagnostics\": {      \"checks\": {        \"nullishCoalescingNotNullable\": \"suppress\"      }    }  }}\n\n```\n\ncheck\n\nSee [extended diagnostic configuration](https://angular.dev/extended-diagnostics/extended-diagnostics#configuration) for more info.",
+    "screenshot": "https://service.firecrawl.dev/storage/v1/object/public/media/screenshot-f17c0b45-5c54-4eec-8662-16e1a75ca8e9.png"
+  },
+  "metadata": {
+    "ogUrl": "https://angular.dev/",
+    "viewport": "width=device-width, initial-scale=1",
+    "msapplication-TileColor": "#e90464",
+    "apple-mobile-web-app-title": "Angular",
+    "theme-color": "#ffffff",
+    "msapplication-config": "/assets/icons/browserconfig.xml",
+    "language": "en",
+    "ogTitle": "Angular",
+    "og:title": "Angular",
+    "application-name": "Angular",
+    "favicon": "https://angular.dev/assets/icons/favicon-48x48.png",
+    "og:type": "website",
+    "twitter:url": "https://angular.dev/",
+    "twitter:title": "Angular",
+    "twitter:description": "The web development framework for building modern apps.",
+    "og:description": "The web development framework for building modern apps.",
+    "twitter:card": "summary_large_image",
+    "ogImage": "https://angular.dev/assets/images/ng-image.jpg",
+    "description": "The web development framework for building modern apps.",
+    "og:url": "https://angular.dev/",
+    "og:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "ogDescription": "The web development framework for building modern apps.",
+    "title": "NG8102: Nullish coalescing not nullable • Angular",
+    "twitter:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "scrapeId": "0460585d-dbaf-4487-a874-a9bca7bb3b04",
+    "sourceURL": "https://angular.dev/extended-diagnostics/NG8102",
+    "url": "https://angular.dev/extended-diagnostics/NG8102",
+    "statusCode": 200
+  }
+}

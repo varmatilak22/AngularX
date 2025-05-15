@@ -1,0 +1,18 @@
+{
+  "content": "Skip to main content\n\nmenu\n\nThis site uses cookies from Google to deliver its services and to analyze traffic.\n\n[Learn more](https://policies.google.com/technologies/cookies) Ok, Got it\n\nunfold\\_more\nLearn AngularEnabling routing\n\n[chevron\\_left](https://angular.dev/tutorials/learn-angular/11-optimizing-images) [chevron\\_right](https://angular.dev/tutorials/learn-angular/13-define-a-route)\n\nunfold\\_more\nLearn AngularEnabling routing\n\n[chevron\\_left](https://angular.dev/tutorials/learn-angular/11-optimizing-images) [chevron\\_right](https://angular.dev/tutorials/learn-angular/13-define-a-route)\n\nFor most apps, there comes a point where the app requires more than a single page. When that time inevitably comes, routing becomes a big part of the performance story for users.\n\nNote: Learn more about [routing in the in-depth guide](https://angular.dev/guide/routing).\n\nIn this activity, you'll learn how to set up and configure your app to use Angular Router.\n\n* * *\n\n1. ### [Create an app.routes.ts file](https://angular.dev/tutorials/learn-angular/12-enable-routing\\#create-an-approutests-file)\n\n\nInside `app.routes.ts`, make the following changes:\n\n\n1. Import `Routes` from the `@angular/router` package.\n2. Export a constant called `routes` of type `Routes`, assign it `[]` as the value.\n\n```\n      import {Routes} from '@angular/router';export const routes: Routes = [];\n\n```\n\n2. ### [Add routing to provider](https://angular.dev/tutorials/learn-angular/12-enable-routing\\#add-routing-to-provider)\n\n\nIn `app.config.ts`, configure the app to Angular Router with the following steps:\n\n\n1. Import the `provideRouter` function from `@angular/router`.\n2. Import `routes` from the `./app.routes.ts`.\n3. Call the `provideRouter` function with `routes` passed in as an argument in the `providers` array.\n\n```\n      import {ApplicationConfig} from '@angular/core';import {provideRouter} from '@angular/router';import {routes} from './app.routes';export const appConfig: ApplicationConfig = {providers: [provideRouter(routes)],};\n\n```\n\n3. ### [Import `RouterOutlet` in the component](https://angular.dev/tutorials/learn-angular/12-enable-routing\\#import-routeroutlet-in-the-component)\n\n\nFinally, to make sure your app is ready to use the Angular Router, you need to tell the app where you expect the router to display the desired content. Accomplish that by using the `RouterOutlet` directive from `@angular/router`.\n\nUpdate the template for `AppComponent` by adding `<router-outlet />`\n\n\n\n```\n         import {RouterOutlet} from '@angular/router';@Component({...template: `     <nav>      <a href=\"/\">Home</a>      |      <a href=\"/user\">User</a>    </nav>    <router-outlet />  `,imports: [RouterOutlet],})export class AppComponent {}\n\n```\n\n\nYour app is now set up to use Angular Router. Nice work! \ud83d\ude4c\n\nKeep the momentum going to learn the next step of defining the routes for our app.",
+  "title": "Enabling routing \u2022 Angular",
+  "description": "The web development framework for building modern apps.",
+  "keywords": [
+    "angular",
+    "routes",
+    "learn",
+    "router",
+    "app",
+    "import",
+    "routing",
+    "https",
+    "dev",
+    "tutorials"
+  ],
+  "sourceURL": "https://angular.dev/tutorials/learn-angular/12-enable-routing"
+}

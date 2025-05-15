@@ -1,0 +1,39 @@
+{
+  "scrapeId": "b403b638-bfd7-4dcb-a27b-a267cdafe1f1",
+  "sourceURL": "https://angular.dev/cli/generate/resolver",
+  "statusCode": 200,
+  "data": {
+    "markdown": "Skip to main content\n\nmenu\n\nmenuAPI\n\n- [Roadmap](https://angular.dev/roadmap)\n- [Get involved](https://github.com/angular/angular/blob/main/CONTRIBUTING.md)\n- API Reference\n- CLI Reference\n- Error Encyclopedia\n- Extended Diagnostics\n- [Versioning and releases](https://angular.dev/reference/releases)\n- [Version compatibility](https://angular.dev/reference/versions)\n- [Update guide](https://angular.dev/update-guide)\n- Configurations\n- Migrations\n\n- arrow\\_backCLI Reference\n  - [Overview](https://angular.dev/cli)\n  - [ng add](https://angular.dev/cli/add)\n  - ng analytics\n  - [ng build](https://angular.dev/cli/build)\n  - ng cache\n  - ng completion\n  - [ng config](https://angular.dev/cli/config)\n  - [ng deploy](https://angular.dev/cli/deploy)\n  - [ng e2e](https://angular.dev/cli/e2e)\n  - [ng extract-i18n](https://angular.dev/cli/extract-i18n)\n  - ng generate\n  - [ng lint](https://angular.dev/cli/lint)\n  - [ng new](https://angular.dev/cli/new)\n  - [ng run](https://angular.dev/cli/run)\n  - [ng serve](https://angular.dev/cli/serve)\n  - [ng test](https://angular.dev/cli/test)\n  - [ng update](https://angular.dev/cli/update)\n  - [ng version](https://angular.dev/cli/version)\n\n- arrow\\_backng generate\n  - [Overview](https://angular.dev/cli/generate)\n  - [app-shell](https://angular.dev/cli/generate/app-shell)\n  - [application](https://angular.dev/cli/generate/application)\n  - [class](https://angular.dev/cli/generate/class)\n  - [component](https://angular.dev/cli/generate/component)\n  - [config](https://angular.dev/cli/generate/config)\n  - [directive](https://angular.dev/cli/generate/directive)\n  - [enum](https://angular.dev/cli/generate/enum)\n  - [environments](https://angular.dev/cli/generate/environments)\n  - [guard](https://angular.dev/cli/generate/guard)\n  - [interceptor](https://angular.dev/cli/generate/interceptor)\n  - [interface](https://angular.dev/cli/generate/interface)\n  - [library](https://angular.dev/cli/generate/library)\n  - [module](https://angular.dev/cli/generate/module)\n  - [pipe](https://angular.dev/cli/generate/pipe)\n  - [resolver](https://angular.dev/cli/generate/resolver)\n  - [service-worker](https://angular.dev/cli/generate/service-worker)\n  - [service](https://angular.dev/cli/generate/service)\n  - [web-worker](https://angular.dev/cli/generate/web-worker)\n\nThis site uses cookies from Google to deliver its services and to analyze traffic.\n\n[Learn more](https://policies.google.com/technologies/cookies) Ok, Got it\n\n```\n\nng generate resolver[name][options]\n```\n\ncheck\n\n```\n\nng generate r[name][options]\n```\n\ncheck\n\nCreates a new resolver in your project. Resolvers are used to pre-fetch data before a route is activated, ensuring that the necessary data is available before the component is displayed. This can improve the user experience by preventing delays and loading states. This schematic generates a new resolver with the specified name and options.\n\n## [Arguments](https://angular.dev/cli/generate/resolver\\#arguments)\n\n`name`\n\nThe name for the new resolver. This will be used to create the resolver's class and spec files (e.g., `my-resolver.resolver.ts` and `my-resolver.resolver.spec.ts`).\n\nValue Type `string`\n\n## [Options](https://angular.dev/cli/generate/resolver\\#options)\n\n`flat`\n\nCreates the new resolver files at the top level of the current project. If set to false, a new folder with the resolver's name will be created to contain the files.\n\nValue Type `boolean` Default `true`\n\n`functional`\n\nCreates the resolver as a function `ResolveFn` instead of a class. Functional resolvers can be simpler for basic scenarios.\n\nValue Type `boolean` Default `true`\n\n`project`\n\nThe name of the project where the resolver should be created. If not specified, the CLI will determine the project from the current directory.\n\nValue Type `string`\n\n`skip-tests`\n\nSkip the generation of a unit test file `spec.ts` for the new resolver.\n\nValue Type `boolean` Default `false`\n\nJump to details",
+    "screenshot": "https://service.firecrawl.dev/storage/v1/object/public/media/screenshot-7d6e79c1-a8ec-40a5-8e4f-5bb2c3d9805c.png"
+  },
+  "metadata": {
+    "ogImage": "https://angular.dev/assets/images/ng-image.jpg",
+    "description": "The web development framework for building modern apps.",
+    "favicon": "https://angular.dev/assets/icons/favicon-48x48.png",
+    "og:type": "website",
+    "og:description": "The web development framework for building modern apps.",
+    "apple-mobile-web-app-title": "Angular",
+    "language": "en",
+    "og:url": "https://angular.dev/",
+    "ogUrl": "https://angular.dev/",
+    "viewport": "width=device-width, initial-scale=1",
+    "og:title": "Angular",
+    "twitter:description": "The web development framework for building modern apps.",
+    "og:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "application-name": "Angular",
+    "ogDescription": "The web development framework for building modern apps.",
+    "title": "resolver • Angular",
+    "theme-color": "#ffffff",
+    "twitter:card": "summary_large_image",
+    "ogTitle": "Angular",
+    "twitter:url": "https://angular.dev/",
+    "twitter:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "twitter:title": "Angular",
+    "msapplication-TileColor": "#e90464",
+    "msapplication-config": "/assets/icons/browserconfig.xml",
+    "scrapeId": "b403b638-bfd7-4dcb-a27b-a267cdafe1f1",
+    "sourceURL": "https://angular.dev/cli/generate/resolver",
+    "url": "https://angular.dev/cli/generate/resolver",
+    "statusCode": 200
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "scrapeId": "8d5ef481-1e38-4f4e-a0bc-4708b7b5e962",
+  "sourceURL": "https://angular.dev/tutorials/learn-angular/21-constructor-based-di",
+  "statusCode": 200,
+  "data": {
+    "markdown": "Skip to main content\n\nmenu\n\nThis site uses cookies from Google to deliver its services and to analyze traffic.\n\n[Learn more](https://policies.google.com/technologies/cookies) Ok, Got it\n\nunfold\\_more\nLearn AngularConstructor-based dependency injection\nReveal Answer\n\n[chevron\\_left](https://angular.dev/tutorials/learn-angular/20-inject-based-di) [chevron\\_right](https://angular.dev/tutorials/learn-angular/22-pipes)\n\nReveal Answer\n\nunfold\\_more\nLearn AngularConstructor-based dependency injection\nReveal Answer\n\n[chevron\\_left](https://angular.dev/tutorials/learn-angular/20-inject-based-di) [chevron\\_right](https://angular.dev/tutorials/learn-angular/22-pipes)\n\nReveal Answer\n\nIn previous activities you used the `inject()` function to make resources available, \"providing\" them to your components. The `inject()` function is one pattern and it is useful to know that there is another pattern for injecting resources called constructor-based dependency injection.\n\nYou specify the resources as parameters to the `constructor` function of a component. Angular will make those resources available to your component.\n\nNote: Learn more about [injecting services in the in-depth guide](https://angular.dev/guide/di/creating-injectable-service#injecting-services).\n\nIn this activity, you will learn how to use constructor-based dependency injection.\n\n* * *\n\nTo inject a service or some other injectable resource into your component use the following syntax:\n\n```\n      @Component({...})class PetCarDashboardComponent {    constructor(private petCareService: PetCareService) {        ...    }}\n\n```\n\ncheck\n\nThere are a few things to notice here:\n\n- Use the `private` keyword\n- The `petCareService` becomes a property you can use in your class\n- The `PetCareService` class is the injected class\n\nAlright, now you give this a try:\n\n1. ### [Update the code to use constructor-based DI](https://angular.dev/tutorials/learn-angular/21-constructor-based-di\\#update-the-code-to-use-constructor-based-di)\n\n\nIn `app.component.ts`, update the constructor code to match the code below:\n\n\n\n**TIP:** Remember, if you get stuck refer to the example on this activity page.\n\n\n\n\n\n```\n         constructor(private carService: CarService) {    this.display = this.carService.getCars().join(' ⭐️ ');}\n\n```\n\ncheck\n\n\nCongratulations on completing this activity. The example code works the same as with using the `inject` function. While these two approaches are largely the same, there are some small differences that are beyond the scope of this tutorial.\n\nYou can find out more information about dependency injection in the [Angular Documentation](https://angular.dev/guide/di).\n\napp/car.service.ts editdelete\n\napp/app.component.ts\n\nadd\n\nlaunchdownload\n\n99\n\n1\n\n2\n\n3\n\n4\n\n5\n\n6\n\n7\n\n8\n\n9\n\n10\n\n11\n\n12\n\n13\n\n14\n\n15\n\n16\n\n17\n\n›\n\n⌄\n\n⌄\n\n⌄\n\n⌄\n\nimport{Injectable}from'@angular/core';\n\n@Injectable({\n\nprovidedIn:'root',\n\n})\n\nexportclassCarService{\n\ncars=\\['Sunflower GT','Flexus Sport','Sprout Mach One'\\];\n\ngetCars():string\\[\\]{\n\nreturnthis.cars;\n\n}\n\ngetCar(id:number){\n\nreturnthis.cars\\[id\\];\n\n}\n\n}\n\nPreview\n\nBooting\n\nConsole\n\nTerminal\n\nrefresh\n\nStackBlitz",
+    "screenshot": "https://service.firecrawl.dev/storage/v1/object/public/media/screenshot-67697aeb-a650-4f44-a730-2e94ab159730.png"
+  },
+  "metadata": {
+    "apple-mobile-web-app-title": "Angular",
+    "twitter:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "ogUrl": "https://angular.dev/",
+    "viewport": "width=device-width, initial-scale=1",
+    "ogImage": "https://angular.dev/assets/images/ng-image.jpg",
+    "application-name": "Angular",
+    "og:description": "The web development framework for building modern apps.",
+    "og:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "twitter:url": "https://angular.dev/",
+    "ogTitle": "Angular",
+    "title": "Constructor-based dependency injection • Angular",
+    "og:title": "Angular",
+    "favicon": "https://angular.dev/assets/icons/favicon-48x48.png",
+    "og:url": "https://angular.dev/",
+    "msapplication-TileColor": "#e90464",
+    "twitter:title": "Angular",
+    "language": "en",
+    "og:type": "website",
+    "twitter:description": "The web development framework for building modern apps.",
+    "description": "The web development framework for building modern apps.",
+    "msapplication-config": "/assets/icons/browserconfig.xml",
+    "ogDescription": "The web development framework for building modern apps.",
+    "theme-color": "#ffffff",
+    "twitter:card": "summary_large_image",
+    "scrapeId": "8d5ef481-1e38-4f4e-a0bc-4708b7b5e962",
+    "sourceURL": "https://angular.dev/tutorials/learn-angular/21-constructor-based-di",
+    "url": "https://angular.dev/tutorials/learn-angular/21-constructor-based-di",
+    "statusCode": 200
+  }
+}

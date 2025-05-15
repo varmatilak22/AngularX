@@ -1,0 +1,18 @@
+{
+  "content": "Skip to main content\n\nmenu\n\nmenuAPI\n\n- [Roadmap](https://angular.dev/roadmap)\n- [Get involved](https://github.com/angular/angular/blob/main/CONTRIBUTING.md)\n- API Reference\n- CLI Reference\n- Error Encyclopedia\n- Extended Diagnostics\n- [Versioning and releases](https://angular.dev/reference/releases)\n- [Version compatibility](https://angular.dev/reference/versions)\n- [Update guide](https://angular.dev/update-guide)\n- Configurations\n- Migrations\n\n- arrow\\_backCLI Reference\n  - [Overview](https://angular.dev/cli)\n  - [ng add](https://angular.dev/cli/add)\n  - ng analytics\n  - [ng build](https://angular.dev/cli/build)\n  - ng cache\n  - ng completion\n  - [ng config](https://angular.dev/cli/config)\n  - [ng deploy](https://angular.dev/cli/deploy)\n  - [ng e2e](https://angular.dev/cli/e2e)\n  - [ng extract-i18n](https://angular.dev/cli/extract-i18n)\n  - ng generate\n  - [ng lint](https://angular.dev/cli/lint)\n  - [ng new](https://angular.dev/cli/new)\n  - [ng run](https://angular.dev/cli/run)\n  - [ng serve](https://angular.dev/cli/serve)\n  - [ng test](https://angular.dev/cli/test)\n  - [ng update](https://angular.dev/cli/update)\n  - [ng version](https://angular.dev/cli/version)\n\nThis site uses cookies from Google to deliver its services and to analyze traffic.\n\n[Learn more](https://policies.google.com/technologies/cookies) Ok, Got it\n\n```\n\nng extract-i18nng [project][options]\n```\n\ncheck\n\nExtracts i18n messages from source code.\n\n## [Arguments](https://angular.dev/cli/extract-i18n\\#arguments)\n\n`project`\n\nThe name of the project to build. Can be an application or a library.\n\nValue Type `string`\n\n## [Options](https://angular.dev/cli/extract-i18n\\#options)\n\n`build-target`\n\nA builder target to extract i18n messages in the format of `project:target[:configuration]`. You can also pass in more than one configuration name as a comma-separated list. Example: `project:target:production,staging`.\n\nValue Type `string`\n\n`configuration`\n\nAlias `c `\n\nOne or more named builder configurations as a comma-separated list as specified in the \"configurations\" section in angular.json.\nThe builder uses the named configurations to run the given target.\nFor more information, see [https://angular.dev/reference/configs/workspace-config#alternate-build-configurations](https://angular.dev/reference/configs/workspace-config#alternate-build-configurations).\n\nValue Type `string`\n\n`format`\n\nOutput format for the generated file.\n\nValue Type `string` Default `xlf`\n\n`help`\n\nShows a help message for this command in the console.\n\nValue Type `boolean`\n\n`out-file`\n\nName of the file to output.\n\nValue Type `string`\n\n`output-path`\n\nPath where output will be placed.\n\nValue Type `string`\n\n`progress`\n\nLog progress to the console.\n\nValue Type `boolean` Default `true`\n\nJump to details",
+  "title": "ng extract-i18n \u2022 Angular",
+  "description": "The web development framework for building modern apps.",
+  "keywords": [
+    "angular",
+    "https",
+    "dev",
+    "ng",
+    "cli",
+    "type",
+    "value",
+    "reference",
+    "build",
+    "configurations"
+  ],
+  "sourceURL": "https://angular.dev/cli/extract-i18n"
+}

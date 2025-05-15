@@ -1,0 +1,39 @@
+{
+  "scrapeId": "2866ecee-e06f-4777-8eb2-a8b0c3fd4edf",
+  "sourceURL": "https://angular.dev/tutorials/learn-angular/8-input",
+  "statusCode": 200,
+  "data": {
+    "markdown": "Skip to main content\n\nmenu\n\nThis site uses cookies from Google to deliver its services and to analyze traffic.\n\n[Learn more](https://policies.google.com/technologies/cookies) Ok, Got it\n\nunfold\\_more\nLearn AngularCommunicating with @Input\nReveal Answer\n\n[chevron\\_left](https://angular.dev/tutorials/learn-angular/7-event-handling) [chevron\\_right](https://angular.dev/tutorials/learn-angular/9-output)\n\nReveal Answer\n\nunfold\\_more\nLearn AngularCommunicating with @Input\nReveal Answer\n\n[chevron\\_left](https://angular.dev/tutorials/learn-angular/7-event-handling) [chevron\\_right](https://angular.dev/tutorials/learn-angular/9-output)\n\nReveal Answer\n\nSometimes app development requires you to send data into a component. This data can be used to customize a component or perhaps send information from a parent component to a child component.\n\nAngular uses a concept called `Input`. This is similar to `props` in other frameworks. To create an `Input` property, use the `@Input` decorator.\n\nNote: Learn more about [accepting data with input properties in the inputs guide](https://angular.dev/guide/components/inputs).\n\nIn this activity, you'll learn how to use the `@Input` decorator to send information to components.\n\n* * *\n\nTo create an `Input` property, add the `@Input` decorator to a property of a component class:\n\n### user.component.ts\n\n```\n      class UserComponent {  @Input() occupation = '';}\n\n```\n\ncheck\n\nWhen you are ready to pass in a value through an `Input`, values can be set in templates using the attribute syntax. Here's an example:\n\n### app.component.ts\n\n```\n      @Component({  ...  template: `<app-user occupation=\"Angular Developer\"></app-user>`})class AppComponent {}\n\n```\n\ncheck\n\nMake sure you bind the property `occupation` in your `UserComponent`.\n\n### user.component.ts\n\n```\n      @Component({  ...  template: `<p>The user's occupation is {{occupation}}</p>`})\n\n```\n\ncheck\n\n1. ### [Define an `@Input` property](https://angular.dev/tutorials/learn-angular/8-input\\#define-an-input-property)\n\n\nUpdate the code in `user.component.ts` to define an `Input` property on the `UserComponent` called `name`. For now, set the initial value to `empty string`. Be sure to update the template to interpolate the `name` property at the end of the sentence.\n\n2. ### [Pass a value to the `@Input` property](https://angular.dev/tutorials/learn-angular/8-input\\#pass-a-value-to-the-input-property)\n\n\nUpdate the code in `app.component.ts` to send in the `name` property with a value of `\"Simran\"`.\n\n\n\n\nWhen the code has been successfully updated, the app will display `The user's name is Simran`.\n\n\nWhile this is great, it is only one direction of the component communication. What if you want to send information and data to a parent component from a child component? Check out the next lesson to find out.\n\nP.S. you are doing great - keep going 🎉\n\napp/user.component.ts editdelete\n\napp/app.component.ts\n\nadd\n\nlaunchdownload\n\n99\n\n1\n\n2\n\n3\n\n4\n\n5\n\n6\n\n7\n\n8\n\n9\n\n10\n\n›\n\nimport{Component,Input}from'@angular/core';\n\n@Component({\n\nselector:'app-user',\n\ntemplate:\\`\n\n<p>The user's name is</p>\n\n\\`,\n\n})\n\nexportclassUserComponent{}\n\nPreview\n\nBooting\n\nConsole\n\nTerminal\n\nrefresh\n\nStackBlitz",
+    "screenshot": "https://service.firecrawl.dev/storage/v1/object/public/media/screenshot-f5889680-6954-42b6-a83f-8ec3313d9456.png"
+  },
+  "metadata": {
+    "og:description": "The web development framework for building modern apps.",
+    "twitter:url": "https://angular.dev/",
+    "twitter:description": "The web development framework for building modern apps.",
+    "twitter:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "theme-color": "#ffffff",
+    "ogImage": "https://angular.dev/assets/images/ng-image.jpg",
+    "msapplication-config": "/assets/icons/browserconfig.xml",
+    "description": "The web development framework for building modern apps.",
+    "apple-mobile-web-app-title": "Angular",
+    "application-name": "Angular",
+    "ogTitle": "Angular",
+    "og:type": "website",
+    "og:url": "https://angular.dev/",
+    "favicon": "https://angular.dev/assets/icons/favicon-48x48.png",
+    "og:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "viewport": "width=device-width, initial-scale=1",
+    "twitter:card": "summary_large_image",
+    "language": "en",
+    "msapplication-TileColor": "#e90464",
+    "twitter:title": "Angular",
+    "title": "Communicating with @Input • Angular",
+    "ogDescription": "The web development framework for building modern apps.",
+    "ogUrl": "https://angular.dev/",
+    "og:title": "Angular",
+    "scrapeId": "2866ecee-e06f-4777-8eb2-a8b0c3fd4edf",
+    "sourceURL": "https://angular.dev/tutorials/learn-angular/8-input",
+    "url": "https://angular.dev/tutorials/learn-angular/8-input",
+    "statusCode": 200
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "scrapeId": "1d57e9a1-bc63-4f2b-ada5-23bba8d9a452",
+  "sourceURL": "https://angular.dev/tutorials/first-app",
+  "statusCode": 200,
+  "data": {
+    "markdown": "Skip to main content\n\nmenu\n\nThis site uses cookies from Google to deliver its services and to analyze traffic.\n\n[Learn more](https://policies.google.com/technologies/cookies) Ok, Got it\n\nunfold\\_more\nYour first Angular appIntroduction\n\nchevron\\_left [chevron\\_right](https://angular.dev/tutorials/first-app/01-hello-world)\n\nunfold\\_more\nYour first Angular appIntroduction\n\nchevron\\_left [chevron\\_right](https://angular.dev/tutorials/first-app/01-hello-world)\n\nThis tutorial consists of lessons that introduce the Angular concepts you need to know to start coding in Angular.\n\nYou can do as many or as few as you would like and you can do them in any order.\n\n**HELPFUL:** Prefer video? We also have a full [YouTube course](https://youtube.com/playlist?list=PL1w1q3fL4pmj9k1FrJ3Pe91EPub2_h4jF&si=1q9889ulHp8VZ0e7) for this tutorial!\n\nIntroduction to Angular - Learning Angular (Part 1) - YouTube\n\nAngular\n\n159K subscribers\n\n[Introduction to Angular - Learning Angular (Part 1)](https://www.youtube.com/watch?v=xAT0lHYhHMY)\n\nAngular\n\nSearch\n\nWatch later\n\nShare\n\nCopy link\n\nInfo\n\nShopping\n\nTap to unmute\n\nIf playback doesn't begin shortly, try restarting your device.\n\nMore videos\n\n## More videos\n\nYou're signed out\n\nVideos you watch may be added to the TV's watch history and influence TV recommendations. To avoid this, cancel and sign in to YouTube on your computer.\n\nCancelConfirm\n\nShare\n\nInclude playlist\n\nAn error occurred while retrieving sharing information. Please try again later.\n\n[Watch on](https://www.youtube.com/watch?v=xAT0lHYhHMY&embeds_referring_euri=https%3A%2F%2Fangular.dev%2F)\n\n0:00\n\n0:00 / 4:15\n•Live\n\n•\n\n[Watch on YouTube](https://www.youtube.com/watch?v=xAT0lHYhHMY \"Watch on YouTube\")\n\n## [Before you start](https://angular.dev/tutorials/first-app\\#before-you-start)\n\nFor the best experience with this tutorial, review these requirements to make sure you have what you need to be successful.\n\n### [Your experience](https://angular.dev/tutorials/first-app\\#your-experience)\n\nThe lessons in this tutorial assume that you have experience with the following:\n\n1. Created an HTML web page by editing the HTML directly.\n2. Programmed web site content in JavaScript.\n3. Read Cascading Style Sheet (CSS) content and understand how selectors are used.\n4. Used command-line instructions to perform tasks on your computer.\n\n### [Your equipment](https://angular.dev/tutorials/first-app\\#your-equipment)\n\nThese lessons can be completed using a local installation of the Angular tools or in our embedded editor. Local Angular development can be completed on Windows, MacOS or Linux based systems.\n\n**NOTE:** Look for alerts like this one, which call out steps that may only be for your local editor.\n\n## [Conceptual preview of your first Angular app](https://angular.dev/tutorials/first-app\\#conceptual-preview-of-your-first-angular-app)\n\nThe lessons in this tutorial create an Angular app that lists houses for rent and shows the details of individual houses.\nThis app uses features that are common to many Angular apps.\n\n![Output of homes landing page](https://angular.dev/assets/images/tutorials/first-app/homes-app-landing-page.png)\n\n## [Local development environment](https://angular.dev/tutorials/first-app\\#local-development-environment)\n\n**NOTE:** This step is only for your local environment!\n\nPerform these steps in a command-line tool on the computer you want to use for this tutorial.\n\n1. ### [Identify the version of `node.js` that Angular requires](https://angular.dev/tutorials/first-app\\#identify-the-version-of-nodejs-that-angular-requires)\n\n\nAngular requires an active LTS or maintenance LTS version of Node. Let's confirm your version of `node.js`. For information about specific version requirements, see the engines property in the [package.json file](https://unpkg.com/browse/@angular/core@15.1.5/package.json).\n\nFrom a **Terminal** window:\n1. Run the following command: `node --version`\n2. Confirm that the version number displayed meets the requirements.\n2. ### [Install the correct version of `node.js` for Angular](https://angular.dev/tutorials/first-app\\#install-the-correct-version-of-nodejs-for-angular)\n\n\nIf you do not have a version of `node.js` installed, please follow the [directions for installation on nodejs.org](https://nodejs.org/en/download/)\n\n3. ### [Install the latest version of Angular](https://angular.dev/tutorials/first-app\\#install-the-latest-version-of-angular)\n\n\nWith `node.js` and `npm` installed, the next step is to install the [Angular CLI](https://angular.dev/tools/cli) which provides tooling for effective Angular development.\n\nFrom a **Terminal** window run the following command: `npm install -g @angular/cli`.\n\n4. ### [Install integrated development environment (IDE)](https://angular.dev/tutorials/first-app\\#install-integrated-development-environment-ide)\n\n\nYou are free to use any tool you prefer to build apps with Angular. We recommend the following:\n1. [Visual Studio Code](https://code.visualstudio.com/)\n2. As an optional, but recommended step you can further improve your developer experience by installing the [Angular Language Service](https://marketplace.visualstudio.com/items?itemName=Angular.ng-template)\n3. [WebStorm](https://www.jetbrains.com/webstorm/)\n\nFor more information about the topics covered in this lesson, visit:\n\nadd\n\nlaunchdownload\n\n9\n\n1\n\n›\n\nType your code here...\n\nPreview\n\nBooting\n\nConsole\n\nTerminal\n\nrefresh\n\nStackBlitz",
+    "screenshot": "https://service.firecrawl.dev/storage/v1/object/public/media/screenshot-f744b8c2-022f-4f4e-89eb-5d83f31f814c.png"
+  },
+  "metadata": {
+    "msapplication-TileColor": "#e90464",
+    "theme-color": "#ffffff",
+    "og:url": "https://angular.dev/",
+    "og:type": "website",
+    "og:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "twitter:title": "Angular",
+    "ogImage": "https://angular.dev/assets/images/ng-image.jpg",
+    "title": "Your first Angular app • Angular",
+    "application-name": "Angular",
+    "apple-mobile-web-app-title": "Angular",
+    "twitter:url": "https://angular.dev/",
+    "language": "en",
+    "ogDescription": "The web development framework for building modern apps.",
+    "ogUrl": "https://angular.dev/",
+    "ogTitle": "Angular",
+    "description": "The web development framework for building modern apps.",
+    "viewport": [
+      "width=device-width, initial-scale=1",
+      "width=device-width, initial-scale=1"
+    ],
+    "msapplication-config": "/assets/icons/browserconfig.xml",
+    "og:title": "Angular",
+    "favicon": "https://angular.dev/assets/icons/favicon-48x48.png",
+    "og:description": "The web development framework for building modern apps.",
+    "twitter:description": "The web development framework for building modern apps.",
+    "twitter:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "twitter:card": "summary_large_image",
+    "scrapeId": "1d57e9a1-bc63-4f2b-ada5-23bba8d9a452",
+    "sourceURL": "https://angular.dev/tutorials/first-app",
+    "url": "https://angular.dev/tutorials/first-app",
+    "statusCode": 200
+  }
+}

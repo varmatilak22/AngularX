@@ -1,0 +1,39 @@
+{
+  "scrapeId": "c0980b13-bee6-405a-8de2-69fa7835136b",
+  "sourceURL": "https://angular.dev/tutorials/learn-angular/18-forms-validation",
+  "statusCode": 200,
+  "data": {
+    "markdown": "Skip to main content\n\nmenu\n\nThis site uses cookies from Google to deliver its services and to analyze traffic.\n\n[Learn more](https://policies.google.com/technologies/cookies) Ok, Got it\n\nunfold\\_more\nLearn AngularValidating forms\nReveal Answer\n\n[chevron\\_left](https://angular.dev/tutorials/learn-angular/17-reactive-forms) [chevron\\_right](https://angular.dev/tutorials/learn-angular/19-creating-an-injectable-service)\n\nReveal Answer\n\nunfold\\_more\nLearn AngularValidating forms\nReveal Answer\n\n[chevron\\_left](https://angular.dev/tutorials/learn-angular/17-reactive-forms) [chevron\\_right](https://angular.dev/tutorials/learn-angular/19-creating-an-injectable-service)\n\nReveal Answer\n\nAnother common scenario when working with forms is the need to validate the inputs to ensure the correct data is submitted.\n\nNote: Learn more about [validating form input in the in-depth guide](https://angular.dev/guide/forms/reactive-forms#validating-form-input).\n\nIn this activity, you'll learn how to validate forms with reactive forms.\n\n* * *\n\n1. ### [Import Validators](https://angular.dev/tutorials/learn-angular/18-forms-validation\\#import-validators)\n\n\nAngular provides a set of validation tools. To use them, first update the component to import `Validators` from `@angular/forms`.\n\n\n\n```\n         import {ReactiveFormsModule, Validators} from '@angular/forms';@Component({...})export class AppComponent {}\n\n```\n\ncheck\n\n2. ### [Add validation to form](https://angular.dev/tutorials/learn-angular/18-forms-validation\\#add-validation-to-form)\n\n\nEvery `FormControl` can be passed the `Validators` you want to use for validating the `FormControl` values. For example, if you want to make the `name` field in `profileForm` required then use `Validators.required`.\nFor the `email` field in our Angular form, we want to ensure it's not left empty and follows a valid email address structure. We can achieve this by combining the `Validators.required` and `Validators.email` validators in an array.\nUpdate the `name` and `email` `FormControl`:\n\n\n\n```\n         profileForm = new FormGroup({  name: new FormControl('', Validators.required),  email: new FormControl('', [Validators.required, Validators.email]),});\n\n```\n\ncheck\n\n3. ### [Check form validation in template](https://angular.dev/tutorials/learn-angular/18-forms-validation\\#check-form-validation-in-template)\n\n\nTo determine if a form is valid, the `FormGroup` class has a `valid` property.\nYou can use this property to dynamically bind attributes. Update the submit `button` to be enabled based on the validity of the form.\n\n\n\n```\n         <button type=\"submit\" [disabled]=\"!profileForm.valid\">Submit</button>\n\n```\n\ncheck\n\n\nYou now know the basics around how validation works with reactive forms.\n\nGreat job learning these core concepts of working with forms in Angular. If you want to learn more, be sure to refer to the [Angular forms documentation](https://angular.dev/guide/forms/form-validation).\n\napp/app.component.ts\n\nadd\n\nlaunchdownload\n\n99\n\n1\n\n2\n\n3\n\n4\n\n5\n\n6\n\n7\n\n8\n\n9\n\n10\n\n11\n\n12\n\n13\n\n14\n\n15\n\n16\n\n17\n\n18\n\n19\n\n20\n\n21\n\n22\n\n›\n\n⌄\n\nimport{Component}from'@angular/core';\n\nimport{FormGroup,FormControl}from'@angular/forms';\n\nimport{ReactiveFormsModule}from'@angular/forms';\n\n@Component({\n\nselector:'app-root',\n\ntemplate:\\`\n\n<form\\[formGroup\\]=\"profileForm\">\n\n<inputtype=\"text\"formControlName=\"name\"name=\"name\"/>\n\n<inputtype=\"email\"formControlName=\"email\"name=\"email\"/>\n\n<buttontype=\"submit\">Submit</button>\n\n</form>\n\n\\`,\n\nimports:\\[ReactiveFormsModule\\],\n\n})\n\nexportclassAppComponent{\n\nprofileForm=newFormGroup({\n\nname:newFormControl(''),\n\nemail:newFormControl(''),\n\n});\n\n}\n\nPreview\n\nBooting\n\nConsole\n\nTerminal\n\nrefresh\n\nStackBlitz",
+    "screenshot": "https://service.firecrawl.dev/storage/v1/object/public/media/screenshot-1c007bd6-c027-48b5-aed6-188982f2184f.png"
+  },
+  "metadata": {
+    "msapplication-TileColor": "#e90464",
+    "language": "en",
+    "ogDescription": "The web development framework for building modern apps.",
+    "favicon": "https://angular.dev/assets/icons/favicon-48x48.png",
+    "viewport": "width=device-width, initial-scale=1",
+    "theme-color": "#ffffff",
+    "twitter:url": "https://angular.dev/",
+    "ogUrl": "https://angular.dev/",
+    "twitter:description": "The web development framework for building modern apps.",
+    "og:url": "https://angular.dev/",
+    "ogTitle": "Angular",
+    "ogImage": "https://angular.dev/assets/images/ng-image.jpg",
+    "twitter:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "msapplication-config": "/assets/icons/browserconfig.xml",
+    "og:description": "The web development framework for building modern apps.",
+    "title": "Validating forms • Angular",
+    "application-name": "Angular",
+    "twitter:title": "Angular",
+    "twitter:card": "summary_large_image",
+    "og:title": "Angular",
+    "og:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "og:type": "website",
+    "description": "The web development framework for building modern apps.",
+    "apple-mobile-web-app-title": "Angular",
+    "scrapeId": "c0980b13-bee6-405a-8de2-69fa7835136b",
+    "sourceURL": "https://angular.dev/tutorials/learn-angular/18-forms-validation",
+    "url": "https://angular.dev/tutorials/learn-angular/18-forms-validation",
+    "statusCode": 200
+  }
+}

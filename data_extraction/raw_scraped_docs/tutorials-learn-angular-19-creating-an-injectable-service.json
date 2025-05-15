@@ -1,0 +1,39 @@
+{
+  "scrapeId": "8de8e47b-d2b3-4e7e-8c85-e5d9e7340998",
+  "sourceURL": "https://angular.dev/tutorials/learn-angular/19-creating-an-injectable-service",
+  "statusCode": 200,
+  "data": {
+    "markdown": "Skip to main content\n\nmenu\n\nThis site uses cookies from Google to deliver its services and to analyze traffic.\n\n[Learn more](https://policies.google.com/technologies/cookies) Ok, Got it\n\nunfold\\_more\nLearn AngularCreating an injectable service\nReveal Answer\n\n[chevron\\_left](https://angular.dev/tutorials/learn-angular/18-forms-validation) [chevron\\_right](https://angular.dev/tutorials/learn-angular/20-inject-based-di)\n\nReveal Answer\n\nunfold\\_more\nLearn AngularCreating an injectable service\nReveal Answer\n\n[chevron\\_left](https://angular.dev/tutorials/learn-angular/18-forms-validation) [chevron\\_right](https://angular.dev/tutorials/learn-angular/20-inject-based-di)\n\nReveal Answer\n\nDependency injection (DI) in Angular is one of the framework's most powerful features. Consider dependency injection to be the ability for Angular to _provide_ resources you need for your application at runtime. A dependency could be a service or some other resources.\n\nNote: Learn more about [dependency injection in the essentials guide](https://angular.dev/essentials/dependency-injection).\n\nIn this activity, you'll learn how to create an `injectable` service.\n\n* * *\n\nOne way to use a service is to act as a way to interact with data and APIs. To make a service reusable you should keep the logic in the service and share it throughout the application when it is needed.\n\nTo make a service eligible to be injected by the DI system use the `@Injectable` decorator. For example:\n\n```\n      @Injectable({    providedIn: 'root'})class UserService {    // methods to retrieve and return data}\n\n```\n\ncheck\n\nThe `@Injectable` decorator notifies the DI system that the `UserService` is available to be requested in a class. `providedIn` sets the scope in which this resource is available. For now, it is good enough to understand that `providedIn: 'root'` means that the `UserService` is available to the entire application.\n\nAlright, you try:\n\n1. ### [Add the `@Injectable` decorator](https://angular.dev/tutorials/learn-angular/19-creating-an-injectable-service\\#add-the-injectable-decorator)\n\n\nUpdate the code in `car.service.ts` by adding the `@Injectable` decorator.\n\n2. ### [Configure the decorator](https://angular.dev/tutorials/learn-angular/19-creating-an-injectable-service\\#configure-the-decorator)\n\n\nThe values in the object passed to the decorator are considered to be the configuration for the decorator.\n\n\n\nUpdate the `@Injectable` decorator in `car.service.ts` to include the configuration for `providedIn: 'root'`.\n\nTIP: Use the above example to find the correct syntax.\n\n\nWell, done 👍 that service is now `injectable` and can participate in the fun. Now that the service is `injectable`, let's try injecting it into a component 👉\n\napp/car.service.ts editdelete\n\napp/app.component.ts\n\nadd\n\nlaunchdownload\n\n99\n\n1\n\n2\n\n3\n\n4\n\n5\n\n6\n\n7\n\n8\n\n9\n\n10\n\n11\n\n12\n\n13\n\n14\n\n›\n\n⌄\n\n⌄\n\n⌄\n\nimport{Injectable}from'@angular/core';\n\nexportclassCarService{\n\ncars=\\['Sunflower GT','Flexus Sport','Sprout Mach One'\\];\n\ngetCars():string\\[\\]{\n\nreturnthis.cars;\n\n}\n\ngetCar(id:number){\n\nreturnthis.cars\\[id\\];\n\n}\n\n}\n\nPreview\n\nBooting\n\nConsole\n\nTerminal\n\nrefresh\n\nStackBlitz[iframe](cid:frame-0B37CC2478D3667E8533644DEDCF94F8@mhtml.blink)",
+    "screenshot": "https://service.firecrawl.dev/storage/v1/object/public/media/screenshot-0667b3a5-9664-454e-9eaf-104b3eb68e23.png"
+  },
+  "metadata": {
+    "favicon": "https://angular.dev/assets/icons/favicon-48x48.png",
+    "title": "Creating an injectable service • Angular",
+    "viewport": "width=device-width, initial-scale=1",
+    "og:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "application-name": "Angular",
+    "msapplication-config": "/assets/icons/browserconfig.xml",
+    "og:type": "website",
+    "ogDescription": "The web development framework for building modern apps.",
+    "og:title": "Angular",
+    "twitter:title": "Angular",
+    "ogUrl": "https://angular.dev/",
+    "theme-color": "#ffffff",
+    "language": "en",
+    "description": "The web development framework for building modern apps.",
+    "twitter:description": "The web development framework for building modern apps.",
+    "ogTitle": "Angular",
+    "msapplication-TileColor": "#e90464",
+    "og:url": "https://angular.dev/",
+    "og:description": "The web development framework for building modern apps.",
+    "twitter:card": "summary_large_image",
+    "twitter:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "ogImage": "https://angular.dev/assets/images/ng-image.jpg",
+    "apple-mobile-web-app-title": "Angular",
+    "twitter:url": "https://angular.dev/",
+    "scrapeId": "8de8e47b-d2b3-4e7e-8c85-e5d9e7340998",
+    "sourceURL": "https://angular.dev/tutorials/learn-angular/19-creating-an-injectable-service",
+    "url": "https://angular.dev/tutorials/learn-angular/19-creating-an-injectable-service",
+    "statusCode": 200
+  }
+}

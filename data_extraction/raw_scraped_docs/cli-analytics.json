@@ -1,0 +1,39 @@
+{
+  "scrapeId": "8490fc41-b543-4f3f-a4d7-c7a5936e204e",
+  "sourceURL": "https://angular.dev/cli/analytics",
+  "statusCode": 200,
+  "data": {
+    "markdown": "Skip to main content\n\nmenu\n\nmenuAPI\n\n- [Roadmap](https://angular.dev/roadmap)\n- [Get involved](https://github.com/angular/angular/blob/main/CONTRIBUTING.md)\n- API Reference\n- CLI Reference\n- Error Encyclopedia\n- Extended Diagnostics\n- [Versioning and releases](https://angular.dev/reference/releases)\n- [Version compatibility](https://angular.dev/reference/versions)\n- [Update guide](https://angular.dev/update-guide)\n- Configurations\n- Migrations\n\n- arrow\\_backCLI Reference\n  - [Overview](https://angular.dev/cli)\n  - [ng add](https://angular.dev/cli/add)\n  - ng analytics\n  - [ng build](https://angular.dev/cli/build)\n  - ng cache\n  - ng completion\n  - [ng config](https://angular.dev/cli/config)\n  - [ng deploy](https://angular.dev/cli/deploy)\n  - [ng e2e](https://angular.dev/cli/e2e)\n  - [ng extract-i18n](https://angular.dev/cli/extract-i18n)\n  - ng generate\n  - [ng lint](https://angular.dev/cli/lint)\n  - [ng new](https://angular.dev/cli/new)\n  - [ng run](https://angular.dev/cli/run)\n  - [ng serve](https://angular.dev/cli/serve)\n  - [ng test](https://angular.dev/cli/test)\n  - [ng update](https://angular.dev/cli/update)\n  - [ng version](https://angular.dev/cli/version)\n\n- arrow\\_backng analytics\n  - [Overview](https://angular.dev/cli/analytics)\n  - [disable](https://angular.dev/cli/analytics/disable)\n  - [enable](https://angular.dev/cli/analytics/enable)\n  - [info](https://angular.dev/cli/analytics/info)\n  - [prompt](https://angular.dev/cli/analytics/prompt)\n\nThis site uses cookies from Google to deliver its services and to analyze traffic.\n\n[Learn more](https://policies.google.com/technologies/cookies) Ok, Got it\n\n```\n\nng analytics[options]\n```\n\ncheck\n\nYou can help the Angular Team to prioritize features and improvements by permitting the Angular team to send command-line command usage statistics to Google.\nThe Angular Team does not collect usage statistics unless you explicitly opt in. When installing the Angular CLI you are prompted to allow global collection of usage statistics.\nIf you say no or skip the prompt, no data is collected.\n\n### [What is collected?](https://angular.dev/cli/analytics\\#what-is-collected)\n\nUsage analytics include the commands and selected flags for each execution.\nUsage analytics may include the following information:\n\n- Your operating system (macOS, Linux distribution, Windows) and its version.\n- Package manager name and version (local version only).\n- Node.js version (local version only).\n- Angular CLI version (local version only).\n- Command name that was run.\n- Workspace information, the number of application and library projects.\n- For schematics commands (add, generate and new), the schematic collection and name and a list of selected flags.\n- For build commands (build, serve), the builder name, the number and size of bundles (initial and lazy), compilation units, the time it took to build and rebuild, and basic Angular-specific API usage.\n\nOnly Angular owned and developed schematics and builders are reported.\nThird-party schematics and builders do not send data to the Angular Team.\n\n### Sub-commands\n\nThis command has the following sub-commands\n\n- [disable](https://angular.dev/cli/cli/analytics/disable)\n- [enable](https://angular.dev/cli/cli/analytics/enable)\n- [info](https://angular.dev/cli/cli/analytics/info)\n- [prompt](https://angular.dev/cli/cli/analytics/prompt)\n\n## [Options](https://angular.dev/cli/analytics\\#options)\n\n`help`\n\nShows a help message for this command in the console.\n\nValue Type `boolean`\n\nJump to details",
+    "screenshot": "https://service.firecrawl.dev/storage/v1/object/public/media/screenshot-6c92b549-6fe0-4376-8647-b6314f525fa1.png"
+  },
+  "metadata": {
+    "favicon": "https://angular.dev/assets/icons/favicon-48x48.png",
+    "ogDescription": "The web development framework for building modern apps.",
+    "msapplication-config": "/assets/icons/browserconfig.xml",
+    "twitter:card": "summary_large_image",
+    "language": "en",
+    "application-name": "Angular",
+    "msapplication-TileColor": "#e90464",
+    "og:url": "https://angular.dev/",
+    "og:title": "Angular",
+    "twitter:description": "The web development framework for building modern apps.",
+    "apple-mobile-web-app-title": "Angular",
+    "twitter:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "twitter:title": "Angular",
+    "og:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "description": "The web development framework for building modern apps.",
+    "title": "ng analytics • Overview • Angular",
+    "ogUrl": "https://angular.dev/",
+    "theme-color": "#ffffff",
+    "og:description": "The web development framework for building modern apps.",
+    "viewport": "width=device-width, initial-scale=1",
+    "twitter:url": "https://angular.dev/",
+    "ogImage": "https://angular.dev/assets/images/ng-image.jpg",
+    "ogTitle": "Angular",
+    "og:type": "website",
+    "scrapeId": "8490fc41-b543-4f3f-a4d7-c7a5936e204e",
+    "sourceURL": "https://angular.dev/cli/analytics",
+    "url": "https://angular.dev/cli/analytics",
+    "statusCode": 200
+  }
+}

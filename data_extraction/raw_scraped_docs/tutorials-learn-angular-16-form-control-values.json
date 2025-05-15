@@ -1,0 +1,39 @@
+{
+  "scrapeId": "cb62188e-1ac0-4416-adb5-30f0b7aa7113",
+  "sourceURL": "https://angular.dev/tutorials/learn-angular/16-form-control-values",
+  "statusCode": 200,
+  "data": {
+    "markdown": "Skip to main content\n\nmenu\n\nThis site uses cookies from Google to deliver its services and to analyze traffic.\n\n[Learn more](https://policies.google.com/technologies/cookies) Ok, Got it\n\nunfold\\_more\nLearn AngularGetting form control values\n\n[chevron\\_left](https://angular.dev/tutorials/learn-angular/15-forms) [chevron\\_right](https://angular.dev/tutorials/learn-angular/17-reactive-forms)\n\nunfold\\_more\nLearn AngularGetting form control values\n\n[chevron\\_left](https://angular.dev/tutorials/learn-angular/15-forms) [chevron\\_right](https://angular.dev/tutorials/learn-angular/17-reactive-forms)\n\nNow that your forms are set up with Angular, the next step is to access the values from the form controls.\n\nNote: Learn more about [adding a basic form control in the in-depth guide](https://angular.dev/guide/forms/reactive-forms#adding-a-basic-form-control).\n\nIn this activity, you'll learn how to get the value from your form input.\n\n* * *\n\n1. ### [Show the value of the input field in the template](https://angular.dev/tutorials/learn-angular/16-form-control-values\\#show-the-value-of-the-input-field-in-the-template)\n\n\nTo display the input value in a template, you can use the interpolation syntax `{{}}` just like any other class property of the component:\n\n\n\n```\n         @Component({  selector: 'app-user',  template: `    ...    <p>Framework: {{ favoriteFramework }}</p>    <label for=\"framework\">      Favorite Framework:      <input id=\"framework\" type=\"text\" [(ngModel)]=\"favoriteFramework\" />    </label>  `,})export class UserComponent {  favoriteFramework = '';}\n\n```\n\ncheck\n\n2. ### [Retrieve the value of an input field](https://angular.dev/tutorials/learn-angular/16-form-control-values\\#retrieve-the-value-of-an-input-field)\n\n\nWhen you need to reference the input field value in the component class, you can do so by accessing the class property with the `this` syntax.\n\n\n\n```\n         ...@Component({  selector: 'app-user',  template: `    ...    <button (click)=\"showFramework()\">Show Framework</button>  `,  ...})export class UserComponent {  favoriteFramework = '';  ...showFramework() {alert(this.favoriteFramework);}}\n\n```\n\ncheck\n\n\nGreat job learning how to display the input values in your template and access them programmatically.\n\nTime to progress onto the next way of managing forms with Angular: reactive forms. If you'd like to learn more about template-driven forms, please refer to the [Angular forms documentation](https://angular.dev/guide/forms/template-driven-forms).\n\nadd\n\nlaunchdownload\n\n9\n\n1\n\n›\n\nType your code here...\n\nPreview\n\nStarting\n\nConsole\n\nTerminal\n\nrefresh",
+    "screenshot": "https://service.firecrawl.dev/storage/v1/object/public/media/screenshot-0c4fae32-8c9c-467d-a243-9d600a951724.png"
+  },
+  "metadata": {
+    "ogImage": "https://angular.dev/assets/images/ng-image.jpg",
+    "apple-mobile-web-app-title": "Angular",
+    "og:url": "https://angular.dev/",
+    "viewport": "width=device-width, initial-scale=1",
+    "msapplication-config": "/assets/icons/browserconfig.xml",
+    "theme-color": "#ffffff",
+    "og:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "twitter:title": "Angular",
+    "description": "The web development framework for building modern apps.",
+    "title": "Getting form control values • Angular",
+    "language": "en",
+    "twitter:card": "summary_large_image",
+    "ogUrl": "https://angular.dev/",
+    "og:title": "Angular",
+    "msapplication-TileColor": "#e90464",
+    "twitter:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "twitter:description": "The web development framework for building modern apps.",
+    "og:type": "website",
+    "ogTitle": "Angular",
+    "ogDescription": "The web development framework for building modern apps.",
+    "twitter:url": "https://angular.dev/",
+    "og:description": "The web development framework for building modern apps.",
+    "application-name": "Angular",
+    "favicon": "https://angular.dev/assets/icons/favicon-48x48.png",
+    "scrapeId": "cb62188e-1ac0-4416-adb5-30f0b7aa7113",
+    "sourceURL": "https://angular.dev/tutorials/learn-angular/16-form-control-values",
+    "url": "https://angular.dev/tutorials/learn-angular/16-form-control-values",
+    "statusCode": 200
+  }
+}

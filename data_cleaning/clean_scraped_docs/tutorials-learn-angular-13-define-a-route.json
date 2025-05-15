@@ -1,0 +1,18 @@
+{
+  "content": "Skip to main content\n\nmenu\n\nThis site uses cookies from Google to deliver its services and to analyze traffic.\n\n[Learn more](https://policies.google.com/technologies/cookies) Ok, Got it\n\nunfold\\_more\nLearn AngularDefine a route\nReveal Answer\n\n[chevron\\_left](https://angular.dev/tutorials/learn-angular/12-enable-routing) [chevron\\_right](https://angular.dev/tutorials/learn-angular/14-routerLink)\n\nReveal Answer\n\nunfold\\_more\nLearn AngularDefine a route\nReveal Answer\n\n[chevron\\_left](https://angular.dev/tutorials/learn-angular/12-enable-routing) [chevron\\_right](https://angular.dev/tutorials/learn-angular/14-routerLink)\n\nReveal Answer\n\nNow that you've set up the app to use Angular Router, you need to define the routes.\n\nNote: Learn more about [defining a basic route in the in-depth guide](https://angular.dev/guide/routing/common-router-tasks#defining-a-basic-route).\n\nIn this activity, you'll learn how to add and configure routes with your app.\n\n* * *\n\n1. ### [Define a route in `app.routes.ts`](https://angular.dev/tutorials/learn-angular/13-define-a-route\\#define-a-route-in-approutests)\n\n\nIn your app, there are two pages to display: (1) Home Page and (2) User Page.\n\nTo define a route, add a route object to the `routes` array in `app.routes.ts` that contains:\n\n\n   - The `path` of the route (which automatically starts at the root path (i.e., `/`))\n   - The `component` that you want the route to display\n\n```\n      import {Routes} from '@angular/router';import {HomeComponent} from './home/home.component';export const routes: Routes = [  {    path: '',    component: HomeComponent,  },];\n\n```\n\ncheck\n\nThe code above is an example of how `HomeComponent` can be added as a route. Now go ahead and implement this along with the `UserComponent` in the playground.\n\nUse `'user'` for the path of `UserComponent`.\n\n2. ### [Add title to route definition](https://angular.dev/tutorials/learn-angular/13-define-a-route\\#add-title-to-route-definition)\n\n\nIn addition to defining the routes correctly, Angular Router also enables you to set the page title whenever users are navigating by adding the `title` property to each route.\n\nIn `app.routes.ts`, add the `title` property to the default route ( `path: ''`) and the `user` route. Here's an example:\n\n\n\n```\n         import {Routes} from '@angular/router';import {HomeComponent} from './home/home.component';export const routes: Routes = [{path: '',title: 'App Home Page',component: HomeComponent,},];\n\n```\n\ncheck\n\n\nIn the activity, you've learned how to define and configure routes in your Angular app. Nice work. \ud83d\ude4c\n\nThe journey to fully enabling routing in your app is almost complete, keep going.\n\napp/app.routes.ts editdelete\n\napp/home/home.component.ts\n\nadd\n\nlaunchdownload\n\n9\n\n1\n\n2\n\n3\n\n4\n\n5\n\n6\n\n\u203a\n\nimport{Routes}from'@angular/router';\n\nimport{HomeComponent}from'./home/home.component';\n\nimport{UserComponent}from'./user/user.component';\n\nexportconstroutes:Routes=\\[\\];\n\nPreview\n\nBooting\n\nConsole\n\nTerminal\n\nrefresh",
+  "title": "Define a route \u2022 Angular",
+  "description": "The web development framework for building modern apps.",
+  "keywords": [
+    "angular",
+    "route",
+    "routes",
+    "app",
+    "learn",
+    "home",
+    "component",
+    "https",
+    "define",
+    "dev"
+  ],
+  "sourceURL": "https://angular.dev/tutorials/learn-angular/13-define-a-route"
+}

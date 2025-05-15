@@ -1,0 +1,39 @@
+{
+  "scrapeId": "8702f1bd-869e-440d-81cc-f950f259d245",
+  "sourceURL": "https://angular.dev/tutorials/learn-angular/5-control-flow-for",
+  "statusCode": 200,
+  "data": {
+    "markdown": "Skip to main content\n\nmenu\n\nThis site uses cookies from Google to deliver its services and to analyze traffic.\n\n[Learn more](https://policies.google.com/technologies/cookies) Ok, Got it\n\nunfold\\_more\nLearn AngularControl flow - @for\nReveal Answer\n\n[chevron\\_left](https://angular.dev/tutorials/learn-angular/4-control-flow-if) [chevron\\_right](https://angular.dev/tutorials/learn-angular/6-property-binding)\n\nReveal Answer\n\nunfold\\_more\nLearn AngularControl flow - @for\nReveal Answer\n\n[chevron\\_left](https://angular.dev/tutorials/learn-angular/4-control-flow-if) [chevron\\_right](https://angular.dev/tutorials/learn-angular/6-property-binding)\n\nReveal Answer\n\nOften when building web applications, you need to repeat some code a specific number of times - for example, given an array of names, you may want to display each name in a `<p>` tag.\n\nNote: Learn more about [control flow in the essentials guide](https://angular.dev/essentials/templates#control-flow-with-if-and-for).\n\nIn this activity, you'll learn how to use `@for` to repeat elements in a template.\n\n* * *\n\nThe syntax that enables repeating elements in a template is `@for`.\n\nHere's an example of how to use the `@for` syntax in a component:\n\n```\n      @Component({  ...  template: `    @for (os of operatingSystems; track os.id) {      {{ os.name }}    }  `,})export class AppComponent {  operatingSystems = [{id: 'win', name: 'Windows'}, {id: 'osx', name: 'MacOS'}, {id: 'linux', name: 'Linux'}];}\n\n```\n\ncheck\n\nTwo things to take note of:\n\n- There is an `@` prefix for the `for` because it is a special syntax called [Angular template syntax](https://angular.dev/guide/templates)\n- For applications using v16 and older please refer to the [Angular documentation for NgFor](https://angular.dev/guide/directives/structural-directives)\n\n1. ### [Add the `users` property](https://angular.dev/tutorials/learn-angular/5-control-flow-for\\#add-the-users-property)\n\n\nIn the `AppComponent` class, add a property called `users` that contains users and their names.\n\n\n\n```\n         [{id: 0, name: 'Sarah'}, {id: 1, name: 'Amy'}, {id: 2, name: 'Rachel'}, {id: 3, name: 'Jessica'}, {id: 4, name: 'Poornima'}]\n\n```\n\ncheck\n\n2. ### [Update the template](https://angular.dev/tutorials/learn-angular/5-control-flow-for\\#update-the-template)\n\n\nUpdate the template to display each user name in a `p` element using the `@for` template syntax.\n\n\n\n```\n         @for (user of users; track user.id) {  <p>{{ user.name }}</p>}\n\n```\n\ncheck\n\nNOTE: the use of `track` is required, you may use the `id` or some other unique identifier.\n\n\nThis type of functionality is called control flow. Next, you'll learn to customize and communicate with components - by the way, you're doing a great job so far.\n\napp/app.component.ts\n\nadd\n\nlaunchdownload\n\n9\n\n1\n\n2\n\n3\n\n4\n\n5\n\n6\n\n7\n\n8\n\n›\n\nimport{Component}from'@angular/core';\n\n@Component({\n\nselector:'app-root',\n\ntemplate:\\`\\`,\n\n})\n\nexportclassAppComponent{}\n\nPreview\n\nBooting\n\nConsole\n\nTerminal\n\nrefresh\n\nStackBlitz",
+    "screenshot": "https://service.firecrawl.dev/storage/v1/object/public/media/screenshot-dc1b69c6-5d06-4568-804f-e75cff6fc558.png"
+  },
+  "metadata": {
+    "og:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "twitter:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "og:url": "https://angular.dev/",
+    "msapplication-TileColor": "#e90464",
+    "language": "en",
+    "ogTitle": "Angular",
+    "og:description": "The web development framework for building modern apps.",
+    "apple-mobile-web-app-title": "Angular",
+    "ogDescription": "The web development framework for building modern apps.",
+    "ogImage": "https://angular.dev/assets/images/ng-image.jpg",
+    "theme-color": "#ffffff",
+    "description": "The web development framework for building modern apps.",
+    "og:type": "website",
+    "og:title": "Angular",
+    "twitter:card": "summary_large_image",
+    "favicon": "https://angular.dev/assets/icons/favicon-48x48.png",
+    "viewport": "width=device-width, initial-scale=1",
+    "application-name": "Angular",
+    "twitter:url": "https://angular.dev/",
+    "twitter:title": "Angular",
+    "ogUrl": "https://angular.dev/",
+    "title": "Control flow - @for • Angular",
+    "twitter:description": "The web development framework for building modern apps.",
+    "msapplication-config": "/assets/icons/browserconfig.xml",
+    "scrapeId": "8702f1bd-869e-440d-81cc-f950f259d245",
+    "sourceURL": "https://angular.dev/tutorials/learn-angular/5-control-flow-for",
+    "url": "https://angular.dev/tutorials/learn-angular/5-control-flow-for",
+    "statusCode": 200
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "scrapeId": "a87dde18-f035-4876-a87f-c34153bf8767",
+  "sourceURL": "https://angular.dev/cli/generate/directives",
+  "statusCode": 200,
+  "data": {
+    "markdown": "Skip to main content\n\nmenu\n\nThis site uses cookies from Google to deliver its services and to analyze traffic.\n\n[Learn more](https://policies.google.com/technologies/cookies) Ok, Got it\n\nIf you think this is a mistake, please [open an issue](https://github.com/angular/angular/issues/new?template=3-docs-bug.yaml) so we can fix it.",
+    "screenshot": "https://service.firecrawl.dev/storage/v1/object/public/media/screenshot-b39cdcb8-312b-47cc-826c-f153b8802f9f.png"
+  },
+  "metadata": {
+    "application-name": "Angular",
+    "viewport": "width=device-width, initial-scale=1",
+    "description": "The web development framework for building modern apps.",
+    "title": "Angular",
+    "twitter:url": "https://angular.dev/",
+    "twitter:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "msapplication-TileColor": "#e90464",
+    "ogDescription": "The web development framework for building modern apps.",
+    "ogTitle": "Angular",
+    "ogImage": "https://angular.dev/assets/images/ng-image.jpg",
+    "apple-mobile-web-app-title": "Angular",
+    "theme-color": "#ffffff",
+    "twitter:title": "Angular",
+    "og:title": "Angular",
+    "ogUrl": "https://angular.dev/",
+    "og:description": "The web development framework for building modern apps.",
+    "og:type": "website",
+    "twitter:card": "summary_large_image",
+    "twitter:description": "The web development framework for building modern apps.",
+    "language": "en",
+    "og:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "favicon": "https://angular.dev/assets/icons/favicon-48x48.png",
+    "og:url": "https://angular.dev/",
+    "msapplication-config": "/assets/icons/browserconfig.xml",
+    "scrapeId": "a87dde18-f035-4876-a87f-c34153bf8767",
+    "sourceURL": "https://angular.dev/cli/generate/directives",
+    "url": "https://angular.dev/cli/generate/directives",
+    "statusCode": 200
+  }
+}

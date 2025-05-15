@@ -1,0 +1,39 @@
+{
+  "scrapeId": "c7a47a93-1887-446b-813a-ef07976e33ac",
+  "sourceURL": "https://angular.dev/cli/config",
+  "statusCode": 200,
+  "data": {
+    "markdown": "Skip to main content\n\nmenu\n\nmenuAPI\n\n- [Roadmap](https://angular.dev/roadmap)\n- [Get involved](https://github.com/angular/angular/blob/main/CONTRIBUTING.md)\n- API Reference\n- CLI Reference\n- Error Encyclopedia\n- Extended Diagnostics\n- [Versioning and releases](https://angular.dev/reference/releases)\n- [Version compatibility](https://angular.dev/reference/versions)\n- [Update guide](https://angular.dev/update-guide)\n- Configurations\n- Migrations\n\n- arrow\\_backCLI Reference\n  - [Overview](https://angular.dev/cli)\n  - [ng add](https://angular.dev/cli/add)\n  - ng analytics\n  - [ng build](https://angular.dev/cli/build)\n  - ng cache\n  - ng completion\n  - [ng config](https://angular.dev/cli/config)\n  - [ng deploy](https://angular.dev/cli/deploy)\n  - [ng e2e](https://angular.dev/cli/e2e)\n  - [ng extract-i18n](https://angular.dev/cli/extract-i18n)\n  - ng generate\n  - [ng lint](https://angular.dev/cli/lint)\n  - [ng new](https://angular.dev/cli/new)\n  - [ng run](https://angular.dev/cli/run)\n  - [ng serve](https://angular.dev/cli/serve)\n  - [ng test](https://angular.dev/cli/test)\n  - [ng update](https://angular.dev/cli/update)\n  - [ng version](https://angular.dev/cli/version)\n\nThis site uses cookies from Google to deliver its services and to analyze traffic.\n\n[Learn more](https://policies.google.com/technologies/cookies) Ok, Got it\n\n```\n\nng configng [json-path] [value][options]\n```\n\ncheck\n\nA workspace has a single CLI configuration file, `angular.json`, at the top level.\nThe `projects` object contains a configuration object for each project in the workspace.\n\nYou can edit the configuration directly in a code editor,\nor indirectly on the command line using this command.\n\nThe configurable property names match command option names,\nexcept that in the configuration file, all names must use camelCase,\nwhile on the command line options can be given dash-case.\n\nFor further details, see [Workspace Configuration](https://angular.dev/cli/reference/configs/workspace-config).\n\nFor configuration of CLI usage analytics, see [ng analytics](https://angular.dev/cli/cli/analytics).\n\n## [Arguments](https://angular.dev/cli/config\\#arguments)\n\n`json-path`\n\nThe configuration key to set or query, in JSON path format. For example: \"a\\[3\\].foo.bar\\[2\\]\". If no new value is provided, returns the current value of this key.\n\nValue Type `string`\n\n`value`\n\nIf provided, a new value for the given configuration key.\n\nValue Type `string`\n\n## [Options](https://angular.dev/cli/config\\#options)\n\n`global`\n\nAlias `g `\n\nAccess the global configuration in the caller's home directory.\n\nValue Type `boolean` Default `false`\n\n`help`\n\nShows a help message for this command in the console.\n\nValue Type `boolean`\n\nJump to details",
+    "screenshot": "https://service.firecrawl.dev/storage/v1/object/public/media/screenshot-813ce496-0057-48bc-afba-beb40a16df84.png"
+  },
+  "metadata": {
+    "favicon": "https://angular.dev/assets/icons/favicon-48x48.png",
+    "viewport": "width=device-width, initial-scale=1",
+    "language": "en",
+    "title": "ng config • Angular",
+    "og:type": "website",
+    "twitter:card": "summary_large_image",
+    "description": "The web development framework for building modern apps.",
+    "twitter:url": "https://angular.dev/",
+    "og:title": "Angular",
+    "ogImage": "https://angular.dev/assets/images/ng-image.jpg",
+    "msapplication-TileColor": "#e90464",
+    "theme-color": "#ffffff",
+    "msapplication-config": "/assets/icons/browserconfig.xml",
+    "twitter:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "apple-mobile-web-app-title": "Angular",
+    "ogTitle": "Angular",
+    "og:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "twitter:title": "Angular",
+    "og:description": "The web development framework for building modern apps.",
+    "application-name": "Angular",
+    "ogDescription": "The web development framework for building modern apps.",
+    "ogUrl": "https://angular.dev/",
+    "twitter:description": "The web development framework for building modern apps.",
+    "og:url": "https://angular.dev/",
+    "scrapeId": "c7a47a93-1887-446b-813a-ef07976e33ac",
+    "sourceURL": "https://angular.dev/cli/config",
+    "url": "https://angular.dev/cli/config",
+    "statusCode": 200
+  }
+}

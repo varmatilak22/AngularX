@@ -1,0 +1,39 @@
+{
+  "scrapeId": "d97d762a-6030-4954-b2a9-983acbfa1fee",
+  "sourceURL": "https://angular.dev/tutorials/deferrable-views/1-what-are-deferrable-views",
+  "statusCode": 200,
+  "data": {
+    "markdown": "Skip to main content\n\nmenu\n\nThis site uses cookies from Google to deliver its services and to analyze traffic.\n\n[Learn more](https://policies.google.com/technologies/cookies) Ok, Got it\n\nunfold\\_more\nDeferrable ViewsWhat are deferrable views\nReveal Answer\n\nchevron\\_left [chevron\\_right](https://angular.dev/tutorials/deferrable-views/2-loading-error-placeholder)\n\nReveal Answer\n\nunfold\\_more\nDeferrable ViewsWhat are deferrable views\nReveal Answer\n\nchevron\\_left [chevron\\_right](https://angular.dev/tutorials/deferrable-views/2-loading-error-placeholder)\n\nReveal Answer\n\nA fully rendered Angular page may contain many different components, directives, and pipes. While certain parts of the page should be shown to the user immediately, there may be portions that can wait to display until later.\nAngular's _deferrable views_, using the `@defer` syntax, can help you speed up your application by telling Angular to wait to download the JavaScript for the parts of the page that don't need to be shown right away.\n\nIn this activity, you'll learn how to use deferrable views to defer load a section of your component template.\n\n* * *\n\n1. ### [Add a `@defer` block to a section of a template](https://angular.dev/tutorials/deferrable-views/1-what-are-deferrable-views\\#add-a-defer-block-to-a-section-of-a-template)\n\n\nIn your `app.component.ts`, wrap the `article-comments` component with a `@defer` block to defer load it.\n\n\n\n```\n         @defer {  <article-comments />}\n\n```\n\ncheck\n\nBy default, `@defer` loads the `article-comments` component when the browser is idle.\n\nIn your browser's developer console, you can see that the `article-comments-component` lazy chunk file is loaded separately (The specific file names may change from run to run):\n\n\n\n```\n         Initial chunk files | Names                      |  Raw sizechunk-NNSQHFIE.js   | -                          | 769.00 kB | main.js             | main                       | 229.25 kB | Lazy chunk files    | Names                      |  Raw sizechunk-T5UYXUSI.js   | article-comments-component |   1.84 kB |\n\n```\n\ncheck\n\n\nGreat work! You’ve learned the basics of deferrable views.\n\napp/app.component.ts\n\napp/article-comments.component.ts\n\nadd\n\nlaunchdownload\n\n99\n\n1\n\n2\n\n3\n\n4\n\n5\n\n6\n\n7\n\n8\n\n9\n\n10\n\n11\n\n12\n\n13\n\n14\n\n15\n\n16\n\n17\n\n18\n\n19\n\n20\n\n21\n\n22\n\n23\n\n24\n\n25\n\n26\n\n›\n\n⌄\n\n⌄\n\n⌄\n\n⌄\n\nimport{Component}from'@angular/core';\n\nimport{ArticleCommentsComponent}from'./article-comments.component';\n\n@Component({\n\nselector:'app-root',\n\ntemplate:\\`\n\n<div>\n\n<h1>How I feel about Angular</h1>\n\n<article>\n\n<p>\n\nAngular is my favorite framework, and\n\nthis is why. Angular has the coolest\n\ndeferrable view feature that makes defer\n\nloading content the easiest and most\n\nergonomic it could possibly be.\n\n</p>\n\n</article>\n\n<article-comments/>\n\n</div>\n\n\\`,\n\nimports:\\[ArticleCommentsComponent\\],\n\n})\n\nexportclassAppComponent{}\n\nPreview\n\nBooting\n\nConsole\n\nTerminal\n\nrefresh",
+    "screenshot": "https://service.firecrawl.dev/storage/v1/object/public/media/screenshot-2e2c7358-7f6f-4c2c-9ccf-d30855a72d7b.png"
+  },
+  "metadata": {
+    "favicon": "https://angular.dev/assets/icons/favicon-48x48.png",
+    "language": "en",
+    "application-name": "Angular",
+    "title": "What are deferrable views • Angular",
+    "og:title": "Angular",
+    "description": "The web development framework for building modern apps.",
+    "theme-color": "#ffffff",
+    "og:description": "The web development framework for building modern apps.",
+    "og:type": "website",
+    "twitter:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "ogDescription": "The web development framework for building modern apps.",
+    "ogUrl": "https://angular.dev/",
+    "viewport": "width=device-width, initial-scale=1",
+    "ogImage": "https://angular.dev/assets/images/ng-image.jpg",
+    "msapplication-TileColor": "#e90464",
+    "msapplication-config": "/assets/icons/browserconfig.xml",
+    "og:url": "https://angular.dev/",
+    "twitter:card": "summary_large_image",
+    "og:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "twitter:description": "The web development framework for building modern apps.",
+    "twitter:url": "https://angular.dev/",
+    "twitter:title": "Angular",
+    "ogTitle": "Angular",
+    "apple-mobile-web-app-title": "Angular",
+    "scrapeId": "d97d762a-6030-4954-b2a9-983acbfa1fee",
+    "sourceURL": "https://angular.dev/tutorials/deferrable-views/1-what-are-deferrable-views",
+    "url": "https://angular.dev/tutorials/deferrable-views/1-what-are-deferrable-views",
+    "statusCode": 200
+  }
+}

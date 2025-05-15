@@ -1,0 +1,39 @@
+{
+  "scrapeId": "f1834cad-552d-4006-88ea-7b35f806dd32",
+  "sourceURL": "https://angular.dev/extended-diagnostics/NG8109",
+  "statusCode": 200,
+  "data": {
+    "markdown": "Skip to main content\n\nmenu\n\nmenuAPI\n\n- [Roadmap](https://angular.dev/roadmap)\n- [Get involved](https://github.com/angular/angular/blob/main/CONTRIBUTING.md)\n- API Reference\n- CLI Reference\n- Error Encyclopedia\n- Extended Diagnostics\n- [Versioning and releases](https://angular.dev/reference/releases)\n- [Version compatibility](https://angular.dev/reference/versions)\n- [Update guide](https://angular.dev/update-guide)\n- Configurations\n- Migrations\n\n- arrow\\_backExtended Diagnostics\n  - [Overview](https://angular.dev/extended-diagnostics)\n  - [NG8101: Invalid Banana-in-Box](https://angular.dev/extended-diagnostics/NG8101)\n  - [NG8102: Nullish coalescing not nullable](https://angular.dev/extended-diagnostics/NG8102)\n  - [NG8103: Missing control flow directive](https://angular.dev/extended-diagnostics/NG8103)\n  - [NG8104: Text attribute not binding](https://angular.dev/extended-diagnostics/NG8104)\n  - [NG8105: Missing \\`let\\` keyword in an \\`\\*ngFor\\` expression](https://angular.dev/extended-diagnostics/NG8105)\n  - [NG8106: Suffix not supported](https://angular.dev/extended-diagnostics/NG8106)\n  - [NG8107: Optional chain not nullable](https://angular.dev/extended-diagnostics/NG8107)\n  - [NG8108: \\`ngSkipHydration\\` should be a static attribute](https://angular.dev/extended-diagnostics/NG8108)\n  - [NG8109: Signals must be invoked in template interpolations.](https://angular.dev/extended-diagnostics/NG8109)\n  - [NG8111: Functions should be invoked in event bindings.](https://angular.dev/extended-diagnostics/NG8111)\n  - [NG8113: Unused Standalone Imports](https://angular.dev/extended-diagnostics/NG8113)\n\nThis site uses cookies from Google to deliver its services and to analyze traffic.\n\n[Learn more](https://policies.google.com/technologies/cookies) Ok, Got it\n\nThis diagnostic detects uninvoked signals in template interpolations.\n\n```\n      import {Component, signal, Signal} from '@angular/core';@Component({  template: `<div>{{ mySignal }}/div>`,})class MyComponent {    mySignal: Signal<number> = signal(0);}\n\n```\n\ncheck\n\n## [What's wrong with that?](https://angular.dev/extended-diagnostics/NG8109\\#whats-wrong-with-that)\n\nAngular Signals are zero-argument functions ( `() => T`). When executed, they return the current value of the signal.\nThis means they are meant to be invoked when used in template interpolations to render their value.\n\n## [What should I do instead?](https://angular.dev/extended-diagnostics/NG8109\\#what-should-i-do-instead)\n\nEnsure to invoke the signal when you use it within a template interpolation to render its value.\n\n```\n      import {Component, signal, Signal} from '@angular/core';@Component({  template: `<div>{{ mySignal() }}/div>`,})class MyComponent {  mySignal: Signal<number> = signal(0)}\n\n```\n\ncheck\n\n## [Configuration requirements](https://angular.dev/extended-diagnostics/NG8109\\#configuration-requirements)\n\n[`strictTemplates`](https://angular.dev/extended-diagnostics/tools/cli/template-typecheck#strict-mode) must be enabled for any extended diagnostic to emit.\n`interpolatedSignalNotInvoked` has no additional requirements beyond `strictTemplates`.\n\n## [What if I can't avoid this?](https://angular.dev/extended-diagnostics/NG8109\\#what-if-i-cant-avoid-this)\n\nThis diagnostic can be disabled by editing the project's `tsconfig.json` file:\n\n```\n      {  \"angularCompilerOptions\": {    \"extendedDiagnostics\": {      \"checks\": {        \"interpolatedSignalNotInvoked\": \"suppress\"      }    }  }}\n\n```\n\ncheck\n\nSee [extended diagnostic configuration](https://angular.dev/extended-diagnostics/extended-diagnostics#configuration) for more info.",
+    "screenshot": "https://service.firecrawl.dev/storage/v1/object/public/media/screenshot-e95d156e-b569-4770-89d8-2aad1ee5e9e3.png"
+  },
+  "metadata": {
+    "twitter:url": "https://angular.dev/",
+    "ogImage": "https://angular.dev/assets/images/ng-image.jpg",
+    "viewport": "width=device-width, initial-scale=1",
+    "description": "The web development framework for building modern apps.",
+    "application-name": "Angular",
+    "og:url": "https://angular.dev/",
+    "favicon": "https://angular.dev/assets/icons/favicon-48x48.png",
+    "og:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "twitter:title": "Angular",
+    "msapplication-config": "/assets/icons/browserconfig.xml",
+    "og:description": "The web development framework for building modern apps.",
+    "twitter:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "title": "NG8109: Signals must be invoked in template interpolations.  • Angular",
+    "apple-mobile-web-app-title": "Angular",
+    "twitter:card": "summary_large_image",
+    "ogUrl": "https://angular.dev/",
+    "ogDescription": "The web development framework for building modern apps.",
+    "language": "en",
+    "theme-color": "#ffffff",
+    "msapplication-TileColor": "#e90464",
+    "ogTitle": "Angular",
+    "og:type": "website",
+    "og:title": "Angular",
+    "twitter:description": "The web development framework for building modern apps.",
+    "scrapeId": "f1834cad-552d-4006-88ea-7b35f806dd32",
+    "sourceURL": "https://angular.dev/extended-diagnostics/NG8109",
+    "url": "https://angular.dev/extended-diagnostics/NG8109",
+    "statusCode": 200
+  }
+}

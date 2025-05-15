@@ -1,0 +1,42 @@
+{
+  "scrapeId": "9af5559f-1dbd-4bbf-9eb7-34cbb73a758f",
+  "sourceURL": "https://angular.dev/tutorials/first-app/07-dynamic-template-values",
+  "statusCode": 200,
+  "data": {
+    "markdown": "Skip to main content\n\nmenu\n\nThis site uses cookies from Google to deliver its services and to analyze traffic.\n\n[Learn more](https://policies.google.com/technologies/cookies) Ok, Got it\n\nunfold\\_more\nYour first Angular appAdd dynamic values to templates\nReveal Answer\n\n[chevron\\_left](https://angular.dev/tutorials/first-app/06-property-binding) [chevron\\_right](https://angular.dev/tutorials/first-app/08-ngFor)\n\nReveal Answer\n\nunfold\\_more\nYour first Angular appAdd dynamic values to templates\nReveal Answer\n\n[chevron\\_left](https://angular.dev/tutorials/first-app/06-property-binding) [chevron\\_right](https://angular.dev/tutorials/first-app/08-ngFor)\n\nReveal Answer\n\nThis tutorial lesson demonstrates how to add interpolation to Angular templates in order to display dynamic data in a template.\n\nCustomizing components and directives (Part 4) - YouTube\n\nAngular\n\n159K subscribers\n\n[Customizing components and directives (Part 4)](https://www.youtube.com/watch?v=eM3zi_n7lNs)\n\nAngular\n\nSearch\n\nWatch later\n\nShare\n\nCopy link\n\nInfo\n\nShopping\n\nTap to unmute\n\nIf playback doesn't begin shortly, try restarting your device.\n\nYou're signed out\n\nVideos you watch may be added to the TV's watch history and influence TV recommendations. To avoid this, cancel and sign in to YouTube on your computer.\n\nCancelConfirm\n\nMore videos\n\n## More videos\n\nShare\n\nInclude playlist\n\nAn error occurred while retrieving sharing information. Please try again later.\n\n[Watch on](https://www.youtube.com/watch?t=338&v=eM3zi_n7lNs&embeds_referring_euri=https%3A%2F%2Fangular.dev%2F)\n\n5:38\n\n5:38 / 12:18\n•Live\n\n•\n\n[Watch on YouTube](https://www.youtube.com/watch?v=eM3zi_n7lNs \"Watch on YouTube\")\n\n## [What you'll learn](https://angular.dev/tutorials/first-app/07-dynamic-template-values\\#what-youll-learn)\n\n- Your app will display interpolated values in the `HousingLocationComponent` template.\n- Your app will render a housing location data to the browser.\n\n## [Conceptual preview of interpolation](https://angular.dev/tutorials/first-app/07-dynamic-template-values\\#conceptual-preview-of-interpolation)\n\nIn this step you will display values (properties and `Input` values) in a template using interpolation.\n\nUsing the `{{ expression }}` in Angular templates, you can render values from properties, `Inputs` and valid JavaScript expressions.\n\nFor a more in depth explanation, please refer to the [Displaying values with interpolation](https://angular.dev/guide/templates/binding#render-dynamic-text-with-text-interpolation) guide.\n\n1. ### [Update `HousingLocationComponent` template to include interpolated values](https://angular.dev/tutorials/first-app/07-dynamic-template-values\\#update-housinglocationcomponent-template-to-include-interpolated-values)\n\n\nThis step adds new HTML structure and interpolated values in the `HousingLocationComponent` template.\n\nIn the code editor:\n\n\n1. Navigate to `src/app/housing-location/housing-location.component.ts`\n2. In the template property of the `@Component` decorator, replace the existing HTML markup with the following code:\n\ncheck\n\n```\n      import {Component, Input} from '@angular/core';import {CommonModule} from '@angular/common';import {HousingLocation} from '../housinglocation';@Component({  selector: 'app-housing-location',  imports: [CommonModule],  template: `    <section class=\"listing\">      <img        class=\"listing-photo\"        [src]=\"housingLocation.photo\"        alt=\"Exterior photo of {{ housingLocation.name }}\"        crossorigin      />      <h2 class=\"listing-heading\">{{ housingLocation.name }}</h2>      <p class=\"listing-location\">{{ housingLocation.city }}, {{ housingLocation.state }}</p>    </section>  `,  styleUrls: ['./housing-location.component.css'],})export class HousingLocationComponent {  @Input() housingLocation!: HousingLocation;}\n\n```\n\nIn this updated template code you have used property binding to bind the `housingLocation.photo` to the `src` attribute. The `alt` attribute uses interpolation to give more context to the alt text of the image.\n\nYou use interpolation to include the values for `name`, `city` and `state` of the `housingLocation` property.\n\n2. ### [Confirm the changes render in the browser](https://angular.dev/tutorials/first-app/07-dynamic-template-values\\#confirm-the-changes-render-in-the-browser)\n\n1. Save all changes.\n2. Open the browser and confirm that the app renders the photo, city and state sample data.![browser frame of homes-app displaying logo, filter text input box, search button and the same housing location UI card](https://angular.dev/assets/images/tutorials/first-app/homes-app-lesson-07-step-2.png)\n\n**SUMMARY:** In this lesson, you added a new HTML structure and used Angular template syntax to render values in the `HousingLocation` template.\n\nNow, you have two important skills:\n\n- passing data to components\n- Interpolating values into a template\n\nWith these skills, your app can now share data and display dynamic values in the browser. Great work so far.\n\nFor more information about the topics covered in this lesson, visit:\n\napp/housing-location/housing-location.component.ts editdelete\n\nadd\n\nlaunchdownload\n\n99\n\n1\n\n2\n\n3\n\n4\n\n5\n\n6\n\n7\n\n8\n\n9\n\n10\n\n11\n\n12\n\n13\n\n14\n\n15\n\n16\n\n›\n\nimport{Component,Input}from'@angular/core';\n\nimport{CommonModule}from'@angular/common';\n\nimport{HousingLocation}from'../housinglocation';\n\n@Component({\n\nselector:'app-housing-location',\n\nimports:\\[CommonModule\\],\n\ntemplate:\\`\n\n<p>housing-location works!</p>\n\n\\`,\n\nstyleUrls:\\['./housing-location.component.css'\\],\n\n})\n\nexportclassHousingLocationComponent{\n\n@Input()housingLocation!:HousingLocation;\n\n}\n\nPreview\n\nBooting\n\nConsole error 3\n\nTerminal\n\nrefresh\n\nStackBlitz",
+    "screenshot": "https://service.firecrawl.dev/storage/v1/object/public/media/screenshot-46d029fb-f99e-4cad-b83a-3d938c4775d5.png"
+  },
+  "metadata": {
+    "favicon": "https://angular.dev/assets/icons/favicon-48x48.png",
+    "msapplication-config": "/assets/icons/browserconfig.xml",
+    "ogUrl": "https://angular.dev/",
+    "twitter:title": "Angular",
+    "ogImage": "https://angular.dev/assets/images/ng-image.jpg",
+    "twitter:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "language": "en",
+    "ogDescription": "The web development framework for building modern apps.",
+    "apple-mobile-web-app-title": "Angular",
+    "og:type": "website",
+    "og:url": "https://angular.dev/",
+    "og:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "twitter:description": "The web development framework for building modern apps.",
+    "og:title": "Angular",
+    "ogTitle": "Angular",
+    "viewport": [
+      "width=device-width, initial-scale=1",
+      "width=device-width, initial-scale=1"
+    ],
+    "msapplication-TileColor": "#e90464",
+    "description": "The web development framework for building modern apps.",
+    "theme-color": "#ffffff",
+    "title": "Add dynamic values to templates • Angular",
+    "application-name": "Angular",
+    "og:description": "The web development framework for building modern apps.",
+    "twitter:card": "summary_large_image",
+    "twitter:url": "https://angular.dev/",
+    "scrapeId": "9af5559f-1dbd-4bbf-9eb7-34cbb73a758f",
+    "sourceURL": "https://angular.dev/tutorials/first-app/07-dynamic-template-values",
+    "url": "https://angular.dev/tutorials/first-app/07-dynamic-template-values",
+    "statusCode": 200
+  }
+}

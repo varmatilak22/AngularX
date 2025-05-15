@@ -1,0 +1,18 @@
+{
+  "content": "Skip to main content\n\nmenu\n\nThis site uses cookies from Google to deliver its services and to analyze traffic.\n\n[Learn more](https://policies.google.com/technologies/cookies) Ok, Got it\n\nunfold\\_more\nLearn AngularUpdating the component\nReveal Answer\n\n[chevron\\_left](https://angular.dev/tutorials/learn-angular/1-components-in-angular) [chevron\\_right](https://angular.dev/tutorials/learn-angular/3-composing-components)\n\nReveal Answer\n\nunfold\\_more\nLearn AngularUpdating the component\nReveal Answer\n\n[chevron\\_left](https://angular.dev/tutorials/learn-angular/1-components-in-angular) [chevron\\_right](https://angular.dev/tutorials/learn-angular/3-composing-components)\n\nReveal Answer\n\nIn Angular, the component's logic and behavior are defined in the component's TypeScript class.\n\nNote: Learn more about [showing dynamic text in the essentials guide](https://angular.dev/essentials/templates#showing-dynamic-text).\n\nIn this activity, you'll learn how to update the component class and how to use [interpolation](https://angular.dev/guide/templates/binding#render-dynamic-text-with-text-interpolation).\n\n* * *\n\n1. ### [Add a property called `city`](https://angular.dev/tutorials/learn-angular/2-updating-the-component-class\\#add-a-property-called-city)\n\n\nUpdate the component class by adding a property called `city` to the `AppComponent` class.\n\n\n\n```\n         export class AppComponent {  city = 'San Francisco';}\n\n```\n\ncheck\n\nThe `city` property is of type `string` but you can omit the type because of [type inference in TypeScript](https://www.typescriptlang.org/docs/handbook/type-inference.html). The `city` property can be used in the `AppComponent` class and can be referenced in the component template.\n\n\n\nTo use a class property in a template, you have to use the `{{ }}` syntax.\n\n2. ### [Update the component template](https://angular.dev/tutorials/learn-angular/2-updating-the-component-class\\#update-the-component-template)\n\n\nUpdate the `template` property to match the following HTML:\n\n\n\n```\n         template: `Hello {{ city }}`,\n\n```\n\ncheck\n\nThis is an example of interpolation and is a part of Angular template syntax. It enables you to do much more than put dynamic text in a template. You can also use this syntax to call functions, write expressions and more.\n\n3. ### [More practice with interpolation](https://angular.dev/tutorials/learn-angular/2-updating-the-component-class\\#more-practice-with-interpolation)\n\n\nTry this - add another set of `{{ }}` with the contents being `1 + 1`:\n\n\n\n```\n         template: `Hello {{ city }}, {{ 1 + 1 }}`,\n\n```\n\ncheck\n\nAngular evaluates the contents of the `{{ }}` and renders the output in the template.\n\n\nThis is just the beginning of what's possible with Angular templates, keep on learning to find out more.\n\napp/app.component.ts\n\nadd\n\nlaunchdownload\n\n99\n\n1\n\n2\n\n3\n\n4\n\n5\n\n6\n\n7\n\n8\n\n9\n\n10\n\n\u203a\n\nimport{Component}from'@angular/core';\n\n@Component({\n\nselector:'app-root',\n\ntemplate:\\`\n\nHello\n\n\\`,\n\n})\n\nexportclassAppComponent{}\n\nPreview\n\nBooting\n\nConsole\n\nTerminal\n\nrefresh\n\nStackBlitz",
+  "title": "Updating the component \u2022 Angular",
+  "description": "The web development framework for building modern apps.",
+  "keywords": [
+    "angular",
+    "component",
+    "learn",
+    "https",
+    "template",
+    "class",
+    "dev",
+    "city",
+    "property",
+    "tutorials"
+  ],
+  "sourceURL": "https://angular.dev/tutorials/learn-angular/2-updating-the-component-class"
+}

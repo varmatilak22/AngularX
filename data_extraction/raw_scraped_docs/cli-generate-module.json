@@ -1,0 +1,39 @@
+{
+  "scrapeId": "89771aac-2aaa-4a41-b139-a302b293722b",
+  "sourceURL": "https://angular.dev/cli/generate/module",
+  "statusCode": 200,
+  "data": {
+    "markdown": "Skip to main content\n\nmenu\n\nmenuAPI\n\n- [Roadmap](https://angular.dev/roadmap)\n- [Get involved](https://github.com/angular/angular/blob/main/CONTRIBUTING.md)\n- API Reference\n- CLI Reference\n- Error Encyclopedia\n- Extended Diagnostics\n- [Versioning and releases](https://angular.dev/reference/releases)\n- [Version compatibility](https://angular.dev/reference/versions)\n- [Update guide](https://angular.dev/update-guide)\n- Configurations\n- Migrations\n\n- arrow\\_backCLI Reference\n  - [Overview](https://angular.dev/cli)\n  - [ng add](https://angular.dev/cli/add)\n  - ng analytics\n  - [ng build](https://angular.dev/cli/build)\n  - ng cache\n  - ng completion\n  - [ng config](https://angular.dev/cli/config)\n  - [ng deploy](https://angular.dev/cli/deploy)\n  - [ng e2e](https://angular.dev/cli/e2e)\n  - [ng extract-i18n](https://angular.dev/cli/extract-i18n)\n  - ng generate\n  - [ng lint](https://angular.dev/cli/lint)\n  - [ng new](https://angular.dev/cli/new)\n  - [ng run](https://angular.dev/cli/run)\n  - [ng serve](https://angular.dev/cli/serve)\n  - [ng test](https://angular.dev/cli/test)\n  - [ng update](https://angular.dev/cli/update)\n  - [ng version](https://angular.dev/cli/version)\n\n- arrow\\_backng generate\n  - [Overview](https://angular.dev/cli/generate)\n  - [app-shell](https://angular.dev/cli/generate/app-shell)\n  - [application](https://angular.dev/cli/generate/application)\n  - [class](https://angular.dev/cli/generate/class)\n  - [component](https://angular.dev/cli/generate/component)\n  - [config](https://angular.dev/cli/generate/config)\n  - [directive](https://angular.dev/cli/generate/directive)\n  - [enum](https://angular.dev/cli/generate/enum)\n  - [environments](https://angular.dev/cli/generate/environments)\n  - [guard](https://angular.dev/cli/generate/guard)\n  - [interceptor](https://angular.dev/cli/generate/interceptor)\n  - [interface](https://angular.dev/cli/generate/interface)\n  - [library](https://angular.dev/cli/generate/library)\n  - [module](https://angular.dev/cli/generate/module)\n  - [pipe](https://angular.dev/cli/generate/pipe)\n  - [resolver](https://angular.dev/cli/generate/resolver)\n  - [service-worker](https://angular.dev/cli/generate/service-worker)\n  - [service](https://angular.dev/cli/generate/service)\n  - [web-worker](https://angular.dev/cli/generate/web-worker)\n\nThis site uses cookies from Google to deliver its services and to analyze traffic.\n\n[Learn more](https://policies.google.com/technologies/cookies) Ok, Got it\n\n```\n\nng generate module[name][options]\n```\n\ncheck\n\n```\n\nng generate m[name][options]\n```\n\ncheck\n\nCreates a new, generic NgModule definition in the given project.\n\n## [Arguments](https://angular.dev/cli/generate/module\\#arguments)\n\n`name`\n\nThe name of the NgModule.\n\nValue Type `string`\n\n## [Options](https://angular.dev/cli/generate/module\\#options)\n\n`flat`\n\nCreate the new files at the top level of the current project root.\n\nValue Type `boolean` Default `false`\n\n`module`\n\nAlias `m `\n\nThe declaring NgModule.\n\nValue Type `string`\n\n`project`\n\nThe name of the project.\n\nValue Type `string`\n\n`route`\n\nThe route path for a lazy-loaded module. When supplied, creates a component in the new module, and adds the route to that component in the `Routes` array declared in the module provided in the `--module` option.\n\nValue Type `string`\n\n`routing`\n\nCreate a routing module.\n\nValue Type `boolean` Default `false`\n\n`routing-scope`\n\nThe scope for the new routing module.\n\nValue Type `string` Default `Child`\n\nJump to details",
+    "screenshot": "https://service.firecrawl.dev/storage/v1/object/public/media/screenshot-580f1585-6466-48f4-b205-5136da98e552.png"
+  },
+  "metadata": {
+    "ogDescription": "The web development framework for building modern apps.",
+    "application-name": "Angular",
+    "msapplication-config": "/assets/icons/browserconfig.xml",
+    "ogTitle": "Angular",
+    "ogImage": "https://angular.dev/assets/images/ng-image.jpg",
+    "language": "en",
+    "favicon": "https://angular.dev/assets/icons/favicon-48x48.png",
+    "viewport": "width=device-width, initial-scale=1",
+    "theme-color": "#ffffff",
+    "twitter:url": "https://angular.dev/",
+    "twitter:title": "Angular",
+    "og:type": "website",
+    "ogUrl": "https://angular.dev/",
+    "title": "module • Angular",
+    "twitter:card": "summary_large_image",
+    "twitter:description": "The web development framework for building modern apps.",
+    "description": "The web development framework for building modern apps.",
+    "apple-mobile-web-app-title": "Angular",
+    "og:url": "https://angular.dev/",
+    "og:description": "The web development framework for building modern apps.",
+    "twitter:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "og:title": "Angular",
+    "og:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "msapplication-TileColor": "#e90464",
+    "scrapeId": "89771aac-2aaa-4a41-b139-a302b293722b",
+    "sourceURL": "https://angular.dev/cli/generate/module",
+    "url": "https://angular.dev/cli/generate/module",
+    "statusCode": 200
+  }
+}

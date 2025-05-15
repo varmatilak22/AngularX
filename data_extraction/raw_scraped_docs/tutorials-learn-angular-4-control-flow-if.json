@@ -1,0 +1,39 @@
+{
+  "scrapeId": "5674a309-e782-4024-8cf8-708dc50042fe",
+  "sourceURL": "https://angular.dev/tutorials/learn-angular/4-control-flow-if",
+  "statusCode": 200,
+  "data": {
+    "markdown": "Skip to main content\n\nmenu\n\nThis site uses cookies from Google to deliver its services and to analyze traffic.\n\n[Learn more](https://policies.google.com/technologies/cookies) Ok, Got it\n\nunfold\\_more\nLearn AngularControl flow in components - @if\nReveal Answer\n\n[chevron\\_left](https://angular.dev/tutorials/learn-angular/3-composing-components) [chevron\\_right](https://angular.dev/tutorials/learn-angular/5-control-flow-for)\n\nReveal Answer\n\nunfold\\_more\nLearn AngularControl flow in components - @if\nReveal Answer\n\n[chevron\\_left](https://angular.dev/tutorials/learn-angular/3-composing-components) [chevron\\_right](https://angular.dev/tutorials/learn-angular/5-control-flow-for)\n\nReveal Answer\n\nDeciding what to display on the screen for a user is a common task in application development. Many times, the decision is made programmatically using conditions.\n\nTo express conditional displays in templates, Angular uses the `@if` template syntax.\n\nNote: Learn more about [control flow in the essentials guide](https://angular.dev/essentials/templates#control-flow-with-if-and-for).\n\nIn this activity, you'll learn how to use conditionals in templates.\n\n* * *\n\nThe syntax that enables the conditional display of elements in a template is `@if`.\n\nHere's an example of how to use the `@if` syntax in a component:\n\n```\n      @Component({  ...  template: `    @if (isLoggedIn) {      <p>Welcome back, Friend!</p>    }  `,})class AppComponent {  isLoggedIn = true;}\n\n```\n\ncheck\n\nTwo things to take note of:\n\n- There is an `@` prefix for the `if` because it is a special type of syntax called [Angular template syntax](https://angular.dev/guide/templates)\n- For applications using v16 and older please refer to the [Angular documentation for NgIf](https://angular.dev/guide/directives/structural-directives) for more information.\n\n1. ### [Create a property called `isServerRunning`](https://angular.dev/tutorials/learn-angular/4-control-flow-if\\#create-a-property-called-isserverrunning)\n\n\nIn the `AppComponent` class, add a `boolean` property called `isServerRunning`, set the initial value to `true`.\n\n2. ### [Use `@if` in the template](https://angular.dev/tutorials/learn-angular/4-control-flow-if\\#use-if-in-the-template)\n\n\nUpdate the template to display the message `Yes, the server is running` if the value of `isServerRunning` is `true`.\n\n3. ### [Use `@else` in the template](https://angular.dev/tutorials/learn-angular/4-control-flow-if\\#use-else-in-the-template)\n\n\nNow Angular supports native template syntax for defining the else case with the `@else` syntax. Update the template to display the message `No, the server is not running` as the else case.\n\nHere's an example:\n\n\n\n```\n         template: `  @if (isServerRunning) { ... }  @else { ... }`;\n\n```\n\ncheck\n\nAdd your code to fill in the missing markup.\n\n\nThis type of functionality is called conditional control flow. Next you'll learn how to repeat items in a template.\n\napp/app.component.ts\n\nadd\n\nlaunchdownload\n\n99\n\n1\n\n2\n\n3\n\n4\n\n5\n\n6\n\n7\n\n8\n\n9\n\n10\n\n11\n\n12\n\n›\n\nimport{Component}from'@angular/core';\n\n@Component({\n\nselector:'app-root',\n\ntemplate:\\`\n\n<span>Yes, the server is running</span>\n\n\\`,\n\n})\n\nexportclassAppComponent{\n\n// add the boolean property here\n\n}\n\nPreview\n\nBooting\n\nConsole\n\nTerminal\n\nrefresh\n\nStackBlitz",
+    "screenshot": "https://service.firecrawl.dev/storage/v1/object/public/media/screenshot-c1f5c515-47f6-4613-81b6-637472755768.png"
+  },
+  "metadata": {
+    "application-name": "Angular",
+    "og:title": "Angular",
+    "apple-mobile-web-app-title": "Angular",
+    "twitter:card": "summary_large_image",
+    "twitter:description": "The web development framework for building modern apps.",
+    "msapplication-TileColor": "#e90464",
+    "twitter:title": "Angular",
+    "twitter:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "language": "en",
+    "viewport": "width=device-width, initial-scale=1",
+    "twitter:url": "https://angular.dev/",
+    "description": "The web development framework for building modern apps.",
+    "ogDescription": "The web development framework for building modern apps.",
+    "ogTitle": "Angular",
+    "og:description": "The web development framework for building modern apps.",
+    "theme-color": "#ffffff",
+    "title": "Control flow in components - @if • Angular",
+    "og:url": "https://angular.dev/",
+    "ogUrl": "https://angular.dev/",
+    "ogImage": "https://angular.dev/assets/images/ng-image.jpg",
+    "og:type": "website",
+    "og:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "msapplication-config": "/assets/icons/browserconfig.xml",
+    "favicon": "https://angular.dev/assets/icons/favicon-48x48.png",
+    "scrapeId": "5674a309-e782-4024-8cf8-708dc50042fe",
+    "sourceURL": "https://angular.dev/tutorials/learn-angular/4-control-flow-if",
+    "url": "https://angular.dev/tutorials/learn-angular/4-control-flow-if",
+    "statusCode": 200
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "scrapeId": "ccdf03de-f384-4139-bb4f-7fe26fdbcc46",
+  "sourceURL": "https://angular.dev/tutorials/learn-angular/20-inject-based-di",
+  "statusCode": 200,
+  "data": {
+    "markdown": "Skip to main content\n\nmenu\n\nThis site uses cookies from Google to deliver its services and to analyze traffic.\n\n[Learn more](https://policies.google.com/technologies/cookies) Ok, Got it\n\nunfold\\_more\nLearn AngularInject-based dependency injection\nReveal Answer\n\n[chevron\\_left](https://angular.dev/tutorials/learn-angular/19-creating-an-injectable-service) [chevron\\_right](https://angular.dev/tutorials/learn-angular/21-constructor-based-di)\n\nReveal Answer\n\nunfold\\_more\nLearn AngularInject-based dependency injection\nReveal Answer\n\n[chevron\\_left](https://angular.dev/tutorials/learn-angular/19-creating-an-injectable-service) [chevron\\_right](https://angular.dev/tutorials/learn-angular/21-constructor-based-di)\n\nReveal Answer\n\nCreating an injectable service is the first part of the dependency injection (DI) system in Angular. How do you inject a service into a component? Angular has a convenient function called `inject()` that can be used in the proper context.\n\n**NOTE:** Injection contexts are beyond the scope of this tutorial, but you can learn more in the [dependency injection (DI) essentials guide](https://angular.dev/essentials/dependency-injection) and [DI context guide](https://angular.dev/guide/di/dependency-injection-context).\n\nIn this activity, you'll learn how to inject a service and use it in a component.\n\n* * *\n\nIt is often helpful to initialize class properties with values provided by the DI system. Here's an example:\n\n```\n      @Component({...})class PetCareDashboardComponent {    petRosterService = inject(PetRosterService);}\n\n```\n\ncheck\n\n1. ### [Inject the `CarService`](https://angular.dev/tutorials/learn-angular/20-inject-based-di\\#inject-the-carservice)\n\n\nIn `app.component.ts`, using the `inject()` function inject the `CarService` and assign it to a property called `carService`\n\nNOTE: Notice the difference between the property `carService` and the class `CarService`.\n\n2. ### [Use the `carService` instance](https://angular.dev/tutorials/learn-angular/20-inject-based-di\\#use-the-carservice-instance)\n\n\nCalling `inject(CarService)` gave you an instance of the `CarService` that you can use in your application, stored in the `carService` property.\n\nIn the `constructor` function of the `AppComponent`, add the following implementation:\n\n\n\n```\n         constructor() {    this.display = this.carService.getCars().join(' ⭐️ ');}\n\n```\n\ncheck\n\n3. ### [Update the `AppComponent` template](https://angular.dev/tutorials/learn-angular/20-inject-based-di\\#update-the-appcomponent-template)\n\n\nUpdate the component template in `app.component.ts` with the following code:\n\n\n\n```\n         template: `<p>Car Listing: {{ display }}</p>`,\n\n```\n\ncheck\n\n\nYou've just injected your first service into a component - fantastic effort. Before you finish this section on DI, you'll learn an alternative syntax to inject resources into your components.\n\napp/car.service.ts editdelete\n\napp/app.component.ts\n\nadd\n\nlaunchdownload\n\n99\n\n1\n\n2\n\n3\n\n4\n\n5\n\n6\n\n7\n\n8\n\n9\n\n10\n\n11\n\n12\n\n13\n\n14\n\n15\n\n16\n\n17\n\n›\n\n⌄\n\n⌄\n\n⌄\n\n⌄\n\nimport{Injectable}from'@angular/core';\n\n@Injectable({\n\nprovidedIn:'root',\n\n})\n\nexportclassCarService{\n\ncars=\\['Sunflower GT','Flexus Sport','Sprout Mach One'\\];\n\ngetCars():string\\[\\]{\n\nreturnthis.cars;\n\n}\n\ngetCar(id:number){\n\nreturnthis.cars\\[id\\];\n\n}\n\n}\n\nPreview\n\nBooting\n\nConsole\n\nTerminal\n\nrefresh\n\nStackBlitz",
+    "screenshot": "https://service.firecrawl.dev/storage/v1/object/public/media/screenshot-8bf673b6-4403-40fa-be23-8ded0f9ceb57.png"
+  },
+  "metadata": {
+    "twitter:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "description": "The web development framework for building modern apps.",
+    "application-name": "Angular",
+    "twitter:url": "https://angular.dev/",
+    "og:type": "website",
+    "ogTitle": "Angular",
+    "ogUrl": "https://angular.dev/",
+    "msapplication-TileColor": "#e90464",
+    "og:url": "https://angular.dev/",
+    "language": "en",
+    "og:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "og:title": "Angular",
+    "ogDescription": "The web development framework for building modern apps.",
+    "title": "Inject-based dependency injection • Angular",
+    "og:description": "The web development framework for building modern apps.",
+    "twitter:card": "summary_large_image",
+    "favicon": "https://angular.dev/assets/icons/favicon-48x48.png",
+    "apple-mobile-web-app-title": "Angular",
+    "theme-color": "#ffffff",
+    "twitter:title": "Angular",
+    "twitter:description": "The web development framework for building modern apps.",
+    "msapplication-config": "/assets/icons/browserconfig.xml",
+    "viewport": "width=device-width, initial-scale=1",
+    "ogImage": "https://angular.dev/assets/images/ng-image.jpg",
+    "scrapeId": "ccdf03de-f384-4139-bb4f-7fe26fdbcc46",
+    "sourceURL": "https://angular.dev/tutorials/learn-angular/20-inject-based-di",
+    "url": "https://angular.dev/tutorials/learn-angular/20-inject-based-di",
+    "statusCode": 200
+  }
+}

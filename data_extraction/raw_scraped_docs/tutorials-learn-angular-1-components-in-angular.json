@@ -1,0 +1,39 @@
+{
+  "scrapeId": "1024bea1-c22f-4e59-893b-e43a9802cf88",
+  "sourceURL": "https://angular.dev/tutorials/learn-angular/1-components-in-angular",
+  "statusCode": 200,
+  "data": {
+    "markdown": "Skip to main content\n\nmenu\n\nThis site uses cookies from Google to deliver its services and to analyze traffic.\n\n[Learn more](https://policies.google.com/technologies/cookies) Ok, Got it\n\nunfold\\_more\nLearn AngularAnatomy of a Component\nReveal Answer\n\nchevron\\_left [chevron\\_right](https://angular.dev/tutorials/learn-angular/2-updating-the-component-class)\n\nReveal Answer\n\nunfold\\_more\nLearn AngularAnatomy of a Component\nReveal Answer\n\nchevron\\_left [chevron\\_right](https://angular.dev/tutorials/learn-angular/2-updating-the-component-class)\n\nReveal Answer\n\nComponents are the foundational building blocks for any Angular application. Each component has three parts:\n\n- TypeScript class\n- HTML template\n- CSS styles\n\nNote: Learn more about [components in the essentials guide](https://angular.dev/essentials/components).\n\nIn this activity, you'll learn how to update the template and styles of a component.\n\n* * *\n\nThis is a great opportunity for you to get started with Angular.\n\n1. ### [Update the component template](https://angular.dev/tutorials/learn-angular/1-components-in-angular\\#update-the-component-template)\n\n\nUpdate the `template` property to read `Hello Universe`\n\n\n\n```\n         template: `  Hello Universe`,\n\n```\n\ncheck\n\nWhen you changed the HTML template, the preview updated with your message. Let's go one step further: change the color of the text.\n\n2. ### [Update the component styles](https://angular.dev/tutorials/learn-angular/1-components-in-angular\\#update-the-component-styles)\n\n\nUpdate the styles value and change the `color` property from `blue` to `#a144eb`.\n\n\n\n```\n         styles: `  :host {    color: #a144eb;  }`,\n\n```\n\ncheck\n\nWhen you check the preview, you'll find that the text color will be changed.\n\n\nIn Angular, you can use all the browser supported CSS and HTML that's available. If you'd like, you can store your template and styles in separate files.\n\napp/app.component.ts\n\nadd\n\nlaunchdownload\n\n99\n\n1\n\n2\n\n3\n\n4\n\n5\n\n6\n\n7\n\n8\n\n9\n\n10\n\n11\n\n12\n\n13\n\n14\n\n15\n\n›\n\nimport{Component}from'@angular/core';\n\n@Component({\n\nselector:'app-root',\n\ntemplate:\\`\n\nHello\n\n\\`,\n\nstyles:\\`\n\n:host {\n\ncolor: blue;\n\n}\n\n\\`,\n\n})\n\nexportclassAppComponent{}\n\nPreview\n\nBooting\n\nConsole\n\nTerminal\n\nrefresh\n\nStackBlitz[iframe](cid:frame-4BD85818B71DF07857E57CA6B5DADB49@mhtml.blink)",
+    "screenshot": "https://service.firecrawl.dev/storage/v1/object/public/media/screenshot-2cc6c577-06f8-45f1-b5dd-4a979a4325d1.png"
+  },
+  "metadata": {
+    "ogDescription": "The web development framework for building modern apps.",
+    "og:type": "website",
+    "ogTitle": "Angular",
+    "language": "en",
+    "og:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "ogImage": "https://angular.dev/assets/images/ng-image.jpg",
+    "application-name": "Angular",
+    "twitter:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "og:url": "https://angular.dev/",
+    "twitter:url": "https://angular.dev/",
+    "msapplication-TileColor": "#e90464",
+    "apple-mobile-web-app-title": "Angular",
+    "twitter:description": "The web development framework for building modern apps.",
+    "viewport": "width=device-width, initial-scale=1",
+    "description": "The web development framework for building modern apps.",
+    "favicon": "https://angular.dev/assets/icons/favicon-48x48.png",
+    "twitter:card": "summary_large_image",
+    "msapplication-config": "/assets/icons/browserconfig.xml",
+    "og:description": "The web development framework for building modern apps.",
+    "ogUrl": "https://angular.dev/",
+    "theme-color": "#ffffff",
+    "twitter:title": "Angular",
+    "og:title": "Angular",
+    "title": "Anatomy of a Component • Angular",
+    "scrapeId": "1024bea1-c22f-4e59-893b-e43a9802cf88",
+    "sourceURL": "https://angular.dev/tutorials/learn-angular/1-components-in-angular",
+    "url": "https://angular.dev/tutorials/learn-angular/1-components-in-angular",
+    "statusCode": 200
+  }
+}

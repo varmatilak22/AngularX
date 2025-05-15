@@ -1,0 +1,39 @@
+{
+  "scrapeId": "1398cb1d-70e1-4952-aa87-c15fc45aea19",
+  "sourceURL": "https://angular.dev/cli/completion/script",
+  "statusCode": 200,
+  "data": {
+    "markdown": "Skip to main content\n\nmenu\n\nmenuAPI\n\n- [Roadmap](https://angular.dev/roadmap)\n- [Get involved](https://github.com/angular/angular/blob/main/CONTRIBUTING.md)\n- API Reference\n- CLI Reference\n- Error Encyclopedia\n- Extended Diagnostics\n- [Versioning and releases](https://angular.dev/reference/releases)\n- [Version compatibility](https://angular.dev/reference/versions)\n- [Update guide](https://angular.dev/update-guide)\n- Configurations\n- Migrations\n\n- arrow\\_backCLI Reference\n  - [Overview](https://angular.dev/cli)\n  - [ng add](https://angular.dev/cli/add)\n  - ng analytics\n  - [ng build](https://angular.dev/cli/build)\n  - ng cache\n  - ng completion\n  - [ng config](https://angular.dev/cli/config)\n  - [ng deploy](https://angular.dev/cli/deploy)\n  - [ng e2e](https://angular.dev/cli/e2e)\n  - [ng extract-i18n](https://angular.dev/cli/extract-i18n)\n  - ng generate\n  - [ng lint](https://angular.dev/cli/lint)\n  - [ng new](https://angular.dev/cli/new)\n  - [ng run](https://angular.dev/cli/run)\n  - [ng serve](https://angular.dev/cli/serve)\n  - [ng test](https://angular.dev/cli/test)\n  - [ng update](https://angular.dev/cli/update)\n  - [ng version](https://angular.dev/cli/version)\n\n- arrow\\_backng completion\n  - [Overview](https://angular.dev/cli/completion)\n  - [script](https://angular.dev/cli/completion/script)\n\nThis site uses cookies from Google to deliver its services and to analyze traffic.\n\n[Learn more](https://policies.google.com/technologies/cookies) Ok, Got it\n\n```\n\nng completion script\n```\n\ncheck\n\nGenerate a bash and zsh real-time type-ahead autocompletion script.\n\nJump to details",
+    "screenshot": "https://service.firecrawl.dev/storage/v1/object/public/media/screenshot-0b349468-62f3-444c-ac66-594c934bc549.png"
+  },
+  "metadata": {
+    "twitter:title": "Angular",
+    "twitter:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "og:type": "website",
+    "og:title": "Angular",
+    "application-name": "Angular",
+    "ogTitle": "Angular",
+    "msapplication-config": "/assets/icons/browserconfig.xml",
+    "title": "script • Angular",
+    "ogImage": "https://angular.dev/assets/images/ng-image.jpg",
+    "twitter:card": "summary_large_image",
+    "viewport": "width=device-width, initial-scale=1",
+    "ogUrl": "https://angular.dev/",
+    "description": "The web development framework for building modern apps.",
+    "og:description": "The web development framework for building modern apps.",
+    "apple-mobile-web-app-title": "Angular",
+    "twitter:url": "https://angular.dev/",
+    "theme-color": "#ffffff",
+    "og:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "language": "en",
+    "og:url": "https://angular.dev/",
+    "favicon": "https://angular.dev/assets/icons/favicon-48x48.png",
+    "ogDescription": "The web development framework for building modern apps.",
+    "twitter:description": "The web development framework for building modern apps.",
+    "msapplication-TileColor": "#e90464",
+    "scrapeId": "1398cb1d-70e1-4952-aa87-c15fc45aea19",
+    "sourceURL": "https://angular.dev/cli/completion/script",
+    "url": "https://angular.dev/cli/completion/script",
+    "statusCode": 200
+  }
+}

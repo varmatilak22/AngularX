@@ -1,0 +1,39 @@
+{
+  "scrapeId": "b43d733a-be87-42e4-8772-db9cc1e03801",
+  "sourceURL": "https://angular.dev/extended-diagnostics/NG8113",
+  "statusCode": 200,
+  "data": {
+    "markdown": "Skip to main content\n\nmenu\n\nmenuAPI\n\n- [Roadmap](https://angular.dev/roadmap)\n- [Get involved](https://github.com/angular/angular/blob/main/CONTRIBUTING.md)\n- API Reference\n- CLI Reference\n- Error Encyclopedia\n- Extended Diagnostics\n- [Versioning and releases](https://angular.dev/reference/releases)\n- [Version compatibility](https://angular.dev/reference/versions)\n- [Update guide](https://angular.dev/update-guide)\n- Configurations\n- Migrations\n\n- arrow\\_backExtended Diagnostics\n  - [Overview](https://angular.dev/extended-diagnostics)\n  - [NG8101: Invalid Banana-in-Box](https://angular.dev/extended-diagnostics/NG8101)\n  - [NG8102: Nullish coalescing not nullable](https://angular.dev/extended-diagnostics/NG8102)\n  - [NG8103: Missing control flow directive](https://angular.dev/extended-diagnostics/NG8103)\n  - [NG8104: Text attribute not binding](https://angular.dev/extended-diagnostics/NG8104)\n  - [NG8105: Missing \\`let\\` keyword in an \\`\\*ngFor\\` expression](https://angular.dev/extended-diagnostics/NG8105)\n  - [NG8106: Suffix not supported](https://angular.dev/extended-diagnostics/NG8106)\n  - [NG8107: Optional chain not nullable](https://angular.dev/extended-diagnostics/NG8107)\n  - [NG8108: \\`ngSkipHydration\\` should be a static attribute](https://angular.dev/extended-diagnostics/NG8108)\n  - [NG8109: Signals must be invoked in template interpolations.](https://angular.dev/extended-diagnostics/NG8109)\n  - [NG8111: Functions should be invoked in event bindings.](https://angular.dev/extended-diagnostics/NG8111)\n  - [NG8113: Unused Standalone Imports](https://angular.dev/extended-diagnostics/NG8113)\n\nThis site uses cookies from Google to deliver its services and to analyze traffic.\n\n[Learn more](https://policies.google.com/technologies/cookies) Ok, Got it\n\nThis diagnostic detects cases where the `imports` array of a `@Component` contains symbols that\naren't used within the template.\n\n```\n      @Component({  imports: [UsedDirective, UnusedPipe]})class AwesomeCheckbox {}\n\n```\n\ncheck\n\n## [What's wrong with that?](https://angular.dev/extended-diagnostics/NG8113\\#whats-wrong-with-that)\n\nThe unused imports add unnecessary noise to your code and can increase your compilation time.\n\n## [What should I do instead?](https://angular.dev/extended-diagnostics/NG8113\\#what-should-i-do-instead)\n\nDelete the unused import.\n\n```\n      @Component({  imports: [UsedDirective]})class AwesomeCheckbox {}\n\n```\n\ncheck\n\n## [What if I can't avoid this?](https://angular.dev/extended-diagnostics/NG8113\\#what-if-i-cant-avoid-this)\n\nThis diagnostic can be disabled by editing the project's `tsconfig.json` file:\n\n```\n      {  \"angularCompilerOptions\": {    \"extendedDiagnostics\": {      \"checks\": {        \"unusedStandaloneImports\": \"suppress\"      }    }  }}\n\n```\n\ncheck\n\nSee [extended diagnostic configuration](https://angular.dev/extended-diagnostics/extended-diagnostics#configuration) for more info.",
+    "screenshot": "https://service.firecrawl.dev/storage/v1/object/public/media/screenshot-2156f514-ae79-4751-aafa-c5bd0fb498cb.png"
+  },
+  "metadata": {
+    "twitter:card": "summary_large_image",
+    "twitter:url": "https://angular.dev/",
+    "ogUrl": "https://angular.dev/",
+    "twitter:title": "Angular",
+    "twitter:description": "The web development framework for building modern apps.",
+    "twitter:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "og:type": "website",
+    "viewport": "width=device-width, initial-scale=1",
+    "favicon": "https://angular.dev/assets/icons/favicon-48x48.png",
+    "ogImage": "https://angular.dev/assets/images/ng-image.jpg",
+    "msapplication-config": "/assets/icons/browserconfig.xml",
+    "ogDescription": "The web development framework for building modern apps.",
+    "og:description": "The web development framework for building modern apps.",
+    "og:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "title": "NG8113: Unused Standalone Imports • Angular",
+    "description": "The web development framework for building modern apps.",
+    "ogTitle": "Angular",
+    "apple-mobile-web-app-title": "Angular",
+    "msapplication-TileColor": "#e90464",
+    "theme-color": "#ffffff",
+    "application-name": "Angular",
+    "language": "en",
+    "og:url": "https://angular.dev/",
+    "og:title": "Angular",
+    "scrapeId": "b43d733a-be87-42e4-8772-db9cc1e03801",
+    "sourceURL": "https://angular.dev/extended-diagnostics/NG8113",
+    "url": "https://angular.dev/extended-diagnostics/NG8113",
+    "statusCode": 200
+  }
+}

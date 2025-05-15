@@ -1,0 +1,39 @@
+{
+  "scrapeId": "92bc952f-6b89-442d-b8c3-19a42c612f42",
+  "sourceURL": "https://angular.dev/cli/serve",
+  "statusCode": 200,
+  "data": {
+    "markdown": "Skip to main content\n\nmenu\n\nmenuAPI\n\n- [Roadmap](https://angular.dev/roadmap)\n- [Get involved](https://github.com/angular/angular/blob/main/CONTRIBUTING.md)\n- API Reference\n- CLI Reference\n- Error Encyclopedia\n- Extended Diagnostics\n- [Versioning and releases](https://angular.dev/reference/releases)\n- [Version compatibility](https://angular.dev/reference/versions)\n- [Update guide](https://angular.dev/update-guide)\n- Configurations\n- Migrations\n\n- arrow\\_backCLI Reference\n  - [Overview](https://angular.dev/cli)\n  - [ng add](https://angular.dev/cli/add)\n  - ng analytics\n  - [ng build](https://angular.dev/cli/build)\n  - ng cache\n  - ng completion\n  - [ng config](https://angular.dev/cli/config)\n  - [ng deploy](https://angular.dev/cli/deploy)\n  - [ng e2e](https://angular.dev/cli/e2e)\n  - [ng extract-i18n](https://angular.dev/cli/extract-i18n)\n  - ng generate\n  - [ng lint](https://angular.dev/cli/lint)\n  - [ng new](https://angular.dev/cli/new)\n  - [ng run](https://angular.dev/cli/run)\n  - [ng serve](https://angular.dev/cli/serve)\n  - [ng test](https://angular.dev/cli/test)\n  - [ng update](https://angular.dev/cli/update)\n  - [ng version](https://angular.dev/cli/version)\n\nThis site uses cookies from Google to deliver its services and to analyze traffic.\n\n[Learn more](https://policies.google.com/technologies/cookies) Ok, Got it\n\n```\n\nng serveng [project][options]\n```\n\ncheck\n\n```\n\nng devng [project][options]\n```\n\ncheck\n\n```\n\nng sng [project][options]\n```\n\ncheck\n\nBuilds and serves your application, rebuilding on file changes.\n\n## [Arguments](https://angular.dev/cli/serve\\#arguments)\n\n`project`\n\nThe name of the project to build. Can be an application or a library.\n\nValue Type `string`\n\n## [Options](https://angular.dev/cli/serve\\#options)\n\n`allowed-hosts`\n\nList of hosts that are allowed to access the dev server.\n\nValue Type `array`\n\n`build-target`\n\nA build builder target to serve in the format of `project:target[:configuration]`. You can also pass in more than one configuration name as a comma-separated list. Example: `project:target:production,staging`.\n\nValue Type `string`\n\n`configuration`\n\nAlias `c `\n\nOne or more named builder configurations as a comma-separated list as specified in the \"configurations\" section in angular.json.\nThe builder uses the named configurations to run the given target.\nFor more information, see [https://angular.dev/reference/configs/workspace-config#alternate-build-configurations](https://angular.dev/reference/configs/workspace-config#alternate-build-configurations).\n\nValue Type `string`\n\n`disable-host-check`\n\nDon't verify connected clients are part of allowed hosts.\n\nValue Type `boolean` Default `false`\n\n`force-esbuild`\n\nForce the development server to use the 'browser-esbuild' builder when building.\n\nValue Type `boolean` Default `false`\n\n`headers`\n\nCustom HTTP headers to be added to all responses.\n\nValue Type `array`\n\n`headers`\n\nCustom HTTP headers to be added to all responses.\n\nValue Type `string`\n\n`help`\n\nShows a help message for this command in the console.\n\nValue Type `boolean`\n\n`hmr`\n\nEnable hot module replacement.\n\nValue Type `boolean`\n\n`host`\n\nHost to listen on.\n\nValue Type `string` Default `localhost`\n\n`inspect`\n\nActivate debugging inspector. This option only has an effect when 'SSR' or 'SSG' are enabled.\n\nValue Type `string`\n\n`live-reload`\n\nWhether to reload the page on change, using live-reload.\n\nValue Type `boolean` Default `true`\n\n`open`\n\nAlias `o `\n\nOpens the url in default browser.\n\nValue Type `boolean` Default `false`\n\n`poll`\n\nEnable and define the file watching poll time period in milliseconds.\n\nValue Type `number`\n\n`port`\n\nPort to listen on.\n\nValue Type `number` Default `4200`\n\n`prebundle`\n\nEnable and control the Vite-based development server's prebundling capabilities. To enable prebundling, the Angular CLI cache must also be enabled. This option has no effect when using the 'browser' or other Webpack-based builders.\n\nValue Type `boolean`\n\n`proxy-config`\n\nProxy configuration file. For more information, see [https://angular.dev/tools/cli/serve#proxying-to-a-backend-server](https://angular.dev/tools/cli/serve#proxying-to-a-backend-server).\n\nValue Type `string`\n\n`public-host`\n\nThe URL that the browser client (or live-reload client, if enabled) should use to connect to the development server. Use for a complex dev server setup, such as one with reverse proxies. This option has no effect when using the 'application' or other esbuild-based builders.\n\nValue Type `string`\n\n`serve-path`\n\nThe pathname where the application will be served.\n\nValue Type `string`\n\n`ssl`\n\nServe using HTTPS.\n\nValue Type `boolean` Default `false`\n\n`ssl-cert`\n\nSSL certificate to use for serving HTTPS.\n\nValue Type `string`\n\n`ssl-key`\n\nSSL key to use for serving HTTPS.\n\nValue Type `string`\n\n`verbose`\n\nAdds more details to output logging.\n\nValue Type `boolean`\n\n`watch`\n\nRebuild on change.\n\nValue Type `boolean` Default `true`\n\nJump to details",
+    "screenshot": "https://service.firecrawl.dev/storage/v1/object/public/media/screenshot-4fc8a66c-f1ba-4705-9cc0-561a8db4720b.png"
+  },
+  "metadata": {
+    "ogDescription": "The web development framework for building modern apps.",
+    "theme-color": "#ffffff",
+    "favicon": "https://angular.dev/assets/icons/favicon-48x48.png",
+    "twitter:description": "The web development framework for building modern apps.",
+    "og:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "apple-mobile-web-app-title": "Angular",
+    "msapplication-config": "/assets/icons/browserconfig.xml",
+    "og:url": "https://angular.dev/",
+    "twitter:card": "summary_large_image",
+    "og:type": "website",
+    "twitter:url": "https://angular.dev/",
+    "description": "The web development framework for building modern apps.",
+    "ogImage": "https://angular.dev/assets/images/ng-image.jpg",
+    "twitter:title": "Angular",
+    "application-name": "Angular",
+    "ogTitle": "Angular",
+    "ogUrl": "https://angular.dev/",
+    "msapplication-TileColor": "#e90464",
+    "title": "ng serve • Angular",
+    "language": "en",
+    "viewport": "width=device-width, initial-scale=1",
+    "og:description": "The web development framework for building modern apps.",
+    "og:title": "Angular",
+    "twitter:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "scrapeId": "92bc952f-6b89-442d-b8c3-19a42c612f42",
+    "sourceURL": "https://angular.dev/cli/serve",
+    "url": "https://angular.dev/cli/serve",
+    "statusCode": 200
+  }
+}

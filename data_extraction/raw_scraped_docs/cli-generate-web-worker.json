@@ -1,0 +1,39 @@
+{
+  "scrapeId": "82a0ace6-a72d-48ac-832b-70b3cfab32a8",
+  "sourceURL": "https://angular.dev/cli/generate/web-worker",
+  "statusCode": 200,
+  "data": {
+    "markdown": "Skip to main content\n\nmenu\n\nmenuAPI\n\n- [Roadmap](https://angular.dev/roadmap)\n- [Get involved](https://github.com/angular/angular/blob/main/CONTRIBUTING.md)\n- API Reference\n- CLI Reference\n- Error Encyclopedia\n- Extended Diagnostics\n- [Versioning and releases](https://angular.dev/reference/releases)\n- [Version compatibility](https://angular.dev/reference/versions)\n- [Update guide](https://angular.dev/update-guide)\n- Configurations\n- Migrations\n\n- arrow\\_backCLI Reference\n  - [Overview](https://angular.dev/cli)\n  - [ng add](https://angular.dev/cli/add)\n  - ng analytics\n  - [ng build](https://angular.dev/cli/build)\n  - ng cache\n  - ng completion\n  - [ng config](https://angular.dev/cli/config)\n  - [ng deploy](https://angular.dev/cli/deploy)\n  - [ng e2e](https://angular.dev/cli/e2e)\n  - [ng extract-i18n](https://angular.dev/cli/extract-i18n)\n  - ng generate\n  - [ng lint](https://angular.dev/cli/lint)\n  - [ng new](https://angular.dev/cli/new)\n  - [ng run](https://angular.dev/cli/run)\n  - [ng serve](https://angular.dev/cli/serve)\n  - [ng test](https://angular.dev/cli/test)\n  - [ng update](https://angular.dev/cli/update)\n  - [ng version](https://angular.dev/cli/version)\n\n- arrow\\_backng generate\n  - [Overview](https://angular.dev/cli/generate)\n  - [app-shell](https://angular.dev/cli/generate/app-shell)\n  - [application](https://angular.dev/cli/generate/application)\n  - [class](https://angular.dev/cli/generate/class)\n  - [component](https://angular.dev/cli/generate/component)\n  - [config](https://angular.dev/cli/generate/config)\n  - [directive](https://angular.dev/cli/generate/directive)\n  - [enum](https://angular.dev/cli/generate/enum)\n  - [environments](https://angular.dev/cli/generate/environments)\n  - [guard](https://angular.dev/cli/generate/guard)\n  - [interceptor](https://angular.dev/cli/generate/interceptor)\n  - [interface](https://angular.dev/cli/generate/interface)\n  - [library](https://angular.dev/cli/generate/library)\n  - [module](https://angular.dev/cli/generate/module)\n  - [pipe](https://angular.dev/cli/generate/pipe)\n  - [resolver](https://angular.dev/cli/generate/resolver)\n  - [service-worker](https://angular.dev/cli/generate/service-worker)\n  - [service](https://angular.dev/cli/generate/service)\n  - [web-worker](https://angular.dev/cli/generate/web-worker)\n\nThis site uses cookies from Google to deliver its services and to analyze traffic.\n\n[Learn more](https://policies.google.com/technologies/cookies) Ok, Got it\n\n```\n\nng generate web-worker[name][options]\n```\n\ncheck\n\nCreates a new web worker in your project. Web workers allow you to run JavaScript code in the background, improving the performance and responsiveness of your application by offloading computationally intensive tasks. This schematic generates the necessary files for a new web worker and provides an optional code snippet to demonstrate its usage.\n\n## [Arguments](https://angular.dev/cli/generate/web-worker\\#arguments)\n\n`name`\n\nThe name for the new web worker. This will be used to create the worker file (e.g., `my-worker.worker.ts`).\n\nValue Type `string`\n\n## [Options](https://angular.dev/cli/generate/web-worker\\#options)\n\n`project`\n\nThe name of the project where the web worker should be created. If not specified, the CLI will determine the project from the current directory.\n\nValue Type `string`\n\n`snippet`\n\nGenerate a code snippet that demonstrates how to create and use the new web worker.\n\nValue Type `boolean` Default `true`\n\nJump to details",
+    "screenshot": "https://service.firecrawl.dev/storage/v1/object/public/media/screenshot-d6a53efa-d585-4b73-9381-c652d1b84a70.png"
+  },
+  "metadata": {
+    "application-name": "Angular",
+    "theme-color": "#ffffff",
+    "og:url": "https://angular.dev/",
+    "og:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "description": "The web development framework for building modern apps.",
+    "og:title": "Angular",
+    "twitter:card": "summary_large_image",
+    "language": "en",
+    "ogTitle": "Angular",
+    "ogImage": "https://angular.dev/assets/images/ng-image.jpg",
+    "twitter:url": "https://angular.dev/",
+    "title": "web-worker • Angular",
+    "ogDescription": "The web development framework for building modern apps.",
+    "apple-mobile-web-app-title": "Angular",
+    "ogUrl": "https://angular.dev/",
+    "twitter:description": "The web development framework for building modern apps.",
+    "og:type": "website",
+    "twitter:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "favicon": "https://angular.dev/assets/icons/favicon-48x48.png",
+    "msapplication-TileColor": "#e90464",
+    "twitter:title": "Angular",
+    "viewport": "width=device-width, initial-scale=1",
+    "msapplication-config": "/assets/icons/browserconfig.xml",
+    "og:description": "The web development framework for building modern apps.",
+    "scrapeId": "82a0ace6-a72d-48ac-832b-70b3cfab32a8",
+    "sourceURL": "https://angular.dev/cli/generate/web-worker",
+    "url": "https://angular.dev/cli/generate/web-worker",
+    "statusCode": 200
+  }
+}

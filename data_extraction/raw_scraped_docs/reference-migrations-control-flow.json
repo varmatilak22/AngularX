@@ -1,0 +1,39 @@
+{
+  "scrapeId": "8e72217f-345b-4640-8842-66b17e72361a",
+  "sourceURL": "https://angular.dev/reference/migrations/control-flow",
+  "statusCode": 200,
+  "data": {
+    "markdown": "Skip to main content\n\nmenu\n\nmenuAPI\n\n- [Roadmap](https://angular.dev/roadmap)\n- [Get involved](https://github.com/angular/angular/blob/main/CONTRIBUTING.md)\n- API Reference\n- CLI Reference\n- Error Encyclopedia\n- Extended Diagnostics\n- [Versioning and releases](https://angular.dev/reference/releases)\n- [Version compatibility](https://angular.dev/reference/versions)\n- [Update guide](https://angular.dev/update-guide)\n- Configurations\n- Migrations\n\n- arrow\\_backMigrations\n  - [Overview](https://angular.dev/reference/migrations)\n  - [Standalone](https://angular.dev/reference/migrations/standalone)\n  - [Control Flow Syntax](https://angular.dev/reference/migrations/control-flow)\n  - [inject() Function](https://angular.dev/reference/migrations/inject-function)\n  - [Lazy-loaded routes](https://angular.dev/reference/migrations/route-lazy-loading)\n  - [Signal inputs](https://angular.dev/reference/migrations/signal-inputs)\n  - [Outputs](https://angular.dev/reference/migrations/outputs)\n  - [Signal queries](https://angular.dev/reference/migrations/signal-queries)\n  - [Clean up unused imports](https://angular.dev/reference/migrations/cleanup-unused-imports)\n  - [Self-closing tags](https://angular.dev/reference/migrations/self-closing-tags)\n\nThis site uses cookies from Google to deliver its services and to analyze traffic.\n\n[Learn more](https://policies.google.com/technologies/cookies) Ok, Got it\n\n[Control flow syntax](https://angular.dev/reference/migrations/guide/templates/control-flow) is available from Angular v17. The new syntax is baked into the template, so you don't need to import `CommonModule` anymore.\n\nThis schematic migrates all existing code in your application to use new Control Flow Syntax.\n\nRun the schematic using the following command:\n\n```\n      ng generate @angular/core:control-flow\n\n```\n\ncheck",
+    "screenshot": "https://service.firecrawl.dev/storage/v1/object/public/media/screenshot-86865348-04ed-4c2b-87df-38eca2727b13.png"
+  },
+  "metadata": {
+    "twitter:card": "summary_large_image",
+    "twitter:description": "The web development framework for building modern apps.",
+    "twitter:title": "Angular",
+    "ogDescription": "The web development framework for building modern apps.",
+    "og:title": "Angular",
+    "og:url": "https://angular.dev/",
+    "twitter:url": "https://angular.dev/",
+    "twitter:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "apple-mobile-web-app-title": "Angular",
+    "title": "Control Flow Syntax • Angular",
+    "favicon": "https://angular.dev/assets/icons/favicon-48x48.png",
+    "application-name": "Angular",
+    "msapplication-config": "/assets/icons/browserconfig.xml",
+    "ogTitle": "Angular",
+    "theme-color": "#ffffff",
+    "ogImage": "https://angular.dev/assets/images/ng-image.jpg",
+    "og:type": "website",
+    "og:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "description": "The web development framework for building modern apps.",
+    "msapplication-TileColor": "#e90464",
+    "og:description": "The web development framework for building modern apps.",
+    "viewport": "width=device-width, initial-scale=1",
+    "ogUrl": "https://angular.dev/",
+    "language": "en",
+    "scrapeId": "8e72217f-345b-4640-8842-66b17e72361a",
+    "sourceURL": "https://angular.dev/reference/migrations/control-flow",
+    "url": "https://angular.dev/reference/migrations/control-flow",
+    "statusCode": 200
+  }
+}

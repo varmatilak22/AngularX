@@ -1,0 +1,39 @@
+{
+  "scrapeId": "bd61d970-157a-4b2f-8c6d-8abd1fc40046",
+  "sourceURL": "https://angular.dev/cli/cache/info",
+  "statusCode": 200,
+  "data": {
+    "markdown": "Skip to main content\n\nmenu\n\nmenuAPI\n\n- [Roadmap](https://angular.dev/roadmap)\n- [Get involved](https://github.com/angular/angular/blob/main/CONTRIBUTING.md)\n- API Reference\n- CLI Reference\n- Error Encyclopedia\n- Extended Diagnostics\n- [Versioning and releases](https://angular.dev/reference/releases)\n- [Version compatibility](https://angular.dev/reference/versions)\n- [Update guide](https://angular.dev/update-guide)\n- Configurations\n- Migrations\n\n- arrow\\_backCLI Reference\n  - [Overview](https://angular.dev/cli)\n  - [ng add](https://angular.dev/cli/add)\n  - ng analytics\n  - [ng build](https://angular.dev/cli/build)\n  - ng cache\n  - ng completion\n  - [ng config](https://angular.dev/cli/config)\n  - [ng deploy](https://angular.dev/cli/deploy)\n  - [ng e2e](https://angular.dev/cli/e2e)\n  - [ng extract-i18n](https://angular.dev/cli/extract-i18n)\n  - ng generate\n  - [ng lint](https://angular.dev/cli/lint)\n  - [ng new](https://angular.dev/cli/new)\n  - [ng run](https://angular.dev/cli/run)\n  - [ng serve](https://angular.dev/cli/serve)\n  - [ng test](https://angular.dev/cli/test)\n  - [ng update](https://angular.dev/cli/update)\n  - [ng version](https://angular.dev/cli/version)\n\n- arrow\\_backng cache\n  - [Overview](https://angular.dev/cli/cache)\n  - [clean](https://angular.dev/cli/cache/clean)\n  - [disable](https://angular.dev/cli/cache/disable)\n  - [enable](https://angular.dev/cli/cache/enable)\n  - [info](https://angular.dev/cli/cache/info)\n\nThis site uses cookies from Google to deliver its services and to analyze traffic.\n\n[Learn more](https://policies.google.com/technologies/cookies) Ok, Got it\n\n```\n\nng cache info\n```\n\ncheck\n\nPrints persistent disk cache configuration and statistics in the console.\n\nJump to details",
+    "screenshot": "https://service.firecrawl.dev/storage/v1/object/public/media/screenshot-b8c9463d-7aa7-4ef4-ba00-6ee544086ca5.png"
+  },
+  "metadata": {
+    "language": "en",
+    "twitter:url": "https://angular.dev/",
+    "twitter:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "title": "info • Angular",
+    "application-name": "Angular",
+    "apple-mobile-web-app-title": "Angular",
+    "msapplication-TileColor": "#e90464",
+    "ogImage": "https://angular.dev/assets/images/ng-image.jpg",
+    "description": "The web development framework for building modern apps.",
+    "og:url": "https://angular.dev/",
+    "ogDescription": "The web development framework for building modern apps.",
+    "og:type": "website",
+    "theme-color": "#ffffff",
+    "og:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "favicon": "https://angular.dev/assets/icons/favicon-48x48.png",
+    "ogTitle": "Angular",
+    "msapplication-config": "/assets/icons/browserconfig.xml",
+    "viewport": "width=device-width, initial-scale=1",
+    "og:title": "Angular",
+    "twitter:card": "summary_large_image",
+    "ogUrl": "https://angular.dev/",
+    "og:description": "The web development framework for building modern apps.",
+    "twitter:title": "Angular",
+    "twitter:description": "The web development framework for building modern apps.",
+    "scrapeId": "bd61d970-157a-4b2f-8c6d-8abd1fc40046",
+    "sourceURL": "https://angular.dev/cli/cache/info",
+    "url": "https://angular.dev/cli/cache/info",
+    "statusCode": 200
+  }
+}

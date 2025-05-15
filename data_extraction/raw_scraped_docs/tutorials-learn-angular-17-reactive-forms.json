@@ -1,0 +1,39 @@
+{
+  "scrapeId": "05e57ab8-b42b-4805-80e8-fc990f998ff5",
+  "sourceURL": "https://angular.dev/tutorials/learn-angular/17-reactive-forms",
+  "statusCode": 200,
+  "data": {
+    "markdown": "Skip to main content\n\nmenu\n\nThis site uses cookies from Google to deliver its services and to analyze traffic.\n\n[Learn more](https://policies.google.com/technologies/cookies) Ok, Got it\n\nunfold\\_more\nLearn AngularReactive forms\n\n[chevron\\_left](https://angular.dev/tutorials/learn-angular/16-form-control-values) [chevron\\_right](https://angular.dev/tutorials/learn-angular/18-forms-validation)\n\nunfold\\_more\nLearn AngularReactive forms\n\n[chevron\\_left](https://angular.dev/tutorials/learn-angular/16-form-control-values) [chevron\\_right](https://angular.dev/tutorials/learn-angular/18-forms-validation)\n\nWhen you want to manage your forms programmatically instead of relying purely on the template, reactive forms are the answer.\n\nNote: Learn more about [reactive forms in the in-depth guide](https://angular.dev/guide/forms/reactive-forms).\n\nIn this activity, you'll learn how to set up reactive forms.\n\n* * *\n\n1. ### [Import `ReactiveForms` module](https://angular.dev/tutorials/learn-angular/17-reactive-forms\\#import-reactiveforms-module)\n\n\nIn `app.component.ts`, import `ReactiveFormsModule` from `@angular/forms` and add it to the `imports` array of the component.\n\n\n\n```\n         import { ReactiveFormsModule } from '@angular/forms';@Component({  selector: 'app-root',  template: `    <form>      <label>Name        <input type=\"text\" />      </label>      <label>Email        <input type=\"email\" />      </label>      <button type=\"submit\">Submit</button>    </form>  `,  imports: [ReactiveFormsModule],})\n\n```\n\n2. ### [Create the `FormGroup` object with FormControls](https://angular.dev/tutorials/learn-angular/17-reactive-forms\\#create-the-formgroup-object-with-formcontrols)\n\n\nReactive forms use the `FormControl` class to represent the form controls (e.g., inputs). Angular provides the `FormGroup` class to serve as a grouping of form controls into a helpful object that makes handling large forms more convenient for developers.\n\nAdd `FormControl` and `FormGroup` to the import from `@angular/forms` so that you can create a FormGroup for each form, with the properties `name` and `email` as FormControls.\n\n\n\n```\n         import {ReactiveFormsModule, FormControl, FormGroup } from '@angular/forms';...export class AppComponent {  profileForm = new FormGroup({    name: new FormControl(''),    email: new FormControl(''),  });}\n\n```\n\n3. ### [Link the FormGroup and FormControls to the form](https://angular.dev/tutorials/learn-angular/17-reactive-forms\\#link-the-formgroup-and-formcontrols-to-the-form)\n\n\nEach `FormGroup` should be attached to a form using the `[formGroup]` directive.\n\nIn addition, each `FormControl` can be attached with the `formControlName` directive and assigned to the corresponding property. Update the template with the following form code:\n\n\n\n```\n         <form [formGroup]=\"profileForm\">  <label>    Name    <input type=\"text\" formControlName=\"name\" />  </label>  <label>    Email    <input type=\"email\" formControlName=\"email\" />  </label>  <button type=\"submit\">Submit</button></form>\n\n```\n\n4. ### [Handle update to the form](https://angular.dev/tutorials/learn-angular/17-reactive-forms\\#handle-update-to-the-form)\n\n\nWhen you want to access data from the `FormGroup`, it can be done by accessing the value of the `FormGroup`. Update the `template` to display the form values:\n\n\n\n```\n         ...<h2>Profile Form</h2><p>Name: {{ profileForm.value.name }}</p><p>Email: {{ profileForm.value.email }}</p>\n\n```\n\n5. ### [Access FormGroup values](https://angular.dev/tutorials/learn-angular/17-reactive-forms\\#access-formgroup-values)\n\n\nAdd a new method to the component class called `handleSubmit` that you'll later use to handle the form submission.\nThis method will display values from the form, you can access the values from the FormGroup.\n\nIn the component class, add the `handleSubmit()` method to handle the form submission.\n\n\n\n```\n         handleSubmit() {  alert(    this.profileForm.value.name + ' | ' + this.profileForm.value.email  );}\n\n```\n\n6. ### [Add `ngSubmit` to the form](https://angular.dev/tutorials/learn-angular/17-reactive-forms\\#add-ngsubmit-to-the-form)\n\n\nYou have access to the form values, now it is time to handle the submission event and use the `handleSubmit` method.\nAngular has an event handler for this specific purpose called `ngSubmit`. Update the form element to call the `handleSubmit` method when the form is submitted.\n\n\n\n```\n         <form  [formGroup]=\"profileForm\"  (ngSubmit)=\"handleSubmit()\">\n\n```\n\n\nAnd just like that, you know how to work with reactive forms in Angular.\n\nFantastic job with this activity. Keep going to learn about form validation.",
+    "screenshot": "https://service.firecrawl.dev/storage/v1/object/public/media/screenshot-5872313e-0146-41d5-86fd-95246055303a.png"
+  },
+  "metadata": {
+    "twitter:title": "Angular",
+    "twitter:description": "The web development framework for building modern apps.",
+    "twitter:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "ogImage": "https://angular.dev/assets/images/ng-image.jpg",
+    "apple-mobile-web-app-title": "Angular",
+    "favicon": "https://angular.dev/assets/icons/favicon-48x48.png",
+    "ogDescription": "The web development framework for building modern apps.",
+    "application-name": "Angular",
+    "og:title": "Angular",
+    "og:description": "The web development framework for building modern apps.",
+    "theme-color": "#ffffff",
+    "og:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "twitter:url": "https://angular.dev/",
+    "language": "en",
+    "og:url": "https://angular.dev/",
+    "twitter:card": "summary_large_image",
+    "msapplication-TileColor": "#e90464",
+    "ogUrl": "https://angular.dev/",
+    "description": "The web development framework for building modern apps.",
+    "ogTitle": "Angular",
+    "og:type": "website",
+    "title": "Reactive forms • Angular",
+    "msapplication-config": "/assets/icons/browserconfig.xml",
+    "viewport": "width=device-width, initial-scale=1",
+    "scrapeId": "05e57ab8-b42b-4805-80e8-fc990f998ff5",
+    "sourceURL": "https://angular.dev/tutorials/learn-angular/17-reactive-forms",
+    "url": "https://angular.dev/tutorials/learn-angular/17-reactive-forms",
+    "statusCode": 200
+  }
+}

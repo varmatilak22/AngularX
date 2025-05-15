@@ -1,0 +1,39 @@
+{
+  "scrapeId": "7c595ba7-1911-4eb2-9b00-06b478f242bb",
+  "sourceURL": "https://angular.dev/cli/cache",
+  "statusCode": 200,
+  "data": {
+    "markdown": "Skip to main content\n\nmenu\n\nmenuAPI\n\n- [Roadmap](https://angular.dev/roadmap)\n- [Get involved](https://github.com/angular/angular/blob/main/CONTRIBUTING.md)\n- API Reference\n- CLI Reference\n- Error Encyclopedia\n- Extended Diagnostics\n- [Versioning and releases](https://angular.dev/reference/releases)\n- [Version compatibility](https://angular.dev/reference/versions)\n- [Update guide](https://angular.dev/update-guide)\n- Configurations\n- Migrations\n\n- arrow\\_backCLI Reference\n  - [Overview](https://angular.dev/cli)\n  - [ng add](https://angular.dev/cli/add)\n  - ng analytics\n  - [ng build](https://angular.dev/cli/build)\n  - ng cache\n  - ng completion\n  - [ng config](https://angular.dev/cli/config)\n  - [ng deploy](https://angular.dev/cli/deploy)\n  - [ng e2e](https://angular.dev/cli/e2e)\n  - [ng extract-i18n](https://angular.dev/cli/extract-i18n)\n  - ng generate\n  - [ng lint](https://angular.dev/cli/lint)\n  - [ng new](https://angular.dev/cli/new)\n  - [ng run](https://angular.dev/cli/run)\n  - [ng serve](https://angular.dev/cli/serve)\n  - [ng test](https://angular.dev/cli/test)\n  - [ng update](https://angular.dev/cli/update)\n  - [ng version](https://angular.dev/cli/version)\n\n- arrow\\_backng cache\n  - [Overview](https://angular.dev/cli/cache)\n  - [clean](https://angular.dev/cli/cache/clean)\n  - [disable](https://angular.dev/cli/cache/disable)\n  - [enable](https://angular.dev/cli/cache/enable)\n  - [info](https://angular.dev/cli/cache/info)\n\nThis site uses cookies from Google to deliver its services and to analyze traffic.\n\n[Learn more](https://policies.google.com/technologies/cookies) Ok, Got it\n\n```\n\nng cache[options]\n```\n\ncheck\n\nAngular CLI saves a number of cachable operations on disk by default.\n\nWhen you re-run the same build, the build system restores the state of the previous build and re-uses previously performed operations, which decreases the time taken to build and test your applications and libraries.\n\nTo amend the default cache settings, add the `cli.cache` object to your [Workspace Configuration](https://angular.dev/cli/reference/configs/workspace-config).\nThe object goes under `cli.cache` at the top level of the file, outside the `projects` sections.\n\n```\n          {  \"$schema\": \"./node_modules/@angular/cli/lib/config/schema.json\",  \"version\": 1,  \"cli\": {    \"cache\": {      // ...    },  },  \"projects\": {},}\n\n```\n\ncheck\n\nFor more information, see [cache options](https://angular.dev/cli/reference/configs/workspace-config#cache-options).\n\n### [Cache environments](https://angular.dev/cli/cache\\#cache-environments)\n\nBy default, disk cache is only enabled for local environments. The value of environment can be one of the following:\n\n- `all` \\- allows disk cache on all machines.\n- `local` \\- allows disk cache only on development machines.\n- `ci` \\- allows disk cache only on continuous integration (CI) systems.\n\nTo change the environment setting to `all`, run the following command:\n\n```\n          ng config cli.cache.environment all\n\n```\n\ncheck\n\nFor more information, see `environment` in [cache options](https://angular.dev/cli/reference/configs/workspace-config#cache-options).\n\nThe Angular CLI checks for the presence and value of the `CI` environment variable to determine in which environment it is running.\n\n### [Cache path](https://angular.dev/cli/cache\\#cache-path)\n\nBy default, `.angular/cache` is used as a base directory to store cache results.\n\nTo change this path to `.cache/ng`, run the following command:\n\n```\n          ng config cli.cache.path \".cache/ng\"\n\n```\n\ncheck\n\n### Sub-commands\n\nThis command has the following sub-commands\n\n- [clean](https://angular.dev/cli/cli/cache/clean)\n- [disable](https://angular.dev/cli/cli/cache/disable)\n- [enable](https://angular.dev/cli/cli/cache/enable)\n- [info](https://angular.dev/cli/cli/cache/info)\n\n## [Options](https://angular.dev/cli/cache\\#options)\n\n`help`\n\nShows a help message for this command in the console.\n\nValue Type `boolean`\n\nJump to details",
+    "screenshot": "https://service.firecrawl.dev/storage/v1/object/public/media/screenshot-58fedb9b-f8c5-431d-af01-57f16ba03179.png"
+  },
+  "metadata": {
+    "title": "ng cache • Overview • Angular",
+    "viewport": "width=device-width, initial-scale=1",
+    "theme-color": "#ffffff",
+    "msapplication-config": "/assets/icons/browserconfig.xml",
+    "msapplication-TileColor": "#e90464",
+    "og:description": "The web development framework for building modern apps.",
+    "ogUrl": "https://angular.dev/",
+    "ogTitle": "Angular",
+    "favicon": "https://angular.dev/assets/icons/favicon-48x48.png",
+    "description": "The web development framework for building modern apps.",
+    "application-name": "Angular",
+    "apple-mobile-web-app-title": "Angular",
+    "og:url": "https://angular.dev/",
+    "twitter:card": "summary_large_image",
+    "twitter:title": "Angular",
+    "og:title": "Angular",
+    "og:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "twitter:url": "https://angular.dev/",
+    "twitter:description": "The web development framework for building modern apps.",
+    "language": "en",
+    "ogDescription": "The web development framework for building modern apps.",
+    "twitter:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "og:type": "website",
+    "ogImage": "https://angular.dev/assets/images/ng-image.jpg",
+    "scrapeId": "7c595ba7-1911-4eb2-9b00-06b478f242bb",
+    "sourceURL": "https://angular.dev/cli/cache",
+    "url": "https://angular.dev/cli/cache",
+    "statusCode": 200
+  }
+}

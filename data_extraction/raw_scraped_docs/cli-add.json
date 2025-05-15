@@ -1,0 +1,39 @@
+{
+  "scrapeId": "82317361-1388-463f-917c-7fb3d2a93407",
+  "sourceURL": "https://angular.dev/cli/add",
+  "statusCode": 200,
+  "data": {
+    "markdown": "Skip to main content\n\nmenu\n\nmenuAPI\n\n- [Roadmap](https://angular.dev/roadmap)\n- [Get involved](https://github.com/angular/angular/blob/main/CONTRIBUTING.md)\n- API Reference\n- CLI Reference\n- Error Encyclopedia\n- Extended Diagnostics\n- [Versioning and releases](https://angular.dev/reference/releases)\n- [Version compatibility](https://angular.dev/reference/versions)\n- [Update guide](https://angular.dev/update-guide)\n- Configurations\n- Migrations\n\n- arrow\\_backCLI Reference\n  - [Overview](https://angular.dev/cli)\n  - [ng add](https://angular.dev/cli/add)\n  - ng analytics\n  - [ng build](https://angular.dev/cli/build)\n  - ng cache\n  - ng completion\n  - [ng config](https://angular.dev/cli/config)\n  - [ng deploy](https://angular.dev/cli/deploy)\n  - [ng e2e](https://angular.dev/cli/e2e)\n  - [ng extract-i18n](https://angular.dev/cli/extract-i18n)\n  - ng generate\n  - [ng lint](https://angular.dev/cli/lint)\n  - [ng new](https://angular.dev/cli/new)\n  - [ng run](https://angular.dev/cli/run)\n  - [ng serve](https://angular.dev/cli/serve)\n  - [ng test](https://angular.dev/cli/test)\n  - [ng update](https://angular.dev/cli/update)\n  - [ng version](https://angular.dev/cli/version)\n\nThis site uses cookies from Google to deliver its services and to analyze traffic.\n\n[Learn more](https://policies.google.com/technologies/cookies) Ok, Got it\n\n```\n\nng addng <collection>[options]\n```\n\ncheck\n\nAdds the npm package for a published library to your workspace, and configures\nthe project in the current working directory to use that library, as specified by the library's schematic.\nFor example, adding `@angular/pwa` configures your project for PWA support:\n\n```\n          ng add @angular/pwa\n\n```\n\ncheck\n\n## [Arguments](https://angular.dev/cli/add\\#arguments)\n\n`collection`\n\nThe package to be added.\n\nValue Type `string`\n\n## [Options](https://angular.dev/cli/add\\#options)\n\n`defaults`\n\nDisable interactive input prompts for options with a default.\n\nValue Type `boolean` Default `false`\n\n`dry-run`\n\nAlias `d `\n\nRun through and reports activity without writing out results.\n\nValue Type `boolean` Default `false`\n\n`force`\n\nForce overwriting of existing files.\n\nValue Type `boolean` Default `false`\n\n`help`\n\nShows a help message for this command in the console.\n\nValue Type `boolean`\n\n`interactive`\n\nEnable interactive input prompts.\n\nValue Type `boolean` Default `true`\n\n`registry`\n\nThe NPM registry to use.\n\nValue Type `string`\n\n`skip-confirmation`\n\nSkip asking a confirmation prompt before installing and executing the package. Ensure package name is correct prior to using this option.\n\nValue Type `boolean` Default `false`\n\n`verbose`\n\nDisplay additional details about internal operations during execution.\n\nValue Type `boolean` Default `false`\n\nJump to details",
+    "screenshot": "https://service.firecrawl.dev/storage/v1/object/public/media/screenshot-0977f538-af1f-45ee-9ab0-e236a2cc7827.png"
+  },
+  "metadata": {
+    "language": "en",
+    "twitter:url": "https://angular.dev/",
+    "ogUrl": "https://angular.dev/",
+    "og:url": "https://angular.dev/",
+    "og:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "description": "The web development framework for building modern apps.",
+    "twitter:description": "The web development framework for building modern apps.",
+    "title": "ng add • Angular",
+    "apple-mobile-web-app-title": "Angular",
+    "msapplication-TileColor": "#e90464",
+    "ogImage": "https://angular.dev/assets/images/ng-image.jpg",
+    "msapplication-config": "/assets/icons/browserconfig.xml",
+    "twitter:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "application-name": "Angular",
+    "ogTitle": "Angular",
+    "ogDescription": "The web development framework for building modern apps.",
+    "favicon": "https://angular.dev/assets/icons/favicon-48x48.png",
+    "theme-color": "#ffffff",
+    "og:title": "Angular",
+    "twitter:title": "Angular",
+    "og:type": "website",
+    "og:description": "The web development framework for building modern apps.",
+    "twitter:card": "summary_large_image",
+    "viewport": "width=device-width, initial-scale=1",
+    "scrapeId": "82317361-1388-463f-917c-7fb3d2a93407",
+    "sourceURL": "https://angular.dev/cli/add",
+    "url": "https://angular.dev/cli/add",
+    "statusCode": 200
+  }
+}

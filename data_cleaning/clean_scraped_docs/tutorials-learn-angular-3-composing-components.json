@@ -1,0 +1,18 @@
+{
+  "content": "Skip to main content\n\nmenu\n\nThis site uses cookies from Google to deliver its services and to analyze traffic.\n\n[Learn more](https://policies.google.com/technologies/cookies) Ok, Got it\n\nunfold\\_more\nLearn AngularComponent composition\nReveal Answer\n\n[chevron\\_left](https://angular.dev/tutorials/learn-angular/2-updating-the-component-class) [chevron\\_right](https://angular.dev/tutorials/learn-angular/4-control-flow-if)\n\nReveal Answer\n\nunfold\\_more\nLearn AngularComponent composition\nReveal Answer\n\n[chevron\\_left](https://angular.dev/tutorials/learn-angular/2-updating-the-component-class) [chevron\\_right](https://angular.dev/tutorials/learn-angular/4-control-flow-if)\n\nReveal Answer\n\nYou've learned to update the component template, component logic, and component styles, but how do you use a component in your application?\n\nThe `selector` property of the component configuration gives you a name to use when referencing the component in another template. You use the `selector` like an HTML tag, for example `app-user` would be `<app-user />` in the template.\n\nNote: Learn more about [using components in the essentials guide](https://angular.dev/essentials/components#using-components).\n\nIn this activity, you'll learn how to compose components.\n\n* * *\n\nIn this example, there are two components `UserComponent` and `AppComponent`.\n\n1. ### [Add a reference to `UserComponent`](https://angular.dev/tutorials/learn-angular/3-composing-components\\#add-a-reference-to-usercomponent)\n\n\nUpdate the `AppComponent` template to include a reference to the `UserComponent` which uses the selector `app-user`. Be sure to add `UserComponent` to the imports array of `AppComponent`, this makes it available for use in the `AppComponent` template.\n\n\n\n```\n         template: `<app-user />`,imports: [UserComponent]\n\n```\n\ncheck\n\nThe component now displays the message `Username: youngTech`. You can update the template code to include more markup.\n\n2. ### [Add more markup](https://angular.dev/tutorials/learn-angular/3-composing-components\\#add-more-markup)\n\n\nBecause you can use any HTML markup that you want in a template, try updating the template for `AppComponent` to also include more HTML elements. This example will add a `<section>` element as the parent of the `<app-user>` element.\n\n\n\n```\n         template: `<section><app-user /></section>`,\n\n```\n\ncheck\n\n\nYou can use as much HTML markup and as many components as you need to bring your app idea to reality. You can even have multiple copies of your component on the same page.\n\nThat's a great segue, how would you conditionally show a component based on data? Head to the next section to find out.\n\napp/app.component.ts\n\nadd\n\nlaunchdownload\n\n99\n\n1\n\n2\n\n3\n\n4\n\n5\n\n6\n\n7\n\n8\n\n9\n\n10\n\n11\n\n12\n\n13\n\n14\n\n15\n\n16\n\n17\n\n18\n\n19\n\n\u203a\n\nimport{Component}from'@angular/core';\n\n@Component({\n\nselector:'app-user',\n\ntemplate:\\`\n\nUsername: {{username}}\n\n\\`,\n\n})\n\nexportclassUserComponent{\n\nusername='youngTech';\n\n}\n\n@Component({\n\nselector:'app-root',\n\ntemplate:\\`\\`,\n\nimports:\\[\\],\n\n})\n\nexportclassAppComponent{}\n\nPreview\n\nBooting\n\nConsole\n\nTerminal\n\nrefresh\n\nStackBlitz",
+  "title": "Component composition \u2022 Angular",
+  "description": "The web development framework for building modern apps.",
+  "keywords": [
+    "component",
+    "angular",
+    "template",
+    "app",
+    "learn",
+    "components",
+    "https",
+    "add",
+    "dev",
+    "user"
+  ],
+  "sourceURL": "https://angular.dev/tutorials/learn-angular/3-composing-components"
+}

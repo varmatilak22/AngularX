@@ -1,0 +1,42 @@
+{
+  "scrapeId": "bc03e2bc-b403-44ea-a15d-48aa98c66f45",
+  "sourceURL": "https://angular.dev/tutorials/first-app/05-inputs",
+  "statusCode": 200,
+  "data": {
+    "markdown": "Skip to main content\n\nmenu\n\nThis site uses cookies from Google to deliver its services and to analyze traffic.\n\n[Learn more](https://policies.google.com/technologies/cookies) Ok, Got it\n\nunfold\\_more\nYour first Angular appAdd inputs to components\nReveal Answer\n\n[chevron\\_left](https://angular.dev/tutorials/first-app/04-interfaces) [chevron\\_right](https://angular.dev/tutorials/first-app/06-property-binding)\n\nReveal Answer\n\nunfold\\_more\nYour first Angular appAdd inputs to components\nReveal Answer\n\n[chevron\\_left](https://angular.dev/tutorials/first-app/04-interfaces) [chevron\\_right](https://angular.dev/tutorials/first-app/06-property-binding)\n\nReveal Answer\n\nThis tutorial lesson demonstrates how to create a component `@Input()` and use it to pass data to a component for customization.\n\nCustomizing components and directives (Part 4) - YouTube\n\nAngular\n\n159K subscribers\n\n[Customizing components and directives (Part 4)](https://www.youtube.com/watch?v=eM3zi_n7lNs)\n\nAngular\n\nSearch\n\nWatch later\n\nShare\n\nCopy link\n\nInfo\n\nShopping\n\nTap to unmute\n\nIf playback doesn't begin shortly, try restarting your device.\n\nYou're signed out\n\nVideos you watch may be added to the TV's watch history and influence TV recommendations. To avoid this, cancel and sign in to YouTube on your computer.\n\nCancelConfirm\n\nMore videos\n\n## More videos\n\nShare\n\nInclude playlist\n\nAn error occurred while retrieving sharing information. Please try again later.\n\n[Watch on](https://www.youtube.com/watch?t=241&v=eM3zi_n7lNs&embeds_referring_euri=https%3A%2F%2Fangular.dev%2F)\n\n4:01\n\n4:01 / 12:18\n•Live\n\n•\n\n[Watch on YouTube](https://www.youtube.com/watch?v=eM3zi_n7lNs \"Watch on YouTube\")\n\n## [What you'll learn](https://angular.dev/tutorials/first-app/05-inputs\\#what-youll-learn)\n\nYour app's `HousingLocationComponent` template has a `HousingLocation` property to receive input.\n\n## [Conceptual preview of Inputs](https://angular.dev/tutorials/first-app/05-inputs\\#conceptual-preview-of-inputs)\n\n[Inputs](https://angular.dev/api/core/Input) allow components to share data. The direction of the data sharing is from parent component to child component.\n\nIn this lesson, you'll define `@Input()` properties in the `HousingLocationComponent` component which will enable you to customize the data displayed in the component.\n\nLearn more in the [Accepting data with input properties](https://angular.dev/guide/components/inputs) and [Custom events with outputs](https://angular.dev/guide/components/outputs) guides.\n\n1. ### [Import the Input decorator](https://angular.dev/tutorials/first-app/05-inputs\\#import-the-input-decorator)\n\n\nThis step imports the `Input` decorator into the class.\n\nIn the code editor:\n1. Navigate to `src/app/housing-location/housing-location.component.ts`\n2. Update the file imports to include `Input` and `HousingLocation`:\n\n\n\n      check\n\n      ```\n            import {Component, Input} from '@angular/core';import {CommonModule} from '@angular/common';import {HousingLocation} from '../housinglocation';@Component({  selector: 'app-housing-location',  imports: [CommonModule],  template: `    <p>housing-location works!</p>  `,  styleUrls: ['./housing-location.component.css'],})export class HousingLocationComponent {  @Input() housingLocation!: HousingLocation;}\n\n      ```\n2. ### [Add the Input property](https://angular.dev/tutorials/first-app/05-inputs\\#add-the-input-property)\n\n1. In the same file, add a property called `housingLocation` of type `HousingLocation` to the `HousingLocationComponent` class. Add an `!` after the property name and prefix it with the `@Input()` decorator:\n\n\n\n\n      check\n\n      ```\n            import {Component, Input} from '@angular/core';import {CommonModule} from '@angular/common';import {HousingLocation} from '../housinglocation';@Component({  selector: 'app-housing-location',  imports: [CommonModule],  template: `    <p>housing-location works!</p>  `,  styleUrls: ['./housing-location.component.css'],})export class HousingLocationComponent {  @Input() housingLocation!: HousingLocation;}\n\n      ```\n\n\n\n\n\n\n      You have to add the `!` because the input is expecting the value to be passed. In this case, there is no default value. In our example application case we know that the value will be passed in - this is by design. The exclamation point is called the non-null assertion operator and it tells the TypeScript compiler that the value of this property won't be null or undefined.\n\n2. Save your changes and confirm the app does not have any errors.\n\n3. Correct any errors before you continue to the next step.\n\n**SUMMARY:** In this lesson, you created a new property decorated with the `@Input()` decorator. You also used the non-null assertion operator to notify the compiler that the value of the new property won't be `null` or `undefined`.\n\napp/housing-location/housing-location.component.ts editdelete\n\nadd\n\nlaunchdownload\n\n99\n\n1\n\n2\n\n3\n\n4\n\n5\n\n6\n\n7\n\n8\n\n9\n\n10\n\n11\n\n12\n\n13\n\n›\n\nimport{Component}from'@angular/core';\n\nimport{CommonModule}from'@angular/common';\n\n@Component({\n\nselector:'app-housing-location',\n\nimports:\\[CommonModule\\],\n\ntemplate:\\`\n\n<p>housing-location works!</p>\n\n\\`,\n\nstyleUrls:\\['./housing-location.component.css'\\],\n\n})\n\nexportclassHousingLocationComponent{}\n\nPreview\n\nBooting\n\nConsole\n\nTerminal\n\nrefresh\n\nStackBlitz",
+    "screenshot": "https://service.firecrawl.dev/storage/v1/object/public/media/screenshot-19dc4eb9-34e2-4a4a-a695-ca932de71fee.png"
+  },
+  "metadata": {
+    "language": "en",
+    "ogImage": "https://angular.dev/assets/images/ng-image.jpg",
+    "og:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "description": "The web development framework for building modern apps.",
+    "twitter:title": "Angular",
+    "ogDescription": "The web development framework for building modern apps.",
+    "title": "Add inputs to components • Angular",
+    "msapplication-config": "/assets/icons/browserconfig.xml",
+    "twitter:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "ogUrl": "https://angular.dev/",
+    "application-name": "Angular",
+    "msapplication-TileColor": "#e90464",
+    "ogTitle": "Angular",
+    "viewport": [
+      "width=device-width, initial-scale=1",
+      "width=device-width, initial-scale=1"
+    ],
+    "theme-color": "#ffffff",
+    "og:url": "https://angular.dev/",
+    "og:type": "website",
+    "favicon": "https://angular.dev/assets/icons/favicon-48x48.png",
+    "og:description": "The web development framework for building modern apps.",
+    "twitter:url": "https://angular.dev/",
+    "apple-mobile-web-app-title": "Angular",
+    "og:title": "Angular",
+    "twitter:card": "summary_large_image",
+    "twitter:description": "The web development framework for building modern apps.",
+    "scrapeId": "bc03e2bc-b403-44ea-a15d-48aa98c66f45",
+    "sourceURL": "https://angular.dev/tutorials/first-app/05-inputs",
+    "url": "https://angular.dev/tutorials/first-app/05-inputs",
+    "statusCode": 200
+  }
+}

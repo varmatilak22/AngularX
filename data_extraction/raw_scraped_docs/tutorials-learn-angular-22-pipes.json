@@ -1,0 +1,39 @@
+{
+  "scrapeId": "5b9e6bd5-2077-41a6-9c4e-75c36369e130",
+  "sourceURL": "https://angular.dev/tutorials/learn-angular/22-pipes",
+  "statusCode": 200,
+  "data": {
+    "markdown": "Skip to main content\n\nmenu\n\nThis site uses cookies from Google to deliver its services and to analyze traffic.\n\n[Learn more](https://policies.google.com/technologies/cookies) Ok, Got it\n\nunfold\\_more\nLearn AngularPipes\n\n[chevron\\_left](https://angular.dev/tutorials/learn-angular/21-constructor-based-di) [chevron\\_right](https://angular.dev/tutorials/learn-angular/23-pipes-format-data)\n\nunfold\\_more\nLearn AngularPipes\n\n[chevron\\_left](https://angular.dev/tutorials/learn-angular/21-constructor-based-di) [chevron\\_right](https://angular.dev/tutorials/learn-angular/23-pipes-format-data)\n\nPipes are functions that are used to transform data in templates. In general, pipes are \"pure\" functions that don't cause side effects. Angular has a number of helpful built-in pipes you can import and use in your components. You can also create a custom pipe.\n\nNote: Learn more about [pipes in the in-depth guide](https://angular.dev/guide/templates/pipes).\n\nIn this activity, you will import a pipe and use it in the template.\n\n* * *\n\nTo use a pipe in a template include it in an interpolated expression. Check out this example:\n\n```\n      import {UpperCasePipe} from '@angular/common';@Component({...template: `{{ loudMessage | uppercase }}`,imports: [UpperCasePipe],})class AppComponent {loudMessage = 'we think you are doing great!'}\n\n```\n\nNow, it's your turn to give this a try:\n\n1. ### [Import the `LowerCase` pipe](https://angular.dev/tutorials/learn-angular/22-pipes\\#import-the-lowercase-pipe)\n\n\nFirst, update `app.component.ts` by adding the file level import for `LowerCasePipe` from `@angular/common`.\n\n\n\n```\n         import { LowerCasePipe } from '@angular/common';\n\n```\n\n2. ### [Add the pipe to the template imports](https://angular.dev/tutorials/learn-angular/22-pipes\\#add-the-pipe-to-the-template-imports)\n\n\nNext, update `@Component()` decorator `imports` to include a reference to `LowerCasePipe`\n\n\n\n```\n         @Component({    ...    imports: [LowerCasePipe]})\n\n```\n\n3. ### [Add the pipe to the template](https://angular.dev/tutorials/learn-angular/22-pipes\\#add-the-pipe-to-the-template)\n\n\nFinally, in `app.component.ts` update the template to include the `lowercase` pipe:\n\n\n\n```\n         template: `{{username | lowercase }}`\n\n```\n\n\nPipes can also accept parameters which can be used to configure their output. Find out more in the next activity.\n\nP.S. you are doing great ⭐️",
+    "screenshot": "https://service.firecrawl.dev/storage/v1/object/public/media/screenshot-5fbf895c-6b13-4d92-afc6-3d8cbc9b42c3.png"
+  },
+  "metadata": {
+    "title": "Pipes • Angular",
+    "og:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "msapplication-TileColor": "#e90464",
+    "og:title": "Angular",
+    "theme-color": "#ffffff",
+    "language": "en",
+    "apple-mobile-web-app-title": "Angular",
+    "application-name": "Angular",
+    "og:type": "website",
+    "og:description": "The web development framework for building modern apps.",
+    "ogDescription": "The web development framework for building modern apps.",
+    "og:url": "https://angular.dev/",
+    "twitter:card": "summary_large_image",
+    "viewport": "width=device-width, initial-scale=1",
+    "ogTitle": "Angular",
+    "msapplication-config": "/assets/icons/browserconfig.xml",
+    "ogImage": "https://angular.dev/assets/images/ng-image.jpg",
+    "twitter:url": "https://angular.dev/",
+    "favicon": "https://angular.dev/assets/icons/favicon-48x48.png",
+    "twitter:description": "The web development framework for building modern apps.",
+    "ogUrl": "https://angular.dev/",
+    "description": "The web development framework for building modern apps.",
+    "twitter:title": "Angular",
+    "twitter:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "scrapeId": "5b9e6bd5-2077-41a6-9c4e-75c36369e130",
+    "sourceURL": "https://angular.dev/tutorials/learn-angular/22-pipes",
+    "url": "https://angular.dev/tutorials/learn-angular/22-pipes",
+    "statusCode": 200
+  }
+}

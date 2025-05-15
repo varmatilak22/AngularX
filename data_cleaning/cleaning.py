@@ -24,7 +24,7 @@ parent_path=os.path.dirname(current_path)
 print(parent_path)
 
 #Step-3 Inside Scrap docs
-target_folder=os.path.join(parent_path,'DataExtraction')
+target_folder=os.path.join(parent_path,'data_extraction')
 print(target_folder)
 
 #step-4 -target is raw scarp docs dir
@@ -39,7 +39,9 @@ print(destination_dir)
 os.makedirs(destination_dir,exist_ok=True)
 
 # Looping each file name in source dir 
+count=1
 for filename in os.listdir(source_dir):
+    count+=1
     if filename.endswith(".json"):
         # Each file path from source dir
         source_file_path=os.path.join(source_dir,filename)
@@ -76,4 +78,5 @@ for filename in os.listdir(source_dir):
         
         print(f"✅ Cleaned and saved: {filename}")
 print("\n All files cleaned and saved successfully!")
+print(count)
         

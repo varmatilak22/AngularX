@@ -1,0 +1,39 @@
+{
+  "scrapeId": "171f80dd-2198-407e-809e-5cb58d73a877",
+  "sourceURL": "https://angular.dev/cli/generate/library",
+  "statusCode": 200,
+  "data": {
+    "markdown": "Skip to main content\n\nmenu\n\nmenuAPI\n\n- [Roadmap](https://angular.dev/roadmap)\n- [Get involved](https://github.com/angular/angular/blob/main/CONTRIBUTING.md)\n- API Reference\n- CLI Reference\n- Error Encyclopedia\n- Extended Diagnostics\n- [Versioning and releases](https://angular.dev/reference/releases)\n- [Version compatibility](https://angular.dev/reference/versions)\n- [Update guide](https://angular.dev/update-guide)\n- Configurations\n- Migrations\n\n- arrow\\_backCLI Reference\n  - [Overview](https://angular.dev/cli)\n  - [ng add](https://angular.dev/cli/add)\n  - ng analytics\n  - [ng build](https://angular.dev/cli/build)\n  - ng cache\n  - ng completion\n  - [ng config](https://angular.dev/cli/config)\n  - [ng deploy](https://angular.dev/cli/deploy)\n  - [ng e2e](https://angular.dev/cli/e2e)\n  - [ng extract-i18n](https://angular.dev/cli/extract-i18n)\n  - ng generate\n  - [ng lint](https://angular.dev/cli/lint)\n  - [ng new](https://angular.dev/cli/new)\n  - [ng run](https://angular.dev/cli/run)\n  - [ng serve](https://angular.dev/cli/serve)\n  - [ng test](https://angular.dev/cli/test)\n  - [ng update](https://angular.dev/cli/update)\n  - [ng version](https://angular.dev/cli/version)\n\n- arrow\\_backng generate\n  - [Overview](https://angular.dev/cli/generate)\n  - [app-shell](https://angular.dev/cli/generate/app-shell)\n  - [application](https://angular.dev/cli/generate/application)\n  - [class](https://angular.dev/cli/generate/class)\n  - [component](https://angular.dev/cli/generate/component)\n  - [config](https://angular.dev/cli/generate/config)\n  - [directive](https://angular.dev/cli/generate/directive)\n  - [enum](https://angular.dev/cli/generate/enum)\n  - [environments](https://angular.dev/cli/generate/environments)\n  - [guard](https://angular.dev/cli/generate/guard)\n  - [interceptor](https://angular.dev/cli/generate/interceptor)\n  - [interface](https://angular.dev/cli/generate/interface)\n  - [library](https://angular.dev/cli/generate/library)\n  - [module](https://angular.dev/cli/generate/module)\n  - [pipe](https://angular.dev/cli/generate/pipe)\n  - [resolver](https://angular.dev/cli/generate/resolver)\n  - [service-worker](https://angular.dev/cli/generate/service-worker)\n  - [service](https://angular.dev/cli/generate/service)\n  - [web-worker](https://angular.dev/cli/generate/web-worker)\n\nThis site uses cookies from Google to deliver its services and to analyze traffic.\n\n[Learn more](https://policies.google.com/technologies/cookies) Ok, Got it\n\n```\n\nng generate library[name][options]\n```\n\ncheck\n\n```\n\nng generate lib[name][options]\n```\n\ncheck\n\nCreates a new library project in your Angular workspace. Libraries are reusable collections of components, services, and other Angular artifacts that can be shared across multiple applications. This schematic simplifies the process of generating a new library with the necessary files and configurations.\n\n## [Arguments](https://angular.dev/cli/generate/library\\#arguments)\n\n`name`\n\nThe name for the new library. This name will be used for the project directory and various identifiers within the library's code.\n\nValue Type `string`\n\n## [Options](https://angular.dev/cli/generate/library\\#options)\n\n`entry-file`\n\nThe path to the library's public API file, relative to the workspace root. This file defines what parts of the library are accessible to applications that import it.\n\nValue Type `string` Default `public-api`\n\n`prefix`\n\nAlias `p `\n\nA prefix to be added to the selectors of components generated within this library. For example, if the prefix is `my-lib` and you generate a component named `my-component`, the selector will be `my-lib-my-component`.\n\nValue Type `string` Default `lib`\n\n`project-root`\n\nThe root directory for the new library, relative to the workspace root. If not specified, the library will be created in a subfolder within the `projects` directory, using the library's name.\n\nValue Type `string`\n\n`skip-install`\n\nSkip the automatic installation of packages. You will need to manually install the dependencies later.\n\nValue Type `boolean` Default `false`\n\n`skip-package-json`\n\nDo not automatically add dependencies to the `package.json` file.\n\nValue Type `boolean` Default `false`\n\n`skip-ts-config`\n\nDo not update the workspace `tsconfig.json` file to add a path mapping for the new library. The path mapping is needed to use the library in an application, but can be disabled here to simplify development.\n\nValue Type `boolean` Default `false`\n\n`standalone`\n\nCreate a library that utilizes the standalone API, eliminating the need for NgModules. This can simplify the structure of your library and its usage in applications.\n\nValue Type `boolean` Default `true`\n\nJump to details",
+    "screenshot": "https://service.firecrawl.dev/storage/v1/object/public/media/screenshot-4980f8b7-f4c2-4206-ab38-55eecfacf909.png"
+  },
+  "metadata": {
+    "msapplication-TileColor": "#e90464",
+    "theme-color": "#ffffff",
+    "ogDescription": "The web development framework for building modern apps.",
+    "og:url": "https://angular.dev/",
+    "twitter:card": "summary_large_image",
+    "twitter:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "ogTitle": "Angular",
+    "title": "library • Angular",
+    "msapplication-config": "/assets/icons/browserconfig.xml",
+    "viewport": "width=device-width, initial-scale=1",
+    "og:type": "website",
+    "description": "The web development framework for building modern apps.",
+    "favicon": "https://angular.dev/assets/icons/favicon-48x48.png",
+    "ogUrl": "https://angular.dev/",
+    "ogImage": "https://angular.dev/assets/images/ng-image.jpg",
+    "twitter:title": "Angular",
+    "apple-mobile-web-app-title": "Angular",
+    "twitter:url": "https://angular.dev/",
+    "language": "en",
+    "og:title": "Angular",
+    "og:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "application-name": "Angular",
+    "twitter:description": "The web development framework for building modern apps.",
+    "og:description": "The web development framework for building modern apps.",
+    "scrapeId": "171f80dd-2198-407e-809e-5cb58d73a877",
+    "sourceURL": "https://angular.dev/cli/generate/library",
+    "url": "https://angular.dev/cli/generate/library",
+    "statusCode": 200
+  }
+}

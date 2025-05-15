@@ -1,0 +1,18 @@
+{
+  "content": "Skip to main content\n\nmenu\n\nThis site uses cookies from Google to deliver its services and to analyze traffic.\n\n[Learn more](https://policies.google.com/technologies/cookies) Ok, Got it\n\nunfold\\_more\nLearn AngularLink to a route with RouterLink\nReveal Answer\n\n[chevron\\_left](https://angular.dev/tutorials/learn-angular/13-define-a-route) [chevron\\_right](https://angular.dev/tutorials/learn-angular/15-forms)\n\nReveal Answer\n\nunfold\\_more\nLearn AngularLink to a route with RouterLink\nReveal Answer\n\n[chevron\\_left](https://angular.dev/tutorials/learn-angular/13-define-a-route) [chevron\\_right](https://angular.dev/tutorials/learn-angular/15-forms)\n\nReveal Answer\n\nIn the app's current state, the entire page refreshes when we click on an internal link that exists within the app. While this may not seem significant with a small app, this can have performance implications for larger pages with more content where users have to redownload assets and run calculations again.\n\nNote: Learn more about [adding routes to your application in the in-depth guide](https://angular.dev/guide/routing/common-router-tasks#add-your-routes-to-your-application).\n\nIn this activity, you'll learn how to leverage the `RouterLink` directive to make the most use of Angular Router.\n\n* * *\n\n1. ### [Import `RouterLink` directive](https://angular.dev/tutorials/learn-angular/14-routerLink\\#import-routerlink-directive)\n\n\nIn `app.component.ts` add the `RouterLink` directive import to the existing import statement from `@angular/router` and add it to the `imports` array of your component decorator.\n\n\n\n```\n         ...import { RouterLink, RouterOutlet } from '@angular/router';@Component({  imports: [RouterLink, RouterOutlet],  ...})\n\n```\n\ncheck\n\n2. ### [Add a `routerLink` to template](https://angular.dev/tutorials/learn-angular/14-routerLink\\#add-a-routerlink-to-template)\n\n\nTo use the `RouterLink` directive, replace the `href` attributes with `routerLink`. Update the template with this change.\n\n\n\n```\n         import { RouterLink, RouterOutlet } from '@angular/router';@Component({  ...  template: `    ...    <a routerLink=\"/\">Home</a>    <a routerLink=\"/user\">User</a>    ...  `,  imports: [RouterLink, RouterOutlet],})\n\n```\n\ncheck\n\n\nWhen you click on the links in the navigation now, you should not see any blinking and only the content of the page itself (i.e., `router-outlet`) being changed \ud83c\udf89\n\nGreat job learning about routing with Angular. This is just the surface of the `Router` API, to learn more check out the [Angular Router Documentation](https://angular.dev/guide/routing).\n\napp/app.component.ts\n\nadd\n\nlaunchdownload\n\n99\n\n1\n\n2\n\n3\n\n4\n\n5\n\n6\n\n7\n\n8\n\n9\n\n10\n\n11\n\n12\n\n13\n\n14\n\n15\n\n16\n\n17\n\n\u203a\n\n\u2304\n\n\u2304\n\nimport{Component}from'@angular/core';\n\nimport{RouterOutlet}from'@angular/router';\n\n@Component({\n\nselector:'app-root',\n\ntemplate:\\`\n\n<nav>\n\n<ahref=\"/\">Home</a>\n\n\\|\n\n<ahref=\"/user\">User</a>\n\n</nav>\n\n<router-outlet/>\n\n\\`,\n\nimports:\\[RouterOutlet\\],\n\n})\n\nexportclassAppComponent{}\n\nPreview\n\nBooting\n\nConsole\n\nTerminal\n\nrefresh",
+  "title": "Link to a route with RouterLink \u2022 Angular",
+  "description": "The web development framework for building modern apps.",
+  "keywords": [
+    "angular",
+    "routerlink",
+    "learn",
+    "router",
+    "https",
+    "dev",
+    "import",
+    "app",
+    "component",
+    "add"
+  ],
+  "sourceURL": "https://angular.dev/tutorials/learn-angular/14-routerLink"
+}

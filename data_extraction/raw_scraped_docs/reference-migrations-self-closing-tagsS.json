@@ -1,0 +1,39 @@
+{
+  "scrapeId": "57eccf80-5b39-4328-85a8-ac073b5e5437",
+  "sourceURL": "https://angular.dev/reference/migrations/self-closing-tagsS",
+  "statusCode": 200,
+  "data": {
+    "markdown": "Skip to main content\n\nmenu\n\nmenuAPI\n\nThis site uses cookies from Google to deliver its services and to analyze traffic.\n\n[Learn more](https://policies.google.com/technologies/cookies) Ok, Got it\n\nIf you think this is a mistake, please [open an issue](https://github.com/angular/angular/issues/new?template=3-docs-bug.yaml) so we can fix it.",
+    "screenshot": "https://service.firecrawl.dev/storage/v1/object/public/media/screenshot-3e471efa-87ec-4813-9c9e-af848cec6a6a.png"
+  },
+  "metadata": {
+    "title": "Angular",
+    "apple-mobile-web-app-title": "Angular",
+    "og:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "description": "The web development framework for building modern apps.",
+    "twitter:url": "https://angular.dev/",
+    "og:type": "website",
+    "twitter:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "og:title": "Angular",
+    "viewport": "width=device-width, initial-scale=1",
+    "theme-color": "#ffffff",
+    "ogDescription": "The web development framework for building modern apps.",
+    "application-name": "Angular",
+    "ogUrl": "https://angular.dev/",
+    "og:description": "The web development framework for building modern apps.",
+    "msapplication-config": "/assets/icons/browserconfig.xml",
+    "ogImage": "https://angular.dev/assets/images/ng-image.jpg",
+    "ogTitle": "Angular",
+    "twitter:card": "summary_large_image",
+    "twitter:title": "Angular",
+    "twitter:description": "The web development framework for building modern apps.",
+    "og:url": "https://angular.dev/",
+    "msapplication-TileColor": "#e90464",
+    "favicon": "https://angular.dev/assets/icons/favicon-48x48.png",
+    "language": "en",
+    "scrapeId": "57eccf80-5b39-4328-85a8-ac073b5e5437",
+    "sourceURL": "https://angular.dev/reference/migrations/self-closing-tagsS",
+    "url": "https://angular.dev/reference/migrations/self-closing-tagsS",
+    "statusCode": 200
+  }
+}

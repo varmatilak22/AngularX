@@ -1,0 +1,39 @@
+{
+  "scrapeId": "cb85ca45-afb3-43d1-898a-9b3afb65e97f",
+  "sourceURL": "https://angular.dev/errors/NG2009",
+  "statusCode": 200,
+  "data": {
+    "markdown": "Skip to main content\n\nmenu\n\nmenuAPI\n\n- [Roadmap](https://angular.dev/roadmap)\n- [Get involved](https://github.com/angular/angular/blob/main/CONTRIBUTING.md)\n- API Reference\n- CLI Reference\n- Error Encyclopedia\n- Extended Diagnostics\n- [Versioning and releases](https://angular.dev/reference/releases)\n- [Version compatibility](https://angular.dev/reference/versions)\n- [Update guide](https://angular.dev/update-guide)\n- Configurations\n- Migrations\n\n- arrow\\_backError Encyclopedia\n  - [Overview](https://angular.dev/errors)\n  - [NG0100: Expression Changed After Checked](https://angular.dev/errors/NG0100)\n  - [NG01101: Wrong Async Validator Return Type](https://angular.dev/errors/NG01101)\n  - [NG01203: Missing value accessor](https://angular.dev/errors/NG01203)\n  - [NG0200: Circular Dependency in DI](https://angular.dev/errors/NG0200)\n  - [NG0201: No Provider Found](https://angular.dev/errors/NG0201)\n  - [NG0203: \\`inject()\\` must be called from an injection context](https://angular.dev/errors/NG0203)\n  - [NG0209: Invalid multi provider](https://angular.dev/errors/NG0209)\n  - [NG02200: Missing Iterable Differ](https://angular.dev/errors/NG02200)\n  - [NG02800: JSONP support in HttpClient configuration](https://angular.dev/errors/NG02800)\n  - [NG0300: Selector Collision](https://angular.dev/errors/NG0300)\n  - [NG0301: Export Not Found](https://angular.dev/errors/NG0301)\n  - [NG0302: Pipe Not Found](https://angular.dev/errors/NG0302)\n  - [NG0403: Bootstrapped NgModule doesn't specify which component to initialize](https://angular.dev/errors/NG0403)\n  - [NG0500: Hydration Node Mismatch](https://angular.dev/errors/NG0500)\n  - [NG05000: Hydration with unsupported Zone.js instance](https://angular.dev/errors/NG05000)\n  - [NG0501: Hydration Missing Siblings](https://angular.dev/errors/NG0501)\n  - [NG0502: Hydration Missing Node](https://angular.dev/errors/NG0502)\n  - [NG0503: Hydration Unsupported Projection of DOM Nodes](https://angular.dev/errors/NG0503)\n  - [NG0504: Skip hydration flag is applied to an invalid node](https://angular.dev/errors/NG0504)\n  - [NG0505: No hydration info in server response](https://angular.dev/errors/NG0505)\n  - [NG0506: Application remains unstable](https://angular.dev/errors/NG0506)\n  - [NG0507: HTML content was altered after server-side rendering](https://angular.dev/errors/NG0507)\n  - [NG05104: Root element was not found](https://angular.dev/errors/NG05104)\n  - [NG0602: Disallowed function call inside reactive context](https://angular.dev/errors/NG0602)\n  - [NG0750: @defer dependencies failed to load](https://angular.dev/errors/NG0750)\n  - [NG0751: @defer behavior when HMR is enabled](https://angular.dev/errors/NG0751)\n  - [NG0910: Unsafe bindings on an iframe element](https://angular.dev/errors/NG0910)\n  - [NG0912: Component ID generation collision](https://angular.dev/errors/NG0912)\n  - [NG0913: Runtime Performance Warnings](https://angular.dev/errors/NG0913)\n  - [NG0950: Required input is accessed before a value is set.](https://angular.dev/errors/NG0950)\n  - [NG0951: Child query result is required but no value is available.](https://angular.dev/errors/NG0951)\n  - [NG0955: Track expression resulted in duplicated keys for a given collection.](https://angular.dev/errors/NG0955)\n  - [NG0956: Tracking expression caused re-creation of the DOM structure.](https://angular.dev/errors/NG0956)\n  - [NG1001: Argument Not Literal](https://angular.dev/errors/NG1001)\n  - [NG2003: Missing Token](https://angular.dev/errors/NG2003)\n  - [NG2009: Invalid Shadow DOM selector](https://angular.dev/errors/NG2009)\n  - [NG3003: Import Cycle Detected](https://angular.dev/errors/NG3003)\n  - [NG6100: NgModule.id Set to module.id anti-pattern](https://angular.dev/errors/NG6100)\n  - [NG8001: Invalid Element](https://angular.dev/errors/NG8001)\n  - [NG8002: Invalid Attribute](https://angular.dev/errors/NG8002)\n  - [NG8003: Missing Reference Target](https://angular.dev/errors/NG8003)\n\nThis site uses cookies from Google to deliver its services and to analyze traffic.\n\n[Learn more](https://policies.google.com/technologies/cookies) Ok, Got it\n\nThe selector of a component using `ViewEncapsulation.ShadowDom` doesn't match the custom element tag name requirements.\n\nIn order for a tag name to be considered a valid custom element name, it has to:\n\n- Be in lower case.\n- Contain a hyphen.\n- Start with a letter (a-z).\n\n## [Debugging the error](https://angular.dev/errors/NG2009\\#debugging-the-error)\n\nRename your component's selector so that it matches the requirements.\n\n**Before:**\n\n```\n      @Component({  selector: 'comp',  encapsulation: ViewEncapsulation.ShadowDom  …})\n\n```\n\ncheck\n\n**After:**\n\n```\n      @Component({  selector: 'app-comp',  encapsulation: ViewEncapsulation.ShadowDom  …})\n\n```\n\ncheck",
+    "screenshot": "https://service.firecrawl.dev/storage/v1/object/public/media/screenshot-cba3f7ed-1469-47a1-b3df-f38056a82bf9.png"
+  },
+  "metadata": {
+    "twitter:url": "https://angular.dev/",
+    "theme-color": "#ffffff",
+    "twitter:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "language": "en",
+    "description": "The web development framework for building modern apps.",
+    "og:url": "https://angular.dev/",
+    "twitter:card": "summary_large_image",
+    "msapplication-config": "/assets/icons/browserconfig.xml",
+    "og:description": "The web development framework for building modern apps.",
+    "ogUrl": "https://angular.dev/",
+    "viewport": "width=device-width, initial-scale=1",
+    "og:title": "Angular",
+    "ogImage": "https://angular.dev/assets/images/ng-image.jpg",
+    "ogDescription": "The web development framework for building modern apps.",
+    "application-name": "Angular",
+    "og:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "apple-mobile-web-app-title": "Angular",
+    "twitter:title": "Angular",
+    "ogTitle": "Angular",
+    "title": "NG2009: Invalid Shadow DOM selector • Angular",
+    "twitter:description": "The web development framework for building modern apps.",
+    "favicon": "https://angular.dev/assets/icons/favicon-48x48.png",
+    "og:type": "website",
+    "msapplication-TileColor": "#e90464",
+    "scrapeId": "cb85ca45-afb3-43d1-898a-9b3afb65e97f",
+    "sourceURL": "https://angular.dev/errors/NG2009",
+    "url": "https://angular.dev/errors/NG2009",
+    "statusCode": 200
+  }
+}

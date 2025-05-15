@@ -1,0 +1,18 @@
+{
+  "content": "Skip to main content\n\nmenu\n\nThis site uses cookies from Google to deliver its services and to analyze traffic.\n\n[Learn more](https://policies.google.com/technologies/cookies) Ok, Got it\n\nunfold\\_more\nLearn AngularProperty Binding\nReveal Answer\n\n[chevron\\_left](https://angular.dev/tutorials/learn-angular/5-control-flow-for) [chevron\\_right](https://angular.dev/tutorials/learn-angular/7-event-handling)\n\nReveal Answer\n\nunfold\\_more\nLearn AngularProperty Binding\nReveal Answer\n\n[chevron\\_left](https://angular.dev/tutorials/learn-angular/5-control-flow-for) [chevron\\_right](https://angular.dev/tutorials/learn-angular/7-event-handling)\n\nReveal Answer\n\nProperty binding in Angular enables you to set values for properties of HTML elements, Angular components and more.\n\nUse property binding to dynamically set values for properties and attributes. You can do things such as toggle button features, set image paths programmatically, and share values between components.\n\nNote: Learn more about [setting dynamic properties and attributes in the essentials guide](https://angular.dev/essentials/templates#setting-dynamic-properties-and-attributes).\n\nIn this activity, you'll learn how to use property binding in templates.\n\n* * *\n\nTo bind to an element's attribute, wrap the attribute name in square brackets. Here's an example:\n\n```\n      <img alt=\"photo\" [src]=\"imageURL\">\n\n```\n\ncheck\n\nIn this example, the value of the `src` attribute will be bound to the class property `imageURL`. Whatever value `imageURL` has will be set as the `src` attribute of the `img` tag.\n\n1. ### [Add a property called `isEditable`](https://angular.dev/tutorials/learn-angular/6-property-binding\\#add-a-property-called-iseditable)\n\n\nUpdate the code in `app.component.ts` by adding a property to the `AppComponent` class called `isEditable` with the initial value set to `true`.\n\n\n\n```\n         export class AppComponent {    isEditable = true;}\n\n```\n\ncheck\n\n2. ### [Bind to `contentEditable`](https://angular.dev/tutorials/learn-angular/6-property-binding\\#bind-to-contenteditable)\n\n\nNext, bind the `contentEditable` attribute of the `div` to the `isEditable` property by using the `[]` syntax.\n\n\n\n```\n         @Component({    ...    template: `<div [contentEditable]=\"isEditable\"></div>`,})\n\n```\n\ncheck\n\n\nThe div is now editable. Nice work \ud83d\udc4d\n\nProperty binding is one of Angular's many powerful features. If you'd like to learn more checkout [the Angular documentation](https://angular.dev/guide/templates/property-binding).\n\napp/app.component.ts\n\nadd\n\nlaunchdownload\n\n99\n\n1\n\n2\n\n3\n\n4\n\n5\n\n6\n\n7\n\n8\n\n9\n\n10\n\n11\n\n\u203a\n\nimport{Component}from'@angular/core';\n\n@Component({\n\nselector:'app-root',\n\nstyleUrls:\\['app.component.css'\\],\n\ntemplate:\\`\n\n<divcontentEditable=\"false\"></div>\n\n\\`,\n\n})\n\nexportclassAppComponent{}\n\nPreview\n\nBooting\n\nConsole\n\nTerminal\n\nrefresh\n\nStackBlitz",
+  "title": "Property Binding \u2022 Angular",
+  "description": "The web development framework for building modern apps.",
+  "keywords": [
+    "angular",
+    "learn",
+    "property",
+    "binding",
+    "https",
+    "dev",
+    "component",
+    "iseditable",
+    "tutorials",
+    "app"
+  ],
+  "sourceURL": "https://angular.dev/tutorials/learn-angular/6-property-binding"
+}

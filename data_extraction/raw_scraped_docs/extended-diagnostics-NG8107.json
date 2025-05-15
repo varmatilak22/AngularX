@@ -1,0 +1,39 @@
+{
+  "scrapeId": "f6fee260-7157-4730-a5b1-7a2f6cdf56ca",
+  "sourceURL": "https://angular.dev/extended-diagnostics/NG8107",
+  "statusCode": 200,
+  "data": {
+    "markdown": "Skip to main content\n\nmenu\n\nmenuAPI\n\n- [Roadmap](https://angular.dev/roadmap)\n- [Get involved](https://github.com/angular/angular/blob/main/CONTRIBUTING.md)\n- API Reference\n- CLI Reference\n- Error Encyclopedia\n- Extended Diagnostics\n- [Versioning and releases](https://angular.dev/reference/releases)\n- [Version compatibility](https://angular.dev/reference/versions)\n- [Update guide](https://angular.dev/update-guide)\n- Configurations\n- Migrations\n\n- arrow\\_backExtended Diagnostics\n  - [Overview](https://angular.dev/extended-diagnostics)\n  - [NG8101: Invalid Banana-in-Box](https://angular.dev/extended-diagnostics/NG8101)\n  - [NG8102: Nullish coalescing not nullable](https://angular.dev/extended-diagnostics/NG8102)\n  - [NG8103: Missing control flow directive](https://angular.dev/extended-diagnostics/NG8103)\n  - [NG8104: Text attribute not binding](https://angular.dev/extended-diagnostics/NG8104)\n  - [NG8105: Missing \\`let\\` keyword in an \\`\\*ngFor\\` expression](https://angular.dev/extended-diagnostics/NG8105)\n  - [NG8106: Suffix not supported](https://angular.dev/extended-diagnostics/NG8106)\n  - [NG8107: Optional chain not nullable](https://angular.dev/extended-diagnostics/NG8107)\n  - [NG8108: \\`ngSkipHydration\\` should be a static attribute](https://angular.dev/extended-diagnostics/NG8108)\n  - [NG8109: Signals must be invoked in template interpolations.](https://angular.dev/extended-diagnostics/NG8109)\n  - [NG8111: Functions should be invoked in event bindings.](https://angular.dev/extended-diagnostics/NG8111)\n  - [NG8113: Unused Standalone Imports](https://angular.dev/extended-diagnostics/NG8113)\n\nThis site uses cookies from Google to deliver its services and to analyze traffic.\n\n[Learn more](https://policies.google.com/technologies/cookies) Ok, Got it\n\nThis diagnostic detects when the left side of an optional chain operation ( `.?`) does not include `null` or `undefined` in its type in Angular templates.\n\n```\n      import {Component} from '@angular/core';@Component({  // Print the user's name safely, even if `user` is `null` or `undefined`.  template: `<div>User name: {{ user?.name }}</div>`,})class MyComponent {  // `user` is declared as an object which *cannot* be `null` or `undefined`.  user: { name: string } = { name: 'Angelino' };}\n\n```\n\ncheck\n\n## [What's wrong with that?](https://angular.dev/extended-diagnostics/NG8107\\#whats-wrong-with-that)\n\nUsing the optional chain operator with a non-nullable input has no effect and is indicative of a discrepancy between the allowed type of a value and how it is presented in the template.\nA developer might reasonably assume that the output of the optional chain operator is could be `null` or `undefined`, but it will never actually be either of those values.\nThis can lead to confusion about the expected output of the program.\n\n## [What should I do instead?](https://angular.dev/extended-diagnostics/NG8107\\#what-should-i-do-instead)\n\nUpdate the template and declared type to be in sync.\nDouble-check the type of the input and confirm whether it is actually expected to be nullable.\n\nIf the input should be nullable, add `null` or `undefined` to its type to indicate this.\n\n```\n      import {Component} from '@angular/core';@Component({  // If `user` is nullish, `name` won't be evaluated and the expression will  // return the nullish value (`null` or `undefined`).  template: `<div>{{ user?.name }}</div>`,})class MyComponent {  user: { name: string } | null = { name: 'Angelino' };}\n\n```\n\ncheck\n\nIf the input should not be nullable, delete the `?` operator.\n\n```\n      import {Component} from '@angular/core';@Component({  // Template always displays `name` as `user` is guaranteed to never be `null`  // or `undefined`.  template: `<div>{{ foo.bar }}</div>`,})class MyComponent {  user: { name: string } = { name: 'Angelino' };}\n\n```\n\ncheck\n\n## [Configuration requirements](https://angular.dev/extended-diagnostics/NG8107\\#configuration-requirements)\n\n[`strictTemplates`](https://angular.dev/extended-diagnostics/tools/cli/template-typecheck#strict-mode) must be enabled for any extended diagnostic to emit.\n[`strictNullChecks`](https://angular.dev/extended-diagnostics/tools/cli/template-typecheck#strict-null-checks) must also be enabled to emit `optionalChainNotNullable` diagnostics.\n\n## [What if I can't avoid this?](https://angular.dev/extended-diagnostics/NG8107\\#what-if-i-cant-avoid-this)\n\nThis diagnostic can be disabled by editing the project's `tsconfig.json` file:\n\n```\n      {  \"angularCompilerOptions\": {    \"extendedDiagnostics\": {      \"checks\": {        \"optionalChainNotNullable\": \"suppress\"      }    }  }}\n\n```\n\ncheck\n\nSee [extended diagnostic configuration](https://angular.dev/extended-diagnostics/extended-diagnostics#configuration) for more info.",
+    "screenshot": "https://service.firecrawl.dev/storage/v1/object/public/media/screenshot-c1afdbbb-76ee-4743-9865-10416299aa4b.png"
+  },
+  "metadata": {
+    "og:type": "website",
+    "description": "The web development framework for building modern apps.",
+    "msapplication-config": "/assets/icons/browserconfig.xml",
+    "ogDescription": "The web development framework for building modern apps.",
+    "msapplication-TileColor": "#e90464",
+    "og:url": "https://angular.dev/",
+    "ogTitle": "Angular",
+    "twitter:card": "summary_large_image",
+    "twitter:description": "The web development framework for building modern apps.",
+    "application-name": "Angular",
+    "og:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "favicon": "https://angular.dev/assets/icons/favicon-48x48.png",
+    "og:description": "The web development framework for building modern apps.",
+    "title": "NG8107: Optional chain not nullable • Angular",
+    "apple-mobile-web-app-title": "Angular",
+    "viewport": "width=device-width, initial-scale=1",
+    "twitter:url": "https://angular.dev/",
+    "og:title": "Angular",
+    "twitter:title": "Angular",
+    "twitter:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "ogImage": "https://angular.dev/assets/images/ng-image.jpg",
+    "ogUrl": "https://angular.dev/",
+    "theme-color": "#ffffff",
+    "language": "en",
+    "scrapeId": "f6fee260-7157-4730-a5b1-7a2f6cdf56ca",
+    "sourceURL": "https://angular.dev/extended-diagnostics/NG8107",
+    "url": "https://angular.dev/extended-diagnostics/NG8107",
+    "statusCode": 200
+  }
+}

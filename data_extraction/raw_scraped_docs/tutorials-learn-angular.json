@@ -1,0 +1,39 @@
+{
+  "scrapeId": "d0e537a9-232a-4bf3-b90b-5a523ce78a42",
+  "sourceURL": "https://angular.dev/tutorials/learn-angular",
+  "statusCode": 200,
+  "data": {
+    "markdown": "Skip to main content\n\nmenu\n\nThis site uses cookies from Google to deliver its services and to analyze traffic.\n\n[Learn more](https://policies.google.com/technologies/cookies) Ok, Got it\n\nunfold\\_more\nLearn AngularIntroduction\n\nchevron\\_left [chevron\\_right](https://angular.dev/tutorials/learn-angular/1-components-in-angular)\n\nunfold\\_more\nLearn AngularIntroduction\n\nchevron\\_left [chevron\\_right](https://angular.dev/tutorials/learn-angular/1-components-in-angular)\n\nThis interactive tutorial will teach you the basic building blocks to start building great apps with Angular.\n\n## [How to use this tutorial](https://angular.dev/tutorials/learn-angular\\#how-to-use-this-tutorial)\n\nYou'll need to have basic familiarity with HTML, CSS and JavaScript to understand Angular.\n\nEach step represents a concept in Angular. You can do one, or all of them.\n\nIf you get stuck, click \"Reveal answer\" at the top.\n\nAlright, let's [get started](https://angular.dev/tutorials/learn-angular/1-components-in-angular).",
+    "screenshot": "https://service.firecrawl.dev/storage/v1/object/public/media/screenshot-f6e7484e-5e91-4713-802f-20417ac9806b.png"
+  },
+  "metadata": {
+    "twitter:description": "The web development framework for building modern apps.",
+    "title": "Learn Angular • Angular",
+    "ogTitle": "Angular",
+    "description": "The web development framework for building modern apps.",
+    "twitter:card": "summary_large_image",
+    "twitter:url": "https://angular.dev/",
+    "twitter:title": "Angular",
+    "og:description": "The web development framework for building modern apps.",
+    "theme-color": "#ffffff",
+    "ogDescription": "The web development framework for building modern apps.",
+    "favicon": "https://angular.dev/assets/icons/favicon-48x48.png",
+    "twitter:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "viewport": "width=device-width, initial-scale=1",
+    "ogUrl": "https://angular.dev/",
+    "og:type": "website",
+    "apple-mobile-web-app-title": "Angular",
+    "og:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "msapplication-config": "/assets/icons/browserconfig.xml",
+    "ogImage": "https://angular.dev/assets/images/ng-image.jpg",
+    "msapplication-TileColor": "#e90464",
+    "application-name": "Angular",
+    "og:url": "https://angular.dev/",
+    "og:title": "Angular",
+    "language": "en",
+    "scrapeId": "d0e537a9-232a-4bf3-b90b-5a523ce78a42",
+    "sourceURL": "https://angular.dev/tutorials/learn-angular",
+    "url": "https://angular.dev/tutorials/learn-angular",
+    "statusCode": 200
+  }
+}

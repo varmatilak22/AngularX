@@ -1,0 +1,39 @@
+{
+  "scrapeId": "9d4e0695-9d60-45c5-9f9d-c30ea10747a6",
+  "sourceURL": "https://angular.dev/tutorials/deferrable-views",
+  "statusCode": 200,
+  "data": {
+    "markdown": "Skip to main content\n\nmenu\n\nThis site uses cookies from Google to deliver its services and to analyze traffic.\n\n[Learn more](https://policies.google.com/technologies/cookies) Ok, Got it\n\nunfold\\_more\nDeferrable ViewsIntroduction\n\nchevron\\_left [chevron\\_right](https://angular.dev/tutorials/deferrable-views/1-what-are-deferrable-views)\n\nunfold\\_more\nDeferrable ViewsIntroduction\n\nchevron\\_left [chevron\\_right](https://angular.dev/tutorials/deferrable-views/1-what-are-deferrable-views)\n\nThis interactive tutorial consists of lessons that introduce the Angular deferrable views concepts.\n\n## [How to use this tutorial](https://angular.dev/tutorials/deferrable-views\\#how-to-use-this-tutorial)\n\nEach step represents a concept in Angular deferrable views. You can do one, or all of them.\n\nIf you get stuck, click \"Reveal answer\" at the top.\n\nAlright, let's [get started](https://angular.dev/tutorials/deferrable-views/1-what-are-deferrable-views).\n\napp/app.component.ts\n\nadd\n\nlaunchdownload\n\n99\n\n1\n\n2\n\n3\n\n4\n\n5\n\n6\n\n7\n\n8\n\n9\n\n10\n\n›\n\nimport{Component}from'@angular/core';\n\n@Component({\n\nselector:'app-root',\n\ntemplate:\\`\n\nWelcome to Angular!\n\n\\`,\n\n})\n\nexportclassAppComponent{}\n\nPreview\n\nBooting\n\nConsole\n\nTerminal\n\nrefresh\n\nStackBlitz",
+    "screenshot": "https://service.firecrawl.dev/storage/v1/object/public/media/screenshot-4d9d2bf0-db70-440d-b9c4-75b281d8c4c4.png"
+  },
+  "metadata": {
+    "og:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "twitter:description": "The web development framework for building modern apps.",
+    "ogTitle": "Angular",
+    "ogImage": "https://angular.dev/assets/images/ng-image.jpg",
+    "favicon": "https://angular.dev/assets/icons/favicon-48x48.png",
+    "viewport": "width=device-width, initial-scale=1",
+    "ogDescription": "The web development framework for building modern apps.",
+    "description": "The web development framework for building modern apps.",
+    "title": "Deferrable Views • Angular",
+    "theme-color": "#ffffff",
+    "twitter:title": "Angular",
+    "apple-mobile-web-app-title": "Angular",
+    "msapplication-TileColor": "#e90464",
+    "og:url": "https://angular.dev/",
+    "language": "en",
+    "twitter:card": "summary_large_image",
+    "og:description": "The web development framework for building modern apps.",
+    "twitter:url": "https://angular.dev/",
+    "twitter:image": "https://angular.dev/assets/images/ng-image.jpg",
+    "ogUrl": "https://angular.dev/",
+    "msapplication-config": "/assets/icons/browserconfig.xml",
+    "application-name": "Angular",
+    "og:type": "website",
+    "og:title": "Angular",
+    "scrapeId": "9d4e0695-9d60-45c5-9f9d-c30ea10747a6",
+    "sourceURL": "https://angular.dev/tutorials/deferrable-views",
+    "url": "https://angular.dev/tutorials/deferrable-views",
+    "statusCode": 200
+  }
+}
