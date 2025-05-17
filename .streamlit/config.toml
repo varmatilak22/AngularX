@@ -1,2 +1,5 @@
 [layout]
 wide_mode = true
+
+[theme]
+base = "dark"
