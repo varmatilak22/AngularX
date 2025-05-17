@@ -138,7 +138,7 @@ section[data-testid="stSidebar"] .stButton > button:hover {
 section[data-testid="stSidebar"] h2 {
     color: white;
     font-weight: 600;
-    margin-bottom: 0.5rem;
+    
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
  
 }
