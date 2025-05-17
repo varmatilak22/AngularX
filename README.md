@@ -59,7 +59,7 @@ streamlit run FrontEnd/chroma_main.py
 For Faiss : 
 ```bash
 # Start the Streamlit app
-streamlit run FrontEnd/cfaiss_main.py
+streamlit run FrontEnd/faiss_main.py
 ```
 Visit [http://localhost:8501](http://localhost:8501) to interact with AngularX  and Deployed using Faiss script.
 
