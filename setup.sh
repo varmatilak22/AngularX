@@ -1,4 +1,4 @@
-
+pip install langchain_huggingface
 pip install streamlit 
 pip install langchain-community
 pip install tf-keras
