@@ -1,3 +1,16 @@
-myenv
+# Virtual environments
+myenv/
+venv/
+
+# Environment files
+.env
 Pipeline/.env
+*.env
+
+# Streamlit secrets
 .streamlit/secrets.toml
+FrontEnd/.streamlit/secrets.toml
+
+# Python cache
+__pycache__/
+*.pyc

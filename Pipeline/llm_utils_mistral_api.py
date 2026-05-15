@@ -5,9 +5,9 @@ import streamlit as st
 API_KEY=st.secrets["MISTRAL_API_KEY"]
 API_URL='https://api.mistral.ai/v1/chat/completions'
 
-HEADERS={
-    "Authorization":f"Bearer {API_KEY}",
-    "Content-Type":"application/json"
+HEADERS = {
+    "Authorization": f"Bearer {API_KEY}",
+    "Content-Type": "application/json"
 }
 
 def query_mistral(prompt,max_tokens=10000,retries=3,delay=5):
