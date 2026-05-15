@@ -6,8 +6,8 @@ import numpy as np
 import time
 import base64
 import uuid
-from langchain.vectorstores import FAISS
-from langchain.embeddings import SentenceTransformerEmbeddings
+from langchain_community.vectorstores import FAISS
+from langchain_huggingface import HuggingFaceEmbeddings
 
 os.environ["TRANSFORMERS_NO_TF"] = "1"
 
@@ -39,19 +39,26 @@ os.environ["STREAMLIT_WATCHER_TYPE"] = "none"
 st.set_page_config(page_title="AngularX Chatbot", page_icon=f"{logo_path}")
 
 # Embedding model & FAISS index initialization
-FAISS_INDEX_PATH = os.path.join(ROOT_DIR, 'data_preprocessing', 'faiss_index.index')
+FAISS_INDEX_PATH = os.path.join(ROOT_DIR, "data_preprocessing", "faiss_index")
 
-model =SentenceTransformerEmbeddings(model_name='sentence-transformers/all-MiniLM-L6-v2')
-vectorstore=FAISS.load_local(FAISS_INDEX_PATH.replace(".index",""),model,allow_dangerous_deserialization=True)
+model = HuggingFaceEmbeddings(
+    model_name="sentence-transformers/all-MiniLM-L6-v2"
+)
 
-retriever=vectorstore.as_retriever(search_type="similarity",search_kwargs={"k":3})
+if not os.path.isdir(FAISS_INDEX_PATH):
+    st.error(f"FAISS index folder not found: {FAISS_INDEX_PATH}")
+    st.stop()
 
-# Initialize or load FAISS index
-if os.path.exists(FAISS_INDEX_PATH):
-    index = faiss.read_index(FAISS_INDEX_PATH)
-    print("FAISS index loaded.")
-else:
-    print("FAISS index not found. Please ensure the index is pre-created.")
+vectorstore = FAISS.load_local(
+    FAISS_INDEX_PATH,
+    model,
+    allow_dangerous_deserialization=True
+)
+
+retriever = vectorstore.as_retriever(
+    search_type="similarity",
+    search_kwargs={"k": 3}
+)
 
 # --- Session State Initialization ---
 if "all_chats" not in st.session_state:
@@ -289,7 +296,7 @@ if prompt := st.chat_input("Ask about Angular..."):
      unsafe_allow_html=True)
     with st.spinner("Thinking..."):
         # Embed + retrieve context
-        docs=retriever.get_relevant_documents(prompt)
+        docs = retriever.invoke(prompt)
         
         context = "\n\n".join([doc.page_content for doc in docs])
 
